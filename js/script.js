@@ -1,12 +1,12 @@
-// let resizeTimer;
+let resizeTimer;
 
-// window.addEventListener("resize", () => {
-//   clearTimeout(resizeTimer);
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
 
-//   resizeTimer = setTimeout(() => {
-//     location.reload();
-//   }, 400);
-// });
+  resizeTimer = setTimeout(() => {
+    location.reload();
+  }, 400);
+});
 
 // let currentScroll = 0;
 // let targetScroll = 0;
@@ -137,7 +137,7 @@ $(function () {
     ScrollTrigger.create({
       trigger: dancer,
       pin: ".dancer .fix .left",
-      start: "7% top",
+      start: "top top",
       end: "72% top",
       scrub: 1,
       pinSpacing: false,
@@ -339,7 +339,6 @@ $(function () {
           start: "80% 80%",
           end: "80% 60%",
           scrub: 1,
-          markers:true
         }
       }
     );
@@ -366,7 +365,7 @@ $(function () {
     "(min-width: 769px) and (max-width: 1024px)": function () {
       window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=300 top", -600); runHighlightScroll("top+=300 top", 350); runFixcardAnimation(); changeBg();
     },
-    "(min-width: 390px) and (max-width: 768px)": function () {
+    "(min-width: 300px) and (max-width: 768px)": function () {
       window.addEventListener("resize", ScrollTrigger.update); runFixcardAnimation(); changeBg();
     }
   });
