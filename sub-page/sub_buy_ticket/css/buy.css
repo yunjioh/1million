@@ -141,6 +141,9 @@ footer .inner .sns.a {display: none;}
   body.no-scroll { overflow: hidden;}
   .inner {padding: 250px 24px 200px;}
 
+  
+  .inner-header .logo img {width: 18vw;}
+
   .title {font-size: 13vw; margin-bottom: 60px;}
 
   .con1 .buy {font-size: 24px; margin-bottom: 24px;}
@@ -266,6 +269,8 @@ footer .inner .sns .img a {width: 90%;}
   
     .menu {width: 25px; height: 17px;}
     .menu.active .a {transform: translateY(4px) rotate(45deg);}
+    
+  .inner-header .logo img {width: 25vw;}
 
   .inner {padding: 180px 16px 100px;}
   .title {font-size: 15vw; margin-bottom: 30px;}
