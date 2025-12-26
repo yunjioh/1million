@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300;}
+.faq-inner {padding: 0px 160px; display: flex; justify-content: space-between; margin-bottom: 300px;}
+.faq-inner .faq-text-box {width: 50%;}
+.faq-inner .faq-text-box .faq-title {font-size: 5vw; font-weight: 300; letter-spacing: 0px; line-height: 1.2; text-align: center; text-align: left; -webkit-text-stroke: 3px #000; margin-top: 145px;}
+.faq-inner .faq-text-box .faq-title span {display: block; overflow: hidden; transform: translate3d(0,0,0) skewY(0deg)}
+.faq-inner .faq-text-box .faq-title span b {display: block;}
+
+
+.faq-inner .faq-text-box .faq-title.motion span b {animation: textAni 1s ease forwards;}
+
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
+}
+
+.faq-inner .faq-text-box .text {color: #7d7d7d; font-family: 'Prentendard', sans-serif; font-weight: 400; margin-top: 30px; font-size: 20px;}
+
+.faq-inner .accordion {
+  width: 45%;
+}
+
+.faq-inner .accordion .item {
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.faq-inner .accordion .title {
+  width: 100%;
+  padding: 40px 40px;
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1.3vw;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.faq-inner .accordion .item .title br {display: none;}
+
+.faq-inner .accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #666;
+  line-height: 1.4;
+  transition: all 0.35s ease;
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.item.active .content {
+  max-height: 200px; /* 텍스트 길면 늘려줘 */
+  padding: 0 20px 40px;
+}
+
+.faq-inner .accordion .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+  transition: transform 0.3s ease;
+  position: relative;
+  transform: rotate(180deg)
+}
+
+.faq-inner .accordion .icon img {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.faq-inner .accordion .item.active .icon {
+    background: #6F47DB;
+  transform: rotate(360deg);
+}
+
+
+@keyframes card-rise-soft {
+  0% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.faq-inner .accordion .item.a.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+.faq-inner .accordion .item.b.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
+.faq-inner .accordion .item.c.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.3s;}
+.faq-inner .accordion .item.d.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.4s;}
+
+
+@media screen and (max-width: 1300px) {
+    .faq-inner .accordion .item {border-radius: 20px;}
+    .faq-inner {padding: 0 24px; flex-wrap: wrap;}
+    .faq-inner .faq-text-box {margin-bottom: 80px; width: 100%}
+    .faq-inner .faq-text-box .faq-title {font-size: 7vw; margin-top: 0;}
+    .faq-inner .faq-text-box .text {font-size: 18px;}
+    .faq-inner .accordion {width: 100%;}
+
+
+    .faq-inner .accordion .title {font-size: 20px; padding: 50px 40px;}
+    .faq-inner .accordion .content {font-size: 18px; margin: 0 30px;}
+    .item.active .content {padding: 0 10px 30px;}
+}
+
+
+@media screen and (max-width: 768px) {
+    .faq-inner {padding: 0 20px; margin-bottom: 200px;}
+    .faq-inner .faq-text-box {margin-bottom: 80px;}
+    .faq-inner .faq-text-box .faq-title {font-size: 11vw; margin-top: 0;}
+    .faq-inner .faq-text-box .text {font-size: 18px; margin-top: 20px;}
+
+    .faq-inner .accordion .title {font-size: 18px; padding: 40px 30px;}
+    .faq-inner .accordion .content {font-size: 16px; margin: 0 30px;}
+    .faq-inner .accordion .content br {display: none;}
+    .faq-inner .accordion .icon {width: 35px; height: 35px;}
+    .item.active .content {padding: 0 0px 40px;}
+}
+
+
+@media screen and (max-width: 500px) {
+    .faq-inner {padding: 0 16px; margin-bottom: 100px;}
+    .faq-inner .faq-text-box {margin-bottom: 32px;}
+    .faq-inner .faq-text-box .faq-title {font-size: 10vw; -webkit-text-stroke: 1.5px #000;}
+    .faq-inner .faq-text-box .text {font-size: 14px; margin-top: 16px;}
+    .faq-inner .accordion .item .title {font-size: 16px; padding: 30px 20px; text-align: left;}
+    .faq-inner .accordion .item .title br {display: block;}
+    .faq-inner .accordion .content {font-size: 14px;  margin: 0 20px;}
+    .faq-inner .accordion .icon {width: 25px; height: 25px;}
+    .item.active .content {padding: 0 0px 30px;}
+}

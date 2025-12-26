@@ -1,0 +1,482 @@
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통요소 */
+body {background: #F5F6FB; color: #0A0A0A; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300;}
+
+/* header */
+header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
+.inner-header {width: 90%; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
+.inner-header .logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 800;}
+.inner-header nav {border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); backdrop-filter: blur(14px); display: flex; align-items: center; margin: 0 auto;}
+.inner-header nav ul {display: flex; justify-content: space-between; margin: 0 auto; color: #F5F6FB; text-decoration: none; padding: 4px 6vw;}
+.inner-header nav ul li {font-size: 20px; text-align: center; font-weight: 300; font-family: 'Pretendard',sans-serif;}
+
+.inner-header nav ul li a {position: relative; display: inline-block; overflow: hidden; margin: 10px 15px 0 15px; color: transparent;}
+.inner-header nav ul li a::before, .inner-header nav ul li a::after {content: attr(data-text); position: absolute; left: 0; width: 100%; text-align: center; transition: transform 0.4s ease; color: #000;}
+.inner-header nav ul li a::after {transform: translateY(0);}
+.inner-header nav ul li a::before {transform: translateY(100%);}
+.inner-header nav ul li a:hover::after {transform: translateY(-100%);}
+.inner-header nav ul li a:hover::before {transform: translateY(0);}
+
+.inner-header .right-box {display: flex; align-items: center;}
+.inner-header .right-box .language {display: flex; width: 80px; height: 32px; border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); margin: 0 auto; align-items: center; justify-content: center;}
+.inner-header .right-box .language p {font-family: 'Pretendard',sans-serif; font-size: 16px; font-weight: 500; color: #000;}
+.inner-header .right-box .language img {width: 10px; height: 8px; margin-left: 10px; filter: invert(100%);}
+
+.menu {width: 32px; height: 24px; display: flex; flex-direction: column; justify-content: space-between; margin-left: 10px; position: relative; display: none;}
+.menu span {display: block; width: 100%; height: 3px; background: #000; border-radius: 2px;}
+
+.menu.active .a {transform: translateY(11px) rotate(45deg);}
+.menu.active .b {opacity: 0;}
+.menu.active .c {transform: translateY(-10px) rotate(-45deg);}
+
+.fullscreen-menu {display: none;}
+
+
+
+/* select */
+.con1 {position: relative; margin-top: 200px;}
+.con1 .topBox {display: flex; justify-content: space-between; color: #818181; font-size: 18px; line-height: 1.3;  font-family: 'Pretendard', sans-serif; font-weight: 400; letter-spacing: 0px; width: 90%; margin: 0 auto;}
+
+
+
+.con1 .title {font-size: 15vw; letter-spacing: -2px; text-align: center; margin-top: 350px; margin-bottom: 80px; font-weight: 500;}
+.con1 .title span {display: block; overflow: hidden; transform: translate3d(0,0,0) skewY(0deg)}
+.con1 .title span b {display: block;}
+
+
+.con1 .title.motion span b {animation: textAni 1s ease forwards;}
+
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
+}
+
+
+
+
+
+
+
+.con1 .float-wrap {position: absolute; inset: 0; display: grid; place-items: center; z-index: -1;  mix-blend-mode: hard-light;}
+.con1 .float-wrap img.motion {animation: floatUpDown 3s ease-in-out infinite, opacityAni 1s ease forwards; animation-delay: 0.5s, 0s; opacity: 0;}
+
+
+/* heart animation */
+@keyframes floatUpDown {
+  0%   {transform: translateY(0);}
+  50%  { transform:translateY(-30px);}
+  100% { transform:translateY(0);}
+}
+
+@keyframes opacityAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+
+.select .inner {padding: 0 160px;}
+.con2 .tit {font-size: 28px; font-weight: 500; margin-bottom: 30px; letter-spacing: -1px;}
+.con2 ul {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; height: 449px;}
+.con2 ul li {width: 14%; background: #fff; border: 1px solid rgba(253, 205, 205, 0.3); border-radius: 20px; text-align: center; padding: 40px 30px 20px 30px; font-family: 'Pretendard', sans-serif; flex: 1; transition: flex-grow 0.3s;}
+.con2 ul li .img {margin: 50px auto; width: 25%; align-items: center;}
+.con2 ul li .img  img {width: 100%;}
+.con2 ul li.active {background: #0E0E0E; background-image: url(../img/select_ticket.svg); background-size: cover; color: white; border: none; flex: 1.2; transition: flex-grow 0.3s;}
+
+.con2 ul li.active .class, .con2 ul li.active .price {color: white;}
+.con2 ul li .class {font-size: 2vw; font-weight: 500; letter-spacing: -1px; margin-bottom: 8px; white-space: nowrap;}
+.con2 ul li .class-name {font-size: 16px; font-weight: 600; color: #777777; white-space: nowrap;}
+.con2 ul li.active .class-name {color: #e9e9e9;}
+
+.con2 ul li.active .img img {filter: brightness(0) invert(1);}
+.con2 ul li .discount {font-size: 1.1vw; font-weight: 300; color: #ACACAC;  white-space: nowrap}
+.con2 ul li .discount span {margin-right: 6px; text-decoration: none; color: #FF7E7E;}
+.con2 ul li .price {font-size: 1.7vw; font-weight: 600; color: #565656; letter-spacing: -1px; white-space: nowrap;}
+.con2 ul li .btn {display: block; margin-top: 13px; width: 100%; padding: 13px 0; border-radius: 10px; background: white; color: #0A0A0A; font-size: 18px; 
+font-weight: 500; opacity: 0; border: none; pointer-events: none}
+.con2 ul li.active .btn {border: none; transition: all 0.3s ease; opacity: 1;pointer-events: auto}
+
+.con3 .alert {display: flex; margin-top: 50px; color: #6D6D6D; font-family: 'Pretendard', sans-serif;}
+.con3 .alert .left {display: flex; margin-right: 64px; font-size: 18px; font-weight: 700;}
+.con3 .alert .left img {width: 24px; height: 24px; margin-right: 10px;}
+.con3 .alert .right {font-size: 16px; color: #838383; line-height: 1.4;}
+
+
+
+/* use-ticket */
+.use-ticket {margin-top: 300px; padding: 0px 160px 300px;}
+
+.use-ticket .mainTit {margin-bottom: 100px;}
+.use-ticket .mainTit h2 {font-size: 5vw; letter-spacing: -1px; margin-bottom: 30px; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 500; -webkit-text-stroke: 1.5px #000;}
+.use-ticket .mainTit p {font-size: 20px; color: #777777; font-family: 'Pretendard', sans-serif; font-weight: 500;}
+
+.use-ticket ul {display: flex; justify-content: space-between; flex-wrap: wrap; transition: all 0.3s;}
+
+
+.use-ticket ul li {width:31%; box-sizing: border-box;}
+.use-ticket ul li .txtBox {flex: 1; position: relative; overflow: hidden;  border: 1px solid #d6d6d6; border-radius: 10px; }
+.use-ticket ul li p span {display: inline-block;  width: 12px; height: 26px;  margin-right: 16px;}
+.use-ticket ul li p span.pur {background: #C3B2F0;}
+.use-ticket ul li p span.yellow {background: #FFD698;}
+.use-ticket ul li p span.pink {background: #FFA8C2;}
+
+.use-ticket ul li p.top {font-size: 36px; align-items: center; margin-bottom: 16px; }
+
+.use-ticket ul li.step p { font-family: 'Pretendard', sans-serif; font-weight: 500;}
+
+
+.use-ticket ul li.step .txtBox {border-radius: 10px; position: relative;}
+.use-ticket ul li.step .txtBox {background: #fff}
+
+.use-ticket ul li.step .txtBox .topText {padding: 35px;}
+.use-ticket ul li.step .txtBox .topText .tit {font-size: 2.2vw; font-weight: 600; color: #424242; margin-bottom: 16px; font-family: 'Pretendard', sans-serif; letter-spacing: -1px;}
+.use-ticket ul li.step .txtBox .topText .txt {font-size: 1.3vw; color: #555555; font-weight: 500; padding-bottom: 75%; font-family: 'Pretendard', sans-serif; letter-spacing: -1px;}
+
+.use-ticket ul li .txtBox img {width: 100%; position: absolute; bottom: -35px; left: 50%; transform: translate(-50%,0); transition: all 0.5s; opacity: 0.8;}
+
+.use-ticket ul li:hover .txtBox img {transform:  translate(-50%,0) scale(1.15); transition: all 0.3s;}
+
+@keyframes leftAni {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(2px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.use-ticket .mainTit .how-tit.motion {animation: leftAni 0.6s ease-out forwards;}
+
+@keyframes card-rise-soft {
+  0% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes card-rise-soft2 {
+  0% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98) translateY(70%);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98) translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateY(70%);
+  }
+}
+.use-ticket ul .step.s1.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+.use-ticket ul .step.s2.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
+.use-ticket ul .step.s3.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.3s;}
+
+.con2 ul li.a.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+.con2 ul li.b.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
+.con2 ul li.c.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.3s;}
+.con2 ul li.d.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.4s;}
+.con2 ul li.e.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.5s;}
+.con2 ul li.f.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.6s;}
+
+
+
+footer .inner {padding: 100px 120px 100px; display: flex; justify-content: space-between; background: #000}
+footer .inner .logo {font-family: 'Cabinet Grotesk', sans-serif; font-size: 32px; padding-right: 50px; border-right: 2px solid #999; width: auto; color: #fff; font-weight: 400; line-height: 1.3; letter-spacing: -1px;}
+footer .inner ul {display: flex; justify-content: space-between; width: 65%;}
+footer .inner ul li {font-family: 'Pretendard', sans-serif; text-align: right; letter-spacing: 1px;}
+footer .inner ul li .contact {font-size: 20px; font-weight: 600; margin-bottom: 70px; color: #fff;}
+footer .inner ul li .contact.b {margin-bottom: 55px;}
+footer .inner ul li p {font-size: 16px; color: #999; word-break: break-all}
+
+
+footer .inner .sns .img a {display: block; width: 100%; height: 100%;}
+footer .inner .sns .img:nth-child(3) {margin-bottom: 0;}
+footer .inner .sns .img img {width: 100%; margin-bottom: 12px;}
+
+footer .inner .sns.a {display: none;}
+
+
+
+
+/* banner */
+
+
+/* @media screen and (max-width:1680px) {
+    .con1 .title {font-size: 16vw;}
+    .con1 img {top: 52%;}
+    .inner {padding: 5%;}
+    .con2 ul li.active {flex: none;}
+} */
+
+@media screen and (max-width:1900px) {
+  .con2 ul {height: 404px;}
+}
+
+@media screen and (max-width:1800px) {
+  .con2 ul {height: 396px;}
+}
+
+
+@media screen and (max-width:1700px) {
+  .con2 ul {height: 383px;}
+}
+
+
+@media screen and (max-width:1600px) {
+  .con2 ul {height: 372px;}
+}
+
+
+
+
+
+
+/* pc mode 1024px*/ 
+@media screen and (max-width:1400px) {
+  .inner-header {width: 95%;}
+  .inner-header nav {display: none;}
+  .inner-header .right-box .language {display: none;}
+  .menu {display: flex;}
+  .menu.active {display: flex;}
+  .fullscreen-menu {position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 100px; font-size: 50px; color: #fff; transition: all 0.7s; z-index: 100;}
+  .fullscreen-menu.active { left: 0; }
+  .fullscreen-menu a { color: #000; text-decoration: none; font-weight: bold; }
+  header.menu-open {position: fixed; top: 40px; left: 0; width: 100%;}
+  body.no-scroll { overflow: hidden;}
+
+    .select .inner {padding: 0 24px;}
+    .con1 {margin-top: 130px;}
+    .con1 img {width: 700px}
+    .con1 .topBox {font-size: 16px; width: 95%;}
+    .con1 .title {font-size: 18vw; margin-top: 450px; margin-bottom: 80px;}
+
+    .con2 .tit {font-size: 26px; margin-bottom: 35px;}
+    .con2 ul {gap: 0; height: 100%;}
+    .con2 ul li {margin-bottom: 20px; width: 33%; transition: all 0.3s ease;;}
+    .con2 ul li.active {flex: none; transition: all 0.3s ease; background-position: center bottom;}
+    .con2 ul li .img {width: 25%; margin: 70px auto;}
+    .con2 ul li {width: 32%; flex: none; padding: 30px 30px 20px 30px;}
+    .con2 ul li .class {font-size: 36px; margin-bottom: 2px;}
+    .con2 ul li .price {font-size: 32px; font-weight: 600;}
+    .con2 ul li .discount {font-size: 24px; font-weight: 400;}
+    .con3 .alert {margin-top: 30px;}
+    .con3 .alert .left {margin-right: 40px;}
+    .con3 .alert .right {font-size: 16px;}
+
+    .con2 ul li .btn {display: block; margin-top: 13px; width: 100%; padding: 15px 0; border-radius: 10px;font-size: 16px; font-weight: 500; opacity: 0;}
+.con2 ul li.active .btn {display: block; border: none; pointer-events: auto}
+
+
+
+    .use-ticket {padding: 24px; margin-bottom: 300px; margin-top: 300px;}
+    .use-ticket .mainTit {margin-bottom: 80px;}
+    .use-ticket .mainTit h2 {font-size: 7vw; margin-bottom: 30px;}
+    .use-ticket .mainTit p {font-size: 18px;}
+
+    .use-ticket ul li p span {width: 9px;height: 24px;}
+    .use-ticket .inner2 {padding: 0;}
+    .use-ticket ul {display: flex; justify-content: space-between; padding: 0 20px;}
+    .use-ticket ul li {min-width: auto; width: 32%;}
+    .con2 ul li .img {width: 30%; margin: 50px auto;}
+    .use-ticket ul li.step .txtBox .topText {padding: 24px 24px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 2.5vw; }
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 16px;font-size: 1.5vw; padding-bottom: 70%;}
+    .use-ticket ul li p.top {font-size: 26px; gap: 10px; margin-bottom: 4px;}
+    .use-ticket ul li.step .txtBox .topText .tit {margin-bottom: 8px;}
+    .use-ticket ul li .txtBox img {transition: none;}
+    .use-ticket ul li:hover .txtBox img {transform:  translate(-50%,0) scale(1); transition: none}
+
+    .useBanner {margin: 300px 0px 200px;}
+    .useBanner .img {width: 100%;}
+    .useBanner .img img {width: 100%;}
+
+    footer .inner {padding: 50px 24px 50px;}
+footer .inner .logo {font-size: 26px;}
+footer .inner ul {flex-wrap: wrap;}
+footer .inner ul li {width: 45%; margin-bottom: 50px;} 
+footer .inner ul li:nth-child(3), footer .inner ul li:nth-child(4) {margin-bottom: 0;}
+footer .inner ul li .contact {font-size: 16px;}
+footer .inner ul li p {font-size: 14px;}
+footer .inner .sns .img a {width: 90%;}
+
+}
+
+
+/* pc mode 768px*/ 
+@media screen and (max-width:768px) {
+    .inner-header .logo {font-size: 30px;}
+    .fullscreen-menu {font-size: 40px; gap: 80px;}
+
+    .select .inner {padding: 0 20px;}
+    .con1 {margin-top: 100px;}
+    .con1 img {width: 450px;}
+    .con1 .topBox {font-size: 2vw; white-space: nowrap;}
+    .con1 .title {font-size: 18vw; margin-top: 350px; margin-bottom: 60px;}
+    .con2 .tit {font-size: 20px;}
+    .con2 ul li:nth-child(1) .priceBox {margin-top: 73px;}
+    .con2 ul li {padding: 20px 20px 18.37px 20px; border-radius: 15px; margin-bottom: 16px; transition: none;}
+    .con2 ul li.active {flex: none; transition: none;}
+    .con2 ul li .class {font-size: 4vw;}
+    .con2 ul li .class-name {font-size: 14px;}
+    .con2 ul li .price {font-size: 3.5vw;}
+    .con2 ul li .discount {font-size: 3vw; font-weight: 300;}
+    .con2 ul li .discount span {display: block; font-size: 3vw;}
+    .con2 ul li .btn {padding: 14px 0; font-size: 14px;}
+    .con3 .alert {display: block; margin-top: 20px;}
+    .con3 .alert .left {font-size: 18px; margin-bottom: 15px;}
+    .con3 .alert .left img {width: 22px; height: 22px; margin-right: 8px;}
+    .con3 .alert .right {margin-left: 0; letter-spacing: -1px; font-size: 14px;}
+   
+    .use-ticket ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    padding: 0;}
+
+    .use-ticket ul li {width: 100%; margin-bottom: 40%;}
+
+    .use-ticket ul li:nth-child(2) {
+        transform: translateY(70%);}
+
+    .use-ticket ul .step.s2.motion {animation: card-rise-soft2 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
+
+    .use-ticket {padding: 0 20px; margin-bottom: 100px; margin-top: 200px;}
+    .use-ticket .mainTit {margin-bottom: 80px;}
+    .use-ticket .mainTit h2 {font-size: 11vw; margin-bottom: 20px;}
+    .use-ticket .mainTit p {font-size: 18px;}
+
+    .use-ticket ul li p span {width: 9px; height: 24px;}
+    
+    .use-ticket ul li.step .txtBox .topText {padding: 20px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 3.8vw; margin-bottom: 8px;}
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 2.2vw; padding-bottom: 70%;}
+    .use-ticket ul li p.top {font-size: 30px; gap: 12px; margin-bottom: 3px;}
+
+
+  footer .inner {padding: 30px 20px 0px;}
+  footer .inner {padding: 50px 24px 50px; flex-wrap: wrap;}
+  footer .inner .logo {font-size: 28px; padding-right: 25px; line-height: 1.2; margin-bottom: 50px;}
+  footer .inner ul {flex-wrap: wrap;  width: 100%;}
+  footer .inner ul li {width: 45%; margin-bottom: 24px; flex-wrap: wrap; display: flex;} 
+  footer .inner ul li:nth-child(3), footer .inner ul li:nth-child(4) {margin-bottom: 0;}
+  footer .inner ul li .contact {font-size: 14px; display: inline; width: 100%; margin-bottom: 24px; text-align: left;}
+  footer .inner ul li p {font-size: 12px; display: inline; width: 100%; text-align: left;}
+  footer .inner .sns .img a {width: 70%;}
+  footer .inner .sns .img img {margin-bottom: 10px;}
+
+  footer .inner .sns.a {display: block;}
+  footer .inner .sns.b {display: none;}
+
+}
+    
+
+/* pc mode 390px*/ 
+@media screen and (max-width:500px) {
+    .inner-header .logo {font-size: 26px;}
+    .fullscreen-menu {font-size: 32px; gap: 40px;}
+
+      .con1 {margin-top: 100px;}
+    .con1 .topBox {font-size: 12px;}
+    .con1 .topBox .right {display: none;}
+    .con1 img {width: 300px;}
+
+
+
+
+    .select .inner {padding: 0 16px;}
+    .con1 .title {font-size: 18vw; margin-top: 280px; margin-bottom: 40px;}
+    .con2 .tit {font-size: 14px; margin-bottom: 20px;}
+    .con2 ul {transition: none;}
+    .con2 ul li {display: flex; padding: 17px; width: 100%; align-items: center; border-radius: 6px; height: auto; justify-content: space-between; transition: none;}
+    .con2 ul li .classBox {text-align: left;}
+    .con2 ul li .class {display: inline; font-size: 22px;}
+    .con2 ul li .class-name {font-size: 10px; margin-top: 5px;}
+    .con2 ul li .price {font-size: 16px;}
+    .con2 ul li .priceBox {position: relative; padding-right: 30px; text-align: end;}
+    .con2 ul li .priceBox::after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/select_box.svg') no-repeat center/contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+    .con2 ul li .discount {font-size: 12px; font-weight: 300;}
+    .con2 ul li .discount span {font-size: 12px;}
+    .con2 ul li .img {display: none;}
+    .con3 .alert {margin-top: 16px;}
+    .con3 .alert .left img {width: 16px; height: 16px; margin-right: 6px;}
+    .con3 .alert .left {font-size: 14px;}
+    .con3 .alert .right {font-size: 12px; margin-left:0; letter-spacing: normal;}
+    .con2 ul li .btn {display: none;}
+    .con2 ul li.active {background: url(../img/select_ticket390.svg) no-repeat center/cover}
+    .con2 ul li.active .btn {display: none;}
+    .con2 ul li.active .class-name {color: white;}
+    .con2 ul li.active .img {margin: auto;}
+    .con2 ul li:nth-child(1) .priceBox {margin-top: 0;}
+    .con2 ul li.active .priceBox::after { background: url('../img/select_box2.svg') no-repeat center/contain;}
+    
+    .use-ticket {padding: 16px; margin-top: 100px; margin-bottom: 100px;}
+    .use-ticket ul { display:block; gap: 24px;}
+
+    .use-ticket ul li {width: 100%; margin-bottom: 36px; transform: none; }
+
+    .use-ticket ul li:nth-child(2) {
+        transform: none;}
+
+          .use-ticket ul .step.s2.motion {animation: card-rise-soft1 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
+
+    .use-ticket {padding: 0 16px;}
+    .use-ticket .mainTit {margin-bottom: 32px;}
+    .use-ticket .mainTit h2 {font-size: 10vw; letter-spacing: 0px; -webkit-text-stroke: 1px #000; margin-bottom: 16px;}
+    .use-ticket .mainTit p {font-size: 14px;}
+
+    .use-ticket ul li.step .txtBox { border-radius: 8px; }
+    .use-ticket ul li p span {width: 7px; height: 24px; margin-right: 8px;}
+    
+    .use-ticket ul li.step .txtBox .topText {padding: 24px 24px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 28px; margin-bottom:11px; }
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 17px; padding-bottom: 80%; letter-spacing: -1px;}
+    .use-ticket ul li p.top {font-size: 26px; gap: 12px; margin-bottom: 8px;}
+    
+
+      footer .inner .logo {font-size: 24px;}
+  footer .inner ul li .contact.b {margin-bottom: 24px;}
+  footer .inner .sns .img a {width: 60%;}
+  footer .inner .sns .img img {margin-bottom: 8px;}
+}

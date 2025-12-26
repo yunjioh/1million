@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/*topBox schedule, img*/
+/* .wrap.a .inner {padding: 200px 160px 300px 160px; position: relative;}
+.wrap.a .inner .topBox {width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center;}
+.topBox img {width: 45vw; height: auto; margin-bottom: 40px;}
+.topBox .txtBox {position: absolute; line-height: 1; top: 29%;} 
+.topBox .txtBox .maintit {font-size: 13vw; font-weight: 600; margin-bottom: 16px;}
+.topBox .txtBox p {font-size: 1.4vw; color: #777777; font-family: 'Pretendard', sans-serif; font-weight: 500; line-height: 1.6;}
+ before*/
+
+/* 공통요소 */
+body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300;}
+h3 {font-size: 60vw; font-weight: 600;}
+.wrap.a .bigtit {font-size: 48px; font-weight: 600;}
+.wrap.a .tit {font-size: 48px; font-weight: 600;}
+.btnInner {all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; justify-content: space-between; 
+    width: 100%;}
+
+/* header */
+header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
+.inner-header {width: 90%; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
+.inner-header .logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 800;}
+.inner-header nav {border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); backdrop-filter: blur(14px); display: flex; align-items: center; margin: 0 auto;}
+.inner-header nav ul {display: flex; justify-content: space-between; margin: 0 auto; color: #F5F6FB; text-decoration: none; padding: 4px 6vw;}
+.inner-header nav ul li {font-size: 20px; text-align: center; font-weight: 300; font-family: 'Pretendard',sans-serif;}
+
+.inner-header nav ul li a {position: relative; display: inline-block; overflow: hidden; margin: 10px 15px 0 15px; color: transparent;}
+.inner-header nav ul li a::before, .inner-header nav ul li a::after {content: attr(data-text); position: absolute; left: 0; width: 100%; text-align: center; transition: transform 0.4s ease; color: #000;}
+.inner-header nav ul li a::after {transform: translateY(0);}
+.inner-header nav ul li a::before {transform: translateY(100%);}
+.inner-header nav ul li a:hover::after {transform: translateY(-100%);}
+.inner-header nav ul li a:hover::before {transform: translateY(0);}
+
+.inner-header .right-box {display: flex; align-items: center;}
+.inner-header .right-box .language {display: flex; width: 80px; height: 32px; border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); margin: 0 auto; align-items: center; justify-content: center;}
+.inner-header .right-box .language p {font-family: 'Pretendard',sans-serif; font-size: 16px; font-weight: 500; color: #000;}
+.inner-header .right-box .language img {width: 10px; height: 8px; margin-left: 10px; filter: invert(100%);}
+
+.menu {width: 32px; height: 24px; display: flex; flex-direction: column; justify-content: space-between; margin-left: 10px; position: relative; display: none;}
+.menu span {display: block; width: 100%; height: 3px; background: #000; border-radius: 2px;}
+
+.menu.active .a {transform: translateY(11px) rotate(45deg);}
+.menu.active .b {opacity: 0;}
+.menu.active .c {transform: translateY(-10px) rotate(-45deg);}
+
+.fullscreen-menu {display: none;}
+
+/*topBox schedule, img*/
+.wrap.a .inner {padding: 0px 160px 300px 160px;}
+
+.con1 {position: relative; margin-top: 200px;}
+.con1 .topBox {display: flex; justify-content: space-between; color: #818181; font-size: 18px; line-height: 1.3;  font-family: 'Pretendard', sans-serif; font-weight: 400; letter-spacing: 0px; width: 90%; margin: 0 auto;}
+
+
+/* .con1 .title {font-size: 16vw; font-weight: 500; letter-spacing: -2px; text-align: center; margin-top: 350px; margin-bottom: 80px;}
+.con1 .title span {display: block; overflow: hidden; transform: translate3d(0,0,0) skewY(0deg)}
+.visual .inner .text-box .tit span b {display: block;} */
+
+
+.con1 .title {font-size: 16vw; font-weight: 500; letter-spacing: -2px; line-height: 1; text-align: center; margin-top: 350px; margin-bottom: 80px;}
+.con1 .title span {display: block; overflow: hidden; transform: translate3d(0,0,0) skewY(0deg)}
+.con1 .title span b {display: block;}
+
+
+.con1 .title.motion span b {animation: textAni 1s ease forwards;}
+
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
+}
+
+
+.con1 .float-wrap {position: absolute; inset: 0; display: grid; place-items: center; z-index: -1;  mix-blend-mode: hard-light;}
+.con1 .float-wrap img.motion {animation: floatUpDown 3s ease-in-out infinite, opacityAni 1s ease forwards; animation-delay: 0.5s, 0s; opacity: 0;}
+
+
+
+/* heart animation */
+@keyframes floatUpDown {
+  0%   {transform: translateY(0);}
+  50%  { transform:translateY(-30px);}
+  100% { transform:translateY(0);}
+}
+
+@keyframes opacityAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*calender 중간박스 캘린더, 클래스 목록*/
+.calender .smalltit {font-size: 20px; font-weight: 500;}/*font vw변경*/
+.bottomBox .calender {width: 100%; display: flex; justify-content: space-between; margin-top: 0px; margin-bottom: 60px; align-items: stretch;}
+.calender .leftBox {width: 66%; height: auto; background: #FFFFFF; padding: 4%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.2);} /*inner padding 변경*/
+.calender .leftBox .tit {width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px;}
+.calender .leftBox .tit h3 {width: 86%;}
+.calender .leftBox .tit .movemonthBtn {display: flex; justify-content: space-between; width: 14%;}
+
+.calender .innerBox .selectBtn {width: 50%; display: flex; align-items: center; gap: 24px;  margin-bottom: 40px; float: right;}
+.calender .innerBox .selectBtn .btnInner {padding: 10px 20px; background:#F5F6FB; border-radius: 10px; font-family: 'Pretendard', sans-serif; font-size: 18px; font-weight: 400; white-space: nowrap;}
+.calender .innerBox .selectBtn .btnInner img {right: 0;} /*font vw변경*/
+
+.calender .innerBox .month .dayoftheWeek {width: 100%; display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; margin-bottom: 30px;}
+.calender .innerBox .month h3 {width: auto; text-align: center;}
+.calender .innerBox .month .monthDec {width: 100%; display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; font-weight: 300; color: #3D3D3D;}
+.calender .innerBox .month .monthDec .day {font-family: 'Pretendard', sans-serif; font-weight: 400; min-width: 5vw; min-height: 15vh; padding: 10px 12px; background: #F5F6FB; border-radius: 10px; font-size: 64px;} /**/
+.calender .innerBox .month .monthDec .day .class {width: 100%; display: flex; justify-content: space-between; padding: 26px 10px 0 10px; flex-wrap: wrap; gap: 4px} /**/
+.calender .innerBox .month .monthDec .day .class span {width: 10px; height: 10px; border-radius: 50%; display: inline-block;}
+.calender .innerBox .month .monthDec .day .class .stepby1M {background: #0ECB7B;}
+.calender .innerBox .month .monthDec .day .class .starter {background: #FFB039;}
+.calender .innerBox .month .monthDec .day .class .learner {background: #F88FEC;}
+.calender .innerBox .month .monthDec .day .class .master {background: #6F47DB;}
+.calender .innerBox .month .monthDec .day {font-size: 16px;}
+
+.calender .rightBox {width: 32%; height: auto; background: #FFFFFF; padding: 50px 40px; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.2);} /*inner padding 변경*/
+.calender .rightBox .tit {margin-bottom: 60px;}
+.calender .rightBox .tit span {font-size: 22px; color: #777777; font-weight: 400; font-family: 'Pretendard', sans-serif; margin-left: 10px;}
+
+/* .calender .rightBox ul {white-space: nowrap;} */
+.calender .rightBox ul li {width: 100%; padding: 35px; background: #F5F6FB; margin-bottom: 32px; border-radius: 10px; border: none;}
+.calender .rightBox ul li:last-child {margin-bottom: 0;}
+.calender .rightBox .innerBox {width: 100%; display: flex; gap: 2vw;}
+.calender .rightBox .innerBox img {width: 36px; height: 36px;}
+.calender .rightBox ul li .className {width: 100%; display: flex; align-items: end; margin-bottom: 16px; flex-wrap: wrap;}
+.calender .rightBox ul li .className .smalltit {font-size: 28px; font-weight: 500; margin-right: 20px; margin-bottom: 10px;} /*font vw변경*/
+.calender .rightBox ul li .className .instructor {font-family: 'Pretendard', sans-serif; font-weight: 400; color: #000; margin-bottom: 4px; font-size: 20px; width: 100%;}
+.calender .rightBox ul li p {flex-wrap: wrap; font-family: 'Pretendard', sans-serif; font-weight: 400; font-size: 18px; color: #777;} /*font vw변경*/
+.calender .rightBox ul li p.locate {line-height: 1.4;}
+
+
+@keyframes card-rise-soft {
+  0% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(130px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.calender .leftBox.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+.calender .rightBox.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+.moreView .mvButton.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+
+/*moreView*/
+.moreView {width: 100%; display: flex; justify-content: space-between;}
+.moreView .mvButton {width: 49%; background: #fff; padding: 35px; text-align: center; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.2); position: relative;}
+.moreView .mvButton .btnInner {justify-content: center;}
+.moreView .mvButton .txt {font-family: 'Pretendard', sans-serif; font-weight: 400; font-size: 0.8vw; color: #777; margin-bottom: 10px;} /*font vw변경*/
+.moreView img {position: absolute; top: 20px; right: 30px;}
+
+
+footer .inner {padding: 100px 120px 100px; display: flex; justify-content: space-between; background: #000}
+footer .inner .logo {font-family: 'Cabinet Grotesk', sans-serif; font-size: 32px; padding-right: 50px; border-right: 2px solid #999; width: auto; color: #fff; font-weight: 400; line-height: 1.3; letter-spacing: -1px;}
+footer .inner ul {display: flex; justify-content: space-between; width: 65%;}
+footer .inner ul li {font-family: 'Pretendard', sans-serif; text-align: right; letter-spacing: 1px;}
+footer .inner ul li .contact {font-size: 20px; font-weight: 600; margin-bottom: 70px; color: #fff;}
+footer .inner ul li .contact.b {margin-bottom: 55px;}
+footer .inner ul li p {font-size: 16px; color: #999; word-break: break-all}
+
+
+footer .inner .sns .img a {display: block; width: 100%; height: 100%;}
+footer .inner .sns .img:nth-child(3) {margin-bottom: 0;}
+footer .inner .sns .img img {width: 100%; margin-bottom: 12px;}
+
+footer .inner .sns.a {display: none;}
+
+
+/*classinformCard*/
+/* .classinformCard .cardInner {width: 520px; max-width: 90%; position: relative;}
+.classinformCard img {width: 100%; height: auto; display: block;}
+.classinformCard .txtBox {width: 100%; position: absolute; padding: 45px; inset: 0; color: #fff; justify-content: space-between;}
+.classinformCard .txtBox .smallTit {font-size: 26px; font-weight: 500;}
+.classinformCard .txtBox .topBox {width: 100%; display: flex; justify-content: space-between; margin-bottom: 600px;}
+.classinformCard .txtBox .topBox .leftBox {width: 80%; display: flex; align-items: center;}
+.classinformCard .txtBox .topBox .leftBox .icon {width: 64px; height: 64px; background: #F5F6FB; padding: 16px; border-radius: 100%;
+    margin-right: 16px;}
+.classinformCard .txtBox .topBox .leftBox .icon img {width: 100%; align-items: center;}
+.classinformCard .txtBox .topBox .btnInner {width: 45px; height: 45px;}
+
+.classinformCard .txtBox .bottomBox {display: flex; justify-content: space-between; align-items: flex-end;}
+.classinformCard .txtBox .bottomBox .tit {width: 100%; display: flex; align-items: end;}
+.classinformCard .txtBox .bottomBox h3 {margin-right: 16px;}
+.classinformCard .txtBox .bottomBox .classBox {margin-bottom: 4px;}
+.classinformCard .txtBox .bottomBox .classBox .informBox {margin-bottom: 16px;}
+.classinformCard .txtBox .bottomBox .classBox .informBox .inform {margin-bottom: 20px;}
+.classinformCard a img {width: 191px; height: 62px; position: absolute; right: 45px;}
+.classinformCard {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: none; z-index: 10;
+    display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: 0.3s;}
+.classinformCard.active {opacity: 1; pointer-events: auto;} */
+
+
+/*반응형*/
+
+/*~1300*/
+@media screen and (max-width: 1440px) {
+
+  .inner-header {width: 95%;}
+  .inner-header nav {display: none;}
+  .inner-header .right-box .language {display: none;}
+  .menu {display: flex;}
+  .menu.active {display: flex;}
+  .fullscreen-menu {position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 100px; font-size: 50px; color: #fff; transition: all 0.7s; z-index: 100;}
+  .fullscreen-menu.active { left: 0; }
+  .fullscreen-menu a { color: #000; text-decoration: none; font-weight: bold; }
+  header.menu-open {position: fixed; top: 40px; left: 0; width: 100%;}
+  body.no-scroll { overflow: hidden;}
+  .inner {padding: 250px 24px 200px;}
+
+    .wrap.a .visual h3 {font-size: 48px; font-weight: 600;}
+
+    .con1 {margin-top: 130px;}
+    .con1 img {width: 700px}
+    .con1 .topBox {font-size: 16px; width: 95%;}
+    .con1 .title {font-size: 20vw; margin-top: 450px; margin-bottom: 80px;}
+
+    .wrap.a .inner {padding: 0px 24px 200px 24px;}
+
+    .wrap.a .visual .bottomBox .calender {margin-top: 90px; margin-bottom: 30px; flex-wrap: wrap;}
+    .wrap.a .visual .bottomBox .calender .leftBox {width: 100%; margin-bottom: 30px; padding: 60px 50px;} 
+    .wrap.a .visual .bottomBox .calender .leftBox .tit {margin-bottom: 150px;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit h3 {width: 82%;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit .movemonthBtn {width: 18%;}
+
+
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn {margin-bottom: 6vh;}
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn .btnInner {font-size: 18px; padding: 12px 24px; border-radius: 6px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn .btnInner img {width: 20px; height: auto;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .dayoftheWeek {gap: 8px; margin-bottom: 16px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .dayoftheWeek h3 {font-size: 20px; font-weight: 500;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec {gap: 8px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day {min-width: 6vw; min-height: 15vh; padding: 18px; border-radius: 5px; font-size: 20px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class {gap: 4px; padding: 24px 6px 6px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class span {width: 11px; height: 11px;}
+
+    .wrap.a .visual .bottomBox .calender .rightBox {width: 100%; padding: 60px 50px;}
+    .wrap.a .visual .bottomBox .calender .rightBox .tit {margin-bottom: 60px;}
+    .wrap.a .visual .bottomBox .calender .rightBox img {width: 40px; height: 40px; margin-right: 20px; margin-top: 4px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul {flex-wrap: wrap; display: flex; justify-content: space-between;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li {margin-bottom: 16px; width: 49%;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li:nth-child(3), .wrap.a .visual .bottomBox .calender .rightBox ul li:nth-child(4)  {margin-bottom: 0;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className {margin-bottom: 12px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .smalltit {font-size: 30px; margin-bottom: 4px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .instructor {font-size: 22px; margin-bottom: 2px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li p {font-size: 18px;}
+
+    .wrap.a .visual .moreView .mvButton {padding: 32px;}
+    .wrap.a .visual .moreView .mvButton img {width: 40px; top: 15px; right: 20px;}
+    .wrap.a .visual .moreView .mvButton .txtBox .txt {font-size: 16px;}
+    .wrap.a .visual .moreView .mvButton .txtBox .bigtit {font-size: 3.8vw;}
+
+
+  footer .inner {padding: 50px 24px 50px;}
+footer .inner .logo {font-size: 26px;}
+footer .inner ul {flex-wrap: wrap;}
+footer .inner ul li {width: 45%; margin-bottom: 50px;} 
+footer .inner ul li:nth-child(3), footer .inner ul li:nth-child(4) {margin-bottom: 0;}
+footer .inner ul li .contact {font-size: 16px;}
+footer .inner ul li p {font-size: 14px;}
+footer .inner .sns .img a {width: 90%;}
+}
+
+
+/*~768*/
+@media screen and (max-width: 768px) {
+    .inner-header .logo {font-size: 30px;}
+    .fullscreen-menu {font-size: 40px; gap: 80px;}
+
+
+    .con1 {margin-top: 100px;}
+    .con1 img {width: 450px; top: 55%;}
+    .con1 .topBox {font-size: 2vw; white-space: nowrap;}
+    .con1 .title {font-size: 19vw; margin-top: 350px; margin-bottom: 60px;}
+
+    .wrap.a .visual h3 {font-size: 7vw; font-weight: 600;}
+
+    .wrap.a .inner {padding: 0px 20px 150px 20px;}
+
+    .wrap.a .visual .bottomBox .calender {background: none; border: none; border-radius: none;  display: block; margin-top: 40px; margin-bottom: 16px;}
+    .wrap.a .visual .bottomBox .calender .leftBox {width: 100%; background: #fff; border-radius: 15px; border: 2px solid rgba(0, 0, 0, 0.2); margin-bottom: 16px;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit {margin-bottom: 72px;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit h3 {width: 82%;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit .movemonthBtn {width: 18%;}
+    
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn {display: none;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .dayoftheWeek h3 {font-size: 18px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec {gap: 9px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day {min-width: 2vw; min-height: 7.5vh; padding: 12px 10px 12px 10px; border-radius: 5px; font-size: 18px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class {gap: 2px; flex-wrap: wrap; padding: 10px 0 0;}
+    .calender .innerBox .month .monthDec .day .class span {width: 15px; height: 15px; border-radius: 50%; display: inline-block;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class span {width: 9px; height: 9px;}
+    .wrap.a .visual .bottomBox .calender .rightBox {width: 100%; background: #fff; border-radius: 15px; border: 2px solid rgba(0, 0, 0, 0.2); padding: 50px 30px 30px;}
+    .wrap.a .visual .bottomBox .calender .rightBox .tit {margin-bottom: 28px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul {display: flex; flex-wrap: wrap; gap: 12px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li {width: 100%; padding: 30px; background: #F5F6FB; border-radius: 10px; border: none; margin-bottom: 0;}
+    .wrap.a .visual .bottomBox .calender .rightBox .innerBox img {width: 40px; height: 40px; margin-right: 20px; margin-top: 0;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className {margin-bottom: 16px; display: flex; align-items: end;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .smalltit {font-size: 28px; margin-right: 16px; margin-bottom: 8px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .instructor {font-size: 18px; width: 100%;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li p {font-size: 16px; margin-bottom: 8px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li p.locate {line-height: 1.5;}
+
+    .wrap.a .visual .moreView {flex-wrap: wrap;}
+    .wrap.a .visual .moreView .mvButton {border-radius: 15px; padding: 30px; width: 100%; margin-bottom: 16px;}
+    .wrap.a .visual .moreView .mvButton img {top: 12px; right: 12px;}
+    .wrap.a .visual .moreView .mvButton .txtBox .txt {font-size: 14px; margin-bottom: 8px;}
+    .wrap.a .visual .moreView .mvButton .txtBox .bigtit {font-size: 48px;}
+
+
+        footer .inner {padding: 30px 20px 0px;}
+  footer .inner {padding: 50px 24px 50px; flex-wrap: wrap;}
+  footer .inner .logo {font-size: 28px; padding-right: 25px; line-height: 1.2; margin-bottom: 50px;}
+  footer .inner ul {flex-wrap: wrap;  width: 100%;}
+  footer .inner ul li {width: 45%; margin-bottom: 24px; flex-wrap: wrap; display: flex;} 
+  footer .inner ul li:nth-child(3), footer .inner ul li:nth-child(4) {margin-bottom: 0;}
+  footer .inner ul li .contact {font-size: 14px; display: inline; width: 100%; margin-bottom: 24px; text-align: left;}
+  footer .inner ul li p {font-size: 12px; display: inline; width: 100%; text-align: left;}
+  footer .inner .sns .img a {width: 70%;}
+  footer .inner .sns .img img {margin-bottom: 10px;}
+
+  footer .inner .sns.a {display: block;}
+  footer .inner .sns.b {display: none;}
+}
+
+/*~390*/
+@media screen and (max-width: 500px) {
+    .inner-header .logo {font-size: 26px;}
+    .fullscreen-menu {font-size: 32px; gap: 40px;}
+    .wrap.a .visual h3 {font-size: 6.5vw; font-weight: 600;}
+
+    .wrap.a .inner {padding: 50px 16px 100px 16px}
+    .con1 {margin-top: 40px;}
+    .con1 .topBox {font-size: 12px;}
+    .con1 .topBox .right {display: none;}
+    .con1 img {width: 250px;}
+    .con1 .title {font-size: 18vw; margin-top: 200px; margin-bottom: 0px;}
+
+
+    .wrap.a .visual .bottomBox .calender {margin-top: 20px;}
+    .wrap.a .visual .bottomBox .calender .leftBox {padding: 30px 16px 16px}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit {margin-bottom: 60px;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit h3 {width: 80%;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit .movemonthBtn {width: 20%;}
+    .wrap.a .visual .bottomBox .calender .leftBox .tit .movemonthBtn img {width: 16px; height: auto;}
+
+    .wrap.a .visual .bottomBox .calender .innerBox {flex-wrap: nowrap;}
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn {display: none;}
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn .btnInner {font-size: 12px; padding: 2px 4px 2px 8px; border-radius: 5px; float: left;}
+    .wrap.a .visual .bottomBox .calender .innerBox .selectBtn .btnInner img {width: 12px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .dayoftheWeek h3 {font-size: 14px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec {gap: 6px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day {min-height: 60px; padding: 5px 6px 0 6px; border-radius: 3px; font-size: 12px;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class {gap: 2px; padding: 5px 2px; flex-wrap: wrap;}
+    .wrap.a .visual .bottomBox .calender .innerBox .month .monthDec .day .class span {width: 8px; height: 8px;}
+
+    .wrap.a .visual .bottomBox .calender .rightBox .tit {font-size: 24px; margin-bottom: 22px;}
+    .wrap.a .visual .bottomBox .calender .rightBox {width: 100%; padding: 30px 16px 16px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li {width: 100%;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className {margin-bottom: 12px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .smalltit {font-size: 22px; margin-right: 12px; margin-bottom: 10px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li .className .instructor {font-size: 14px; margin-bottom: 2px;}
+    .wrap.a .visual .bottomBox .calender .rightBox ul li p {font-size: 16px; margin-bottom: 8px;}
+
+    .wrap.a .visual .moreView {width: 100%; display: block;}
+    .wrap.a .visual .moreView .mvButton {width: 100%;}
+    .wrap.a .visual .moreView .mvButton img {top: 12px; right: 12px; width: 8vw;}
+    .wrap.a .visual .moreView .mvButton:first-child {width: 100%; margin-bottom: 16px;}
+    .wrap.a .visual .moreView .mvButton .txtBox .txt {display: none;}
+    .wrap.a .visual .moreView .mvButton .txtBox .bigtit {font-size: 9vw;}  
+    
+    footer .inner .logo  {font-size: 24px;}
+    footer .inner ul li .contact.b {margin-bottom: 24px;}
+    footer .inner .sns .img a {width: 60%;}
+    footer .inner .sns .img img {margin-bottom: 8px;}
+} 
