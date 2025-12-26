@@ -264,7 +264,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .highlights li.ani video.metal_shadow2 {opacity: 0.2;  transform: translate(-50%, 40%) rotate(180deg);}
 
 /* card */
-.fixcard {overflow: hidden; position: relative; padding-bottom: 1800px;}
+.fixcard { position: relative; padding-bottom: 1800px;}
 .fixcard .inner2 {padding: 5%; justify-content: center;}
 
 .fixcard ul {display: flex; flex-wrap: wrap; margin: 1500px auto; justify-content: space-between; margin-bottom: 200px; width: 75vw;}

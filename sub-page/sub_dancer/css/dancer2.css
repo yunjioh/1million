@@ -58,7 +58,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 18px;
 
 .dancer-news .inner ul li .news-card .box .talk.motion {animation-delay: 0.1s;}
 
-@keyframes textUp {
+/* @keyframes textUp {
   0% {
     transform: translateX(-80px);
     opacity: 0;
@@ -67,7 +67,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 18px;
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 @keyframes card-rise-soft {
   0% {

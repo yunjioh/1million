@@ -28,7 +28,7 @@ section {overflow: hidden;}
 header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .inner-header {width: 90%; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
 .inner-header .logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 800;}
-.inner-header nav {border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); backdrop-filter: blur(14px); display: flex; align-items: center; margin: 0 auto;}
+.inner-header nav {border-radius: 29px; background: rgba(0,0,0,0.05); backdrop-filter: blur(14px); display: flex; align-items: center; margin: 0 auto;}
 .inner-header nav ul {display: flex; justify-content: space-between; margin: 0 auto; color: #F5F6FB; text-decoration: none; padding: 4px 6vw;}
 .inner-header nav ul li {font-size: 20px; text-align: center; font-weight: 300; font-family: 'Pretendard',sans-serif;}
 
@@ -40,7 +40,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .inner-header nav ul li a:hover::before {transform: translateY(0);}
 
 .inner-header .right-box {display: flex; align-items: center;}
-.inner-header .right-box .language {display: flex; width: 80px; height: 32px; border-radius: 29px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.2); margin: 0 auto; align-items: center; justify-content: center;}
+.inner-header .right-box .language {display: flex; width: 80px; height: 32px; border-radius: 29px; background: rgba(0,0,0,0.05); margin: 0 auto; align-items: center; justify-content: center;}
 .inner-header .right-box .language p {font-family: 'Pretendard',sans-serif; font-size: 16px; font-weight: 500; color: #000;}
 .inner-header .right-box .language img {width: 10px; height: 8px; margin-left: 10px; filter: invert(100%);}
 
@@ -123,9 +123,9 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
     justify-content: space-between;
 
     /* 등장 애니메이션 */
-    animation: wrap-up 0.8s ease-out forwards;
+    /* animation: wrap-up 0.8s ease-out forwards;
     animation-delay: 0.2s;
-    will-change: transform, opacity;
+    will-change: transform, opacity; */
 }
 
 

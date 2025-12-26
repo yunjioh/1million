@@ -339,6 +339,7 @@ $(function () {
           start: "80% 80%",
           end: "80% 60%",
           scrub: 1,
+          markers:true
         }
       }
     );

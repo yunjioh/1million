@@ -34,7 +34,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; overflow-x: hidde
 .text-box .sub-tit {font-family: 'Pretendard',sans-serif; font-size:clamp(14px, 1vw, 16px)}
 
 /* 공통요소 - section 화면 */
-section {width: 100%; overflow: hidden; background: transparent !important;}
+section {width: 100%; background: transparent !important;}
 .inner {width: 95%; margin: 8vh auto; padding: 0 2vw; letter-spacing: -1px;}
 .inner2 {width: 100%; padding: 200px 100px;}
 
