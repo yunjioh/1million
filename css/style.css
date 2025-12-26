@@ -57,10 +57,6 @@ section {width: 100%; background: transparent !important;}
 .visual .visual-inner .dance {width: 100vw; height: 100vh; object-fit: cover; position: absolute; left: 0; top: 0;}
 .visual .visual-inner .dance source {max-width: 100%; height: auto;}
 .visual .visual-inner .video-txt-box {width: min(40vw,514px); height: 130px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.visual .visual-inner .video-txt-box a.morebtn {display: flex; width: 212px; height: 56px; padding: 0 14px; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); border-radius: 30px; backdrop-filter: blur(6px); margin: 50px auto; display: flex; justify-content: center; align-items: center;}
-.visual .visual-inner .video-txt-box a.morebtn p {font-family: 'Pretendard',sans-serif; font-size: 20px; font-weight: normal; color: #fff; padding-right: 50px;}
-.visual .visual-inner .video-txt-box a.morebtn .icon-box {width: 44px; height: 44px; background: rgba(255,255,255,0.14); border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; right: 5px; top: 5px;}
-.visual .visual-inner .video-txt-box a.morebtn .icon-box img {position: static;}
 
 
 .bottom-bookclass .inner .title.motion {animation: text 1.2s ease-out forwards;}

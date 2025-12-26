@@ -145,11 +145,12 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .step-by-review .inner .card-box li span.line {display: block; width: 69px; height: 7px; background: #0a0a0a; margin: 26px 0;}
 .step-by-review .inner .card-box li .text {font-size: 22px; color: #7D7D7D; font-family: 'Pretendard', sans-serif; font-weight: 400; letter-spacing: 0px;}
 
-.step-by-review .inner .card-box li .text-box {margin-top: 62px; background: #fff; margin-bottom: 15px; border-radius: 20px; padding: 40px 200px 40px 40px;}
+.step-by-review .inner .card-box li .text-box {margin-top: 62px; background: #fff; margin-bottom: 15px; border-radius: 20px; padding: 40px 175px 40px 60px;}
 .step-by-review .inner .card-box li .text-box .percent .number {font-size: 130px; font-family: 'Pretendard', sans-serif; font-weight: 400; letter-spacing: -1px;}
 .step-by-review .inner .card-box li .text-box .percent .small-percent {font-size: 42px;}
 .step-by-review .inner .card-box li .text-box .skill {font-family: 'Pretendard', sans-serif; font-size: 22px; color: #7D7D7D;}
-.step-by-review .inner .card-box li .text-box .skill .skill-bottom {display: flex; margin-top: 20px; justify-content: space-between;}
+.step-by-review .inner .card-box li .text-box .skill .skill-bottom {display: flex;}
+.step-by-review .inner .card-box li .text-box .skill .skill-bottom p {margin-right: 10px; margin-bottom: 10px;}
 .step-by-review .inner .card-box li .text-box p b {font-weight: 500; margin-left: 10px; letter-spacing: 0px;}
 
 /* 개별 포인트 색깔 및 간격 */
@@ -381,12 +382,12 @@ text-align: justify;}
   .step-by-review .inner .card-box li .text-box .skill {font-size: 18px;}
   .step-by-review .inner .card-box li .view-btn p {font-size: 22px;}
   .step-by-review .inner .card-box li .view-btn img {width: 17px; height: 17px;}
-  .step-by-review .inner .card-box li .view-btn {bottom: 70px; right: 80px;}
+  .step-by-review .inner .card-box li .view-btn {bottom: 50px; right: 80px;}
   .step-by-review .inner .card-box .learner .skill {margin-top: 0px;}
   .step-by-review .inner .card-box .master .skill {margin-top: 0px;}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   .inner-header .logo {font-size: 26px;}
   .menu {width: 29px; height: 20px;}
   .menu.active .a {transform: translateY(7px) rotate(45deg);}

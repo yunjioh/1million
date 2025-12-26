@@ -13,7 +13,7 @@
     <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/typeface-hk-grotesk@1.0.0/index.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="js/splitting.min.js"></script>
@@ -68,11 +68,11 @@
                 <source src="img/mainhome-video.mp4">
             </video>
             <div class="video-txt-box">
-                <span class="video-logo"><img src="img/video-logo.svg" alt=""></span>
-                <a href="#" class="morebtn">
-                    <p>Read more</p>
-                    <span class="icon-box"><img src="img/read-More-Icon.svg" alt=""></span>
-                </a>
+                <span class="video-logo"><img src="img/video-logo.svg" alt="" class="name"></span>
+                <div class="mainBtn"><a href="#" class="dark-btn morebtn">
+                        Read more <span class="icon-box"><img src="img/dark-button-arrow.svg" alt=""></span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -703,174 +703,176 @@
 
     <!-- class lineup -->
     <section class="lineup"">
-        <div class="inner">
-            <div class="text-box animate" data-animate="motion">
-                <div class="tit">Class Lineup</div>
-                <div class="sub-tit">Explore Various <br> Levels of Classes</div>
-            </div>
-            <div class="card-wrap">
-                <button class="navbtn prev"><img src="img/btn-prev.svg" alt=""></button>
-                <div class="cards">
-                    <div class="card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Step by 1M</p>
-                            <img src="img/class-card-yellow.svg" alt="">
+        <div class=" inner">
+        <div class="text-box animate" data-animate="motion">
+            <div class="tit">Class Lineup</div>
+            <div class="sub-tit">Explore Various <br> Levels of Classes</div>
+        </div>
+        <div class="card-wrap">
+            <button class="navbtn prev"><img src="img/btn-prev.svg" alt=""></button>
+            <div class="cards">
+                <div class="card animate" data-animate="motion">
+                    <div class="top-box">
+                        <p class="tit">Step by 1M</p>
+                        <img src="img/class-card-yellow.svg" alt="">
+                    </div>
+                    <div class="skill-box">
+                        <div class="bar-box">
+                            <p class="skill">Skill</p>
+                            <span class="bar persent1"></span>
                         </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Choreograghy</p>
-                                <span class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement</p>
-                                <span class="bar persent3"></span>
-                            </div>
+                        <div class="bar-box">
+                            <p class="skill">Choreograghy</p>
+                            <span class="bar persent2"></span>
                         </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                        <div class="bar-box">
+                            <p class="skill">Movement</p>
+                            <span class="bar persent3"></span>
+                        </div>
+                    </div>
+                    <div class="dark">
+                        <a href="#" class="dark-btn a">Class Schedule
+                            <span><img src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
                     <div class=" card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Starter</p>
-                            <img src="img/class-card-pink.svg" alt="">
-                        </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Choreograghy</p>
-                                <span class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement</p>
-                                <span class="bar persent3"></span>
-                            </div>
-                        </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                                <div class="top-box">
+                                    <p class="tit">Starter</p>
+                                    <img src="img/class-card-pink.svg" alt="">
+                                </div>
+                                <div class="skill-box">
+                                    <div class="bar-box">
+                                        <p class="skill">Skill</p>
+                                        <span class="bar persent1"></span>
+                                    </div>
+                                    <div class="bar-box">
+                                        <p class="skill">Choreograghy</p>
+                                        <span class="bar persent2"></span>
+                                    </div>
+                                    <div class="bar-box">
+                                        <p class="skill">Movement</p>
+                                        <span class="bar persent3"></span>
+                                    </div>
+                                </div>
+                                <div class="dark">
+                                    <a href="#" class="dark-btn a">Class Schedule
+                                        <span><img src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
                     <div class=" card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Learner</p>
-                            <img src="img/class-card-green.svg" alt="">
-                        </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Choreograghy</p>
-                                <span class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement</p>
-                                <span class="bar persent3"></span>
-                            </div>
-                        </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                                            <div class="top-box">
+                                                <p class="tit">Learner</p>
+                                                <img src="img/class-card-green.svg" alt="">
+                                            </div>
+                                            <div class="skill-box">
+                                                <div class="bar-box">
+                                                    <p class="skill">Skill</p>
+                                                    <span class="bar persent1"></span>
+                                                </div>
+                                                <div class="bar-box">
+                                                    <p class="skill">Choreograghy</p>
+                                                    <span class="bar persent2"></span>
+                                                </div>
+                                                <div class="bar-box">
+                                                    <p class="skill">Movement</p>
+                                                    <span class="bar persent3"></span>
+                                                </div>
+                                            </div>
+                                            <div class="dark">
+                                                <a href="#" class="dark-btn a">Class Schedule
+                                                    <span><img src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
                     <div class=" card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Master</p>
-                            <img src="img/class-card-sky.svg" alt="">
-                        </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Choreograghy</p>
-                                <span class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement</p>
-                                <span class="bar persent3"></span>
-                            </div>
-                        </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                                                        <div class="top-box">
+                                                            <p class="tit">Master</p>
+                                                            <img src="img/class-card-sky.svg" alt="">
+                                                        </div>
+                                                        <div class="skill-box">
+                                                            <div class="bar-box">
+                                                                <p class="skill">Skill</p>
+                                                                <span class="bar persent1"></span>
+                                                            </div>
+                                                            <div class="bar-box">
+                                                                <p class="skill">Choreograghy</p>
+                                                                <span class="bar persent2"></span>
+                                                            </div>
+                                                            <div class="bar-box">
+                                                                <p class="skill">Movement</p>
+                                                                <span class="bar persent3"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dark">
+                                                            <a href="#" class="dark-btn a">Class Schedule
+                                                                <span><img src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
-                    <div class="card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Pro Class</p>
-                            <img src="img/class-card-blue.svg" alt="">
-                        </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Choreograghy</p>
-                                <span class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement</p>
-                                <span class="bar persent3"></span>
-                            </div>
-                        </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                    <div class=" card animate" data-animate="motion">
+                                                                    <div class="top-box">
+                                                                        <p class="tit">Pro Class</p>
+                                                                        <img src="img/class-card-blue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="skill-box">
+                                                                        <div class="bar-box">
+                                                                            <p class="skill">Skill</p>
+                                                                            <span class="bar persent1"></span>
+                                                                        </div>
+                                                                        <div class="bar-box">
+                                                                            <p class="skill">Choreograghy</p>
+                                                                            <span class="bar persent2"></span>
+                                                                        </div>
+                                                                        <div class="bar-box">
+                                                                            <p class="skill">Movement</p>
+                                                                            <span class="bar persent3"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dark">
+                                                                        <a href="#" class="dark-btn a">Class Schedule
+                                                                            <span><img src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
-                    <div class="card animate" data-animate="motion">
-                        <div class="top-box">
-                            <p class="tit">Pop-up</p>
-                            <img src="img/class-card-purple.svg"
-                                alt="">
-                        </div>
-                        <div class="skill-box">
-                            <div class="bar-box">
-                                <p class="skill">Skill</p>
-                                <span
-                                    class="bar persent1"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">
-                                    Choreograghy</p>
-                                <span
-                                    class="bar persent2"></span>
-                            </div>
-                            <div class="bar-box">
-                                <p class="skill">Movement
-                                </p>
-                                <span
-                                    class="bar persent3"></span>
-                            </div>
-                        </div>
-                        <div class="dark">
-                            <a href="#" class="dark-btn a">Class Schedule
-                                <span><img src="img/dark-button-arrow.svg""></span>
+                    <div class=" card animate" data-animate="motion">
+                                                                                <div class="top-box">
+                                                                                    <p class="tit">Pop-up</p>
+                                                                                    <img src="img/class-card-purple.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="skill-box">
+                                                                                    <div class="bar-box">
+                                                                                        <p class="skill">Skill</p>
+                                                                                        <span
+                                                                                            class="bar persent1"></span>
+                                                                                    </div>
+                                                                                    <div class="bar-box">
+                                                                                        <p class="skill">
+                                                                                            Choreograghy</p>
+                                                                                        <span
+                                                                                            class="bar persent2"></span>
+                                                                                    </div>
+                                                                                    <div class="bar-box">
+                                                                                        <p class="skill">Movement
+                                                                                        </p>
+                                                                                        <span
+                                                                                            class="bar persent3"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="dark">
+                                                                                    <a href="#" class="dark-btn a">Class
+                                                                                        Schedule
+                                                                                        <span><img
+                                                                                                src="img/dark-button-arrow.svg""></span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <button class="navbtn next"><img src="img/btn-next.svg" alt=""></button>
-            </div>
-        </div>
+                <button class=" navbtn next"><img src="img/btn-next.svg" alt=""></button>
+                                                                                </div>
+                                                                    </div>
     </section>
 
 
@@ -899,7 +901,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="playbox">
                             <img src="img/upcoming-youtube-img.svg" alt="" class="youtube">
                             <a href="https://www.youtube.com/watch?v=E0Wwol6mVO4">
@@ -943,86 +945,86 @@
                 </a>
             </div>
             <div class=" marquee-wrap">
-                <ul class="marquee-inner">
-                    <li>
-                        <img src="img/voguing-1.svg" alt="">
-                        <p class="sub-tit">Voguing</p>
-                    </li>
-                    <li>
-                        <img src="img/voguing-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/street-jazz-1.svg" alt="">
-                        <p class="sub-tit">StreetJazz</p>
-                    </li>
-                    <li>
-                        <img src="img/street-jazz-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/choreqraphy-1.svg" alt="">
-                        <p class="sub-tit">choreqraphy</p>
-                    </li>
-                    <li>
-                        <img src="img/choreograghy-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/waaking-1.svg" alt="">
-                        <p class="sub-tit">waaking</p>
-                    </li>
-                    <li>
-                        <img src="img/waaking-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/hiphop-1.svg" alt="">
-                        <p class="sub-tit">Hip-Hop</p>
-                    </li>
-                    <li>
-                        <img src="img/hiphop-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/contemporary-1.svg" alt="">
-                        <p class="sub-tit">Contemporary</p>
-                    </li>
-                    <li>
-                        <img src="img/voguing-1.svg" alt="">
-                        <p class="sub-tit">Voguing</p>
-                    </li>
-                    <li>
-                        <img src="img/voguing-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/street-jazz-1.svg" alt="">
-                        <p class="sub-tit">StreetJazz</p>
-                    </li>
-                    <li>
-                        <img src="img/street-jazz-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/choreqraphy-1.svg" alt="">
-                        <p class="sub-tit">choreqraphy</p>
-                    </li>
-                    <li>
-                        <img src="img/choreograghy-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/waaking-1.svg" alt="">
-                        <p class="sub-tit">waaking</p>
-                    </li>
-                    <li>
-                        <img src="img/waaking-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/hiphop-1.svg" alt="">
-                        <p class="sub-tit">Hip-Hop</p>
-                    </li>
-                    <li>
-                        <img src="img/hiphop-2.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/contemporary-1.svg" alt="">
-                        <p class="sub-tit">Contemporary</p>
-                    </li>
-                </ul>
+                        <ul class="marquee-inner">
+                            <li>
+                                <img src="img/voguing-1.svg" alt="">
+                                <p class="sub-tit">Voguing</p>
+                            </li>
+                            <li>
+                                <img src="img/voguing-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/street-jazz-1.svg" alt="">
+                                <p class="sub-tit">StreetJazz</p>
+                            </li>
+                            <li>
+                                <img src="img/street-jazz-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/choreqraphy-1.svg" alt="">
+                                <p class="sub-tit">choreqraphy</p>
+                            </li>
+                            <li>
+                                <img src="img/choreograghy-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/waaking-1.svg" alt="">
+                                <p class="sub-tit">waaking</p>
+                            </li>
+                            <li>
+                                <img src="img/waaking-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/hiphop-1.svg" alt="">
+                                <p class="sub-tit">Hip-Hop</p>
+                            </li>
+                            <li>
+                                <img src="img/hiphop-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/contemporary-1.svg" alt="">
+                                <p class="sub-tit">Contemporary</p>
+                            </li>
+                            <li>
+                                <img src="img/voguing-1.svg" alt="">
+                                <p class="sub-tit">Voguing</p>
+                            </li>
+                            <li>
+                                <img src="img/voguing-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/street-jazz-1.svg" alt="">
+                                <p class="sub-tit">StreetJazz</p>
+                            </li>
+                            <li>
+                                <img src="img/street-jazz-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/choreqraphy-1.svg" alt="">
+                                <p class="sub-tit">choreqraphy</p>
+                            </li>
+                            <li>
+                                <img src="img/choreograghy-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/waaking-1.svg" alt="">
+                                <p class="sub-tit">waaking</p>
+                            </li>
+                            <li>
+                                <img src="img/waaking-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/hiphop-1.svg" alt="">
+                                <p class="sub-tit">Hip-Hop</p>
+                            </li>
+                            <li>
+                                <img src="img/hiphop-2.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/contemporary-1.svg" alt="">
+                                <p class="sub-tit">Contemporary</p>
+                            </li>
+                        </ul>
             </div>
         </div>
     </section>
