@@ -352,6 +352,9 @@ footer .inner .sns .img a {width: 90%;}
     .con1 img {width: 250px;}
     .con1 .title {font-size: 18vw; margin-top: 200px; margin-bottom: 0px;}
 
+    .menu {width: 25px; height: 17px;}
+    .menu.active .a {transform: translateY(4px) rotate(45deg);}
+
 
     .wrap.a .visual .bottomBox .calender {margin-top: 20px;}
     .wrap.a .visual .bottomBox .calender .leftBox {padding: 30px 16px 16px}

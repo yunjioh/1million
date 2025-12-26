@@ -56,6 +56,7 @@ body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-se
   justify-content: space-between;
   align-items: center;
   font-family: 'Pretendard', sans-serif;
+  color: black;
 }
 
 .faq-inner .accordion .item .title br {display: none;}
@@ -156,7 +157,7 @@ body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-se
 @media screen and (max-width: 500px) {
     .faq-inner {padding: 0 16px; margin-bottom: 100px;}
     .faq-inner .faq-text-box {margin-bottom: 32px;}
-    .faq-inner .faq-text-box .faq-title {font-size: 10vw; -webkit-text-stroke: 1.5px #000;}
+    .faq-inner .faq-text-box .faq-title {font-size: 10vw; -webkit-text-stroke: 1px #000;}
     .faq-inner .faq-text-box .text {font-size: 14px; margin-top: 16px;}
     .faq-inner .accordion .item .title {font-size: 16px; padding: 30px 20px; text-align: left;}
     .faq-inner .accordion .item .title br {display: block;}

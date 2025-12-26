@@ -389,8 +389,8 @@ text-align: justify;}
 
 @media (max-width: 500px) {
   .inner-header .logo {font-size: 26px;}
-  .menu {width: 29px; height: 20px;}
-  .menu.active .a {transform: translateY(7px) rotate(45deg);}
+  .menu {width: 25px; height: 17px;}
+  .menu.active .a {transform: translateY(4px) rotate(45deg);}
   .fullscreen-menu {font-size: 30px; gap: 60px;}
   .inner-header .right-box .language {display: none;}
 

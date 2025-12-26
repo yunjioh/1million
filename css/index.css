@@ -56,7 +56,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300
 /* header */
 header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .inner-header {width: 90%; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
-.inner-header .logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 800;}
+.inner-header .logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 900;}
 .inner-header nav {border-radius: 29px; background: rgba(255,255,255,0.14); border: 1px solid rgba(245,246,251,0.2); backdrop-filter: blur(14px); display: flex; align-items: center; margin: 0 auto;}
 .inner-header nav ul {display: flex; justify-content: space-between; margin: 0 auto; color: #F5F6FB;; text-decoration: none; padding: 4px 6vw;}
 .inner-header nav ul li {font-size: 20px; text-align: center; font-weight: 300; font-family: 'Pretendard',sans-serif;}
@@ -597,7 +597,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 @media (max-width: 460px) {
   .inner-header .logo {font-size: 22px; font-weight: 900;}
   .menu {width: 25px; height: 17px;}
-  .menu.active .a {transform: translateY(5px) rotate(45deg);}
+  .menu.active .a {transform: translateY(4px) rotate(45deg);}
   .fullscreen-menu {font-size: 30px; gap: 60px;}
   .inner-header .right-box .language {display: none;}
   .highlights span.comment {padding: 5px 9px;}

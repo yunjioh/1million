@@ -407,6 +407,10 @@ footer .inner .sns .img a {width: 90%;}
     .inner-header .logo {font-size: 26px;}
     .fullscreen-menu {font-size: 32px; gap: 40px;}
 
+    
+    .menu {width: 25px; height: 17px;}
+    .menu.active .a {transform: translateY(4px) rotate(45deg);}
+
       .con1 {margin-top: 100px;}
     .con1 .topBox {font-size: 12px;}
     .con1 .topBox .right {display: none;}

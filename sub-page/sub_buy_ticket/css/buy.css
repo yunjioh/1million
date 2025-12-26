@@ -260,8 +260,12 @@ footer .inner .sns .img a {width: 90%;}
 
 
 @media screen and (max-width: 500px) {
-      .inner-header .logo {font-size: 26px;}
-    .fullscreen-menu {font-size: 32px; gap: 40px;}
+  .inner-header .logo {font-size: 26px;}
+  .fullscreen-menu {font-size: 32px; gap: 40px;}
+
+  
+    .menu {width: 25px; height: 17px;}
+    .menu.active .a {transform: translateY(4px) rotate(45deg);}
 
   .inner {padding: 180px 16px 100px;}
   .title {font-size: 15vw; margin-bottom: 30px;}
