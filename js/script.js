@@ -1,12 +1,12 @@
-let resizeTimer;
+// let resizeTimer;
 
-window.addEventListener("resize", () => {
-  clearTimeout(resizeTimer);
+// window.addEventListener("resize", () => {
+//   clearTimeout(resizeTimer);
 
-  resizeTimer = setTimeout(() => {
-    location.reload();
-  }, 400);
-});
+//   resizeTimer = setTimeout(() => {
+//     location.reload();
+//   }, 400);
+// });
 
 // let currentScroll = 0;
 // let targetScroll = 0;
