@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통요소 */
+body {color: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-serif;}
+.inner {width: 100%; padding: 100px;}
+
+.project, .highlights {overflow-x: scroll; scrollbar-width: none; -ms-overflow-style: none;}
+
+.textBox {margin-bottom: 140px; overflow: hidden; display: flex;}
+.textBox .tit {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; line-height: 1.2; margin-right: 30px; font-size: 250px; font-weight: 600; color: #F5F6FB;}
+.textBox .txt {font-size: 16px; color: #777777; font-weight: 600; align-content: end; padding-bottom: 50px;}
+
+.descBox {width: 400px;}
+.descBox .subTit {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 26px; font-weight: 600; margin-bottom: 26px; color: #0A0A0A}
+.descBox .txt {color: #464748; font-size: 16px; line-height: 1.4;}
+
+.conBtn {align-items: center; display: flex; justify-content: space-between; background: rgba(238, 238, 243, 0.23); width: 208px; height: 64px; border-radius: 50px;  box-shadow: inset 4px 4px 17px rgba(0, 0, 0, 0.12)}
+.conBtn p {font-size: 20px; font-weight: 500; color: #707070; padding-left: 20px;}
+.conBtn p img {box-shadow: inset -2.8px 0px 5px rgba(255, 255, 255, 0.07)}
+.btn {margin-top: 25px; display: inline-flex; align-items: center; padding-left: 20px; width: 212px; height: 64px; border-radius: 200px; border: 1px solid rgba(245, 246, 251, 0.28); background:rgba(255,255,255,0.14); backdrop-filter: blur(10px); font-size: 20px; color: #F5F6FB; cursor: pointer;}
+.btn img {margin-left: 25px;}
+.btn:hover {background:rgba(255,255,255,0.25);}
+
+/* project */
+.project .textBox .tit {color: black;}
+.project .textBox .txt {align-content: start; padding-top: 50px; color: #777777; width: 200px;}
+.project .inner {display: flex; align-items: center;}
+.project .left {margin-right: 250px;}
+.project {position: relative; background: #F5F6FB; padding-bottom: 100px; width: 100%; }
+.project ul {display: flex; flex-wrap: nowrap; gap: 25px;}
+.project ul li {color: #F5F6FB; position: relative; border-radius: 20px;}
+.project ul li.down {margin-top: auto;}
+.project .projectBox {padding: 0 80px 80px 80px; position: absolute; bottom: 0; left: 0;}
+.project .projectBox .top {display: flex; justify-content: space-between; align-items: start;}
+.project .projectBox .num {font-size: 12px; position: absolute; left: 7%;}
+.project .projectBox .subTit {margin-top: 12px; font-size: 26px; color: white; letter-spacing: -1px;margin-bottom: 9px;}
+.project .projectBox .subTit span {font-size: 16px; color: #6D6D6F; margin-left: 100px; letter-spacing: -1px;}
+.project .projectBox .tit {font-size: 40px; margin-bottom: 38px; font-weight: 500;}
+.project .projectBox .txt {font-size: 16px; color: #C9C9C9; letter-spacing: -1px;}
+.project .topRight {font-size: 26px; text-align: right; padding-right: 80px; padding-top: 80px;}
+
+.project ul li:nth-child(1) {background-image: url(../img/project1.svg); background-size: cover; width: 850px; height: 478px; z-index: 1; overflow: hidden; }
+
+.project ul li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; 
+    background-size: inherit;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+
+.project ul li:nth-child(2) {width: 682px; height: 680px; background: #0a0a0a;}
+.project ul li:nth-child(2) .num {left: 8%; top: 20%;}
+.project ul li:nth-child(2) .bottom {border-left: 2px solid #F5F6FB; padding-left: 26px;}
+.project ul li:nth-child(2) .projectBox {padding-top: 60px;}
+.project ul li:nth-child(2) .top {display: block;}
+.project ul li:nth-child(2) .bg {display: block; padding-top: 10px; margin: auto;}
+.project ul li:nth-child(2) .arrow {position: absolute; top: 0; right: 0; padding-top: 30px; padding-right: 52px;}
+
+.project ul li:nth-child(3) {width: 1000px; height: 478px; background: #0a0a0a;} 
+.project ul li:nth-child(3) .top {display: block;}
+.project ul li:nth-child(3) .num {left: 13%; top: -2%;}
+.project ul li:nth-child(3) .bottom {border-left: 2px solid #F5F6FB; padding-left: 26px;}
+.project ul li:nth-child(3) img {position: absolute; right: 0; opacity: 0.5;}
+
+.project ul li:nth-child(4) {background: white; width: 480px; height: 480px; color: black; text-align: center; background-image: url(../img/project4.svg); border: 2px solid #F4F4F4;background-size: cover;}
+.project ul li:nth-child(4) .title {margin-top: 85px; font-family: 'Pretendard', sans-serif; letter-spacing: -1px; font-size: 48px; font-weight: bold; margin-bottom: 12px;}
+.project ul li:nth-child(4) .subTitle {font-size: 16px; margin-bottom: 162px;}
+.project ul li:nth-child(4) .btn {color: black;}
+
+.project ul li:nth-child(5) {width: 682px; height: 680px; background: #0a0a0a;}
+.project ul li:nth-child(5) .subTit span {margin-left: 230px;}
+.project ul li:nth-child(5) .num {left: 8%; top: 21%;}
+.project ul li:nth-child(5) .bottom {border-left: 2px solid #F5F6FB; padding-left: 26px;}
+.project ul li:nth-child(5) .projectBox {padding-top: 60px;}
+.project ul li:nth-child(5) .top {display: block;}
+.project ul li:nth-child(5) .bg {display: block; padding-top: 10px; margin: auto;}
+.project ul li:nth-child(5) .arrow {position: absolute; top: 0; right: 0; padding-top: 30px; padding-right: 52px;}
+
+.project ul li:nth-child(6) {width: 800px; height: 380px; background: #0a0a0a;} 
+.project ul li:nth-child(6) .num {left: 7%; top: 0;}
+.project ul li:nth-child(6) .top {display: block;}
+.project ul li:nth-child(6) .side {color: #C9B3AD; font-size: 13px; position: absolute; right: 10%; top: 10%; text-align: right;}
+.project ul li:nth-child(6) img {position: absolute; right: 0; opacity: 0.5;}
+
+.project ul li:nth-child(7) {background-image: url(../img/project7.svg); background-size: cover; width: 850px; height: 478px; z-index: 1; overflow: hidden;}
+.project ul li:nth-child(7) .num {left: 8%; top: 0;}
+.project ul li:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; 
+    background-size: inherit;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+
+.project ul li:nth-child(8) {background: white; width: 480px; height: 480px; color: black; text-align: center; background-image: url(../img/project8.png); border: 2px solid #F4F4F4; background-size: cover;}
+.project ul li:nth-child(8) .title {margin-top: 85px; font-family: 'Pretendard', sans-serif; letter-spacing: -1px; font-size: 48px; font-weight: bold; margin-bottom: 12px;}
+.project ul li:nth-child(8) .subTitle {font-size: 16px; margin-bottom: 162px;}
+.project ul li:nth-child(8) .btn {color: black;}
+
+
+/* dancer */
+.dancer {background: #F5F6FB;  overflow: hidden; position: relative; padding-bottom: 800px; width: 100%;}
+.dancer .inner {display: flex; justify-content: space-between;}
+
+.dancer .fix .left {position: absolute; top: 15%; width: 45%;}
+.dancer .fix .left.on {position: fixed; top: 15%;}
+.dancer .fix .left.end {position: absolute; top: auto; bottom: 30%;}
+
+.dancer .left .con-tit {color: #0A0A0A; font-family: 'NeueHaasDisplay',sans-serif; font-size: 130px; font-weight: 600; line-height: 1; letter-spacing: -3px; margin-bottom: 30px;} 
+.dancer .left .sub-tit {font-size: 16px; line-height: 1.3; margin-bottom: 113px; color: #777777; font-weight: 500;}
+
+.right {display: flex; gap: 25px;}
+.right .list2 {padding-top: 80px;}
+.right ul li {margin-bottom: 25px;}
+.right .dancer-card {background: white; box-sizing: border-box; border-radius: 20px; padding: 30px; width: 360px; height: 539px; background-size: cover; background-position: center;}
+.right .dancer-card {display: flex; align-items: flex-end;}
+.right .dancer-card .card-tit {font-family: 'NeueHaasDisplay', sans-serif; font-size: 52px; font-weight: 700; color: #ffffff; letter-spacing: -2px;}
+.right .dancer-card .card-sub-tit {font-size: 16px; letter-spacing: 1px; font-weight: 300; color: #ffffff;}
+.right .text-card {width: 360px; border-radius: 20px; border: 1px solid rgba(0, 0, 0, 0.1); background: white; box-sizing: border-box; padding: 35px; background-size: cover; background-position: center; text-align: right; }
+.right .text-card .type {font-size: 16px; background: #3D3D3D; color: white; padding: 5px 25px; border-radius: 20px;}
+.right .text-card .txt {font-family: "Neue Haas Grotesk Display Pro", sans-serif; font-weight: 400; font-size: 36px; color: #505050; margin-top: 23px; line-height: 1;}
+.right .text-card .txt span {font-weight: bold; display: block;}
+
+
+/* highlights */
+.highlights {background: #0a0a0a; width: 100%;}
+.highlights ul {display: flex; flex-wrap: nowrap; gap: 25px; }
+.highlights ul li {position: relative; width: 1120px; height: 593px; padding: 50px; background: #F5F6FB; border-radius: 40px; flex: 0 0 auto;}
+.highlights ul li:nth-child(3) {background: #000; background-image: url(../img/highlight2.png);}
+.highlights .shadow {position: absolute; left: -50px; bottom: -20%;}
+.highlights .screen {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.highlights .play {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.highlights span {font-size: 20px; padding: 12px 25px; color: white; border-radius: 35px; background: linear-gradient(
+        -67deg,
+        rgba(0,0,0,0.1) 0%,
+        rgba(0,0,0,0.3) 65%,
+        rgba(0,0,0,0.3) 100%
+    );
+    backdrop-filter: blur(15px);
+    opacity: 0.7;
+}
+.highlights span.iconic {position: absolute; left: 30%; bottom: 30%;}
+.highlights span.love {position: absolute; right: 20%; top: 30%;}
+.highlights span.amazing {position: absolute; right: 10%; bottom: 40%;}
+
+.highlights .bottom {display: flex; justify-content: space-between; padding-top: 450px;}
+.highlights .bottom .tit {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 700; font-size: 26px; color: #0A0A0A;}
+.highlights .bottom .txt {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 16px; color:#7D7E80}
+
+.highlights li:nth-child(3) .title {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 600; font-size: 180px; text-align: center; color: white;}
+.highlights li:nth-child(3) .txtBox {text-align: right; margin-top: 140px;}
+.highlights li:nth-child(4) {background-image: url(../img/highlight3_bg.png);}
+
+.highlights li:nth-child(5) {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; background-image: url(../img/highlight4.png); background-size: cover; background-position: center; text-align: center; color: white;}
+.highlights li:nth-child(5) .top {font-size: 16px; color: #A6A6A6; margin-bottom: 160px;}
+.highlights li:nth-child(5) .title {font-size: 40px; font-weight: 600;}
+.highlights li:nth-child(5) .btn img {margin-left: 70px;}
+
+.highlights li.ani {position: relative; width: 332px; padding: 50px 36px; background: #000; color: white; box-sizing: border-box; border-radius: 25px; border: 1px solid rgba(246,246,246,0.2); overflow: hidden;}
+.highlights li.ani .aniTop {display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;}
+.highlights li.ani .aniTit {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 38px; font-weight: 600;}
+.highlights li.ani .num {font-size: 16px;}
+.highlights li.ani .aniTxt {color: #C3C3C3; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 20px;}
+.highlights li.ani .posTxt {position: absolute; transform: rotate(90deg); font-size: 13px; font-weight: 500; right: 0; top: 25%; z-index: 1;}
+.highlights li.ani img {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-30%); z-index: 0;}
+.highlights li.ani video {width: 272px; height: 272px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-30%);}
+.highlights li.ani video.metal_shadow {opacity: 0.2;  transform: translate(-50%, 60%) rotate(180deg);}
+.highlights li.ani video.metal_shadow2 {opacity: 0.2;  transform: translate(-50%, 40%) rotate(180deg);}
+
+/* card */
+.fixcard {background: #0A0A0A; position: relative; width: 100%; padding: 24px;}
+
+.fixcard .card-bg {position: absolute; top: 0; left: 0; width: 100vw;}
+.fixcard .card-bg.fixed {position: fixed; top: 0; left: 0; width: 100vw;}
+.fixcard .card-bg.end {position: absolute; top: auto; width: 100vw;}
+
+.fixcard ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.fixcard ul li{ border-radius: 20px; width: 719px; height: 875px; padding: 90px;
+  position: relative; 
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(75px);
+  z-index: 0;
+  overflow: hidden; 
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+.fixcard ul li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    37deg,
+      rgba(205, 255, 235, 1) 0%,
+      rgba(0, 0, 0, 0.58) 50%,  
+      rgba(255, 71, 71, 0) 100% 
+  );
+  opacity: 0.4; 
+  z-index: -1; 
+}
+
+.fixcard ul li:nth-child(1), .fixcard ul li:nth-child(3),.fixcard ul li:nth-child(5) {margin-top: 1800px;}
+.fixcard ul li:nth-child(2), .fixcard ul li:nth-child(4) {margin-top: 3600px;}
+.fixcard ul li:nth-child(2)::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    37deg,
+      rgba(114, 187, 255, 1) 0%,
+      rgba(0, 0, 0, 0.58) 50%,  
+      rgba(130, 251, 255, 0) 100% 
+  );
+  opacity: 0.4; 
+  z-index: -1; 
+}
+
+.fixcard ul li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    37deg,
+      rgba(255, 71, 111, 1) 0%,
+      rgba(0, 0, 0, 0.58) 50%,  
+      rgba(172, 130, 255, 0) 100% 
+  );
+  opacity: 0.4; 
+  z-index: -1; 
+}
+.fixcard ul li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    37deg,
+    rgba(153, 124, 61, 1) 0%,
+    rgba(0, 0, 0, 0) 53%,
+    rgba(123, 175, 72, 0.5) 100%
+  );
+  opacity: 0.4; 
+  z-index: -1; 
+}
+.fixcard ul li:nth-child(5){
+  background:
+    linear-gradient(
+      37deg,
+      rgba(48, 63, 74, 1) 0%,
+      rgba(0, 0, 0, 0.58) 50%,  
+      rgba(136, 12, 12, 0.3) 100%  
+    ),
+    rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(75px);
+}
+
+.fixcard ul li:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(
+    37deg,
+      rgba(255, 71, 71, 0) 0%,
+      rgba(0, 0, 0, 0.58) 50%,  
+      rgba(205, 255, 235, 1) 100% 
+  );
+  opacity: 0.4; 
+  z-index: -1; 
+}
+.fixcard ul li .txtBox .top {display: flex; justify-content: space-between; margin-bottom: 30px;}
+.fixcard ul li .txtBox .top p.tit {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 60px; line-height: 1.2; color: #F5F6FB; font-weight: bold;}
+.fixcard ul li .txtBox .top img {width: 100px; height: 100px; z-index: -1;}
+.fixcard ul li .txtBox p.txt {font-size: 16px; color: rgba(217, 217, 217, 0.8);}
+.fixcard ul li .icon {position: absolute; left: 0; bottom: 0;}
+
+@media (max-width: 1024px) {
+  .inner {padding: 0px;}
+  .conBtn {width: 186px; height: 60px;}
+  .conBtn img {width: 60px; height: 60px;}
+  .highlights li:nth-child(5) .btn img {margin-left: 50px;}
+  .btn {width: 187px; height: 60px; justify-content: space-between;}
+  .btn img {margin-right: 10px;}
+  .conBtn p {font-size: 20px; font-weight: 500; color: #707070; padding-left: 20px;}
+  .conBtn p img {box-shadow: inset -2.8px 0px 5px rgba(255, 255, 255, 0.07)}
+  .textBox .tit {font-size: 150px;}
+  .project {padding: 24px; overflow-x: hidden;}
+  .project .inner {width: 100%; padding: 24px;}
+  .project .left {width: 100%; display: flex; gap: 20px;}
+  .project .projectCard {position: absolute; left: 3%; bottom: -180%;}
+  .project ul li.down {margin-top: 0}
+  .project .textBox .txt {display: none;}
+  .project .left {margin-right: 0; display: flex; justify-content: space-between;}
+  
+  .dancer {padding: 24px;}
+  .dancer .inner {display: block;}
+  .dancer .inner .conBtn {display: none;}
+  .dancer .dancer-card {width: 478px; height: 689px;}
+  .right .list2 {padding-top: 0;}
+  .right .text-card .txt {font-size: 40px;}
+  .right .text-card .txt span {display: inline;}
+  .dancer .text-card {width: 478px;}
+  .dancer .fix .left {width: 100%;}
+  .dancer .fix .left,
+  .dancer .fix .left.on,
+  .dancer .fix .left.end {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+  }
+  .dancer .right {gap: 20px;}
+
+  .highlights {padding-bottom: 100px;}
+  .highlights .inner {padding: 24px; width: 100%;}
+  .highlights ul li {width: 727px; height: 498px;}
+  .highlights .bottom {padding-top: 360px;}
+  .highlights .screen {width: 578px; height: 270px;}
+  .highlights li:nth-child(3) .title {font-size: 128px;}
+  .highlights li:nth-child(4) img.screen {width: 315px; height: 360px;}
+
+  .fixcard ul li {width: 460px; height: 582px; padding: 50px;}
+  .fixcard ul li .icon {width: 350px; z-index: -1;} 
+  .fixcard ul li .txtBox .top img {width: 66px; height: 66px;}
+  .fixcard ul li .txtBox .top p.tit {font-size: 40px;}
+  .fixcard ul li:nth-child(1), .fixcard ul li:nth-child(3),.fixcard ul li:nth-child(5) {margin-top: 500px;}
+  .fixcard ul li:nth-child(2), .fixcard ul li:nth-child(4) {margin-top: 2000px;}
+  
+}
+
+@media (max-width: 768px) {
+  .textBox .tit {font-size: 100px;}
+  .dancer .left .con-tit {font-size: 100px;}
+  .project .inner .left .textBox .txt {display: block;}
+  .project .inner .left .descBox {display: none;}
+  .project .inner {width: 100%; padding: 20px;}
+  .project .projectCard {position: absolute; left: 3%; bottom: -210%;}
+  .project .projectCard li:nth-child(1),  .project .projectCard li:nth-child(2),  .project .projectCard li:nth-child(3),  .project .projectCard li:nth-child(4), .project .projectCard li:nth-child(5), .project .projectCard li:nth-child(6), .project .projectCard li:nth-child(7), .project .projectCard li:nth-child(8) {width: 604px; height: 808px;}
+  .project .projectCard img.bg {width: 100%;}
+  .dancer {padding: 16px;}
+  .dancer .dancer-card {width: 356px; height: 513px;}
+  .right .text-card .txt {font-size: 24px;}
+  .dancer .text-card {width: 356px; padding: 20px;}
+
+  .highlights {padding-bottom: 100px; overflow-x: hidden;}
+  .highlights ul li {width: 604px; height: 786px;}
+  .highlights ul li:nth-child(2),  .highlights ul li:nth-child(6) {width: 440px;}
+  .highlights ul li:nth-child(3) {  background-size: cover;  background-position: center center; background-repeat: no-repeat;}
+  .highlights li:nth-child(3) .title {font-size: 100px;}
+  .highlights .bottom {padding-top: 0px;}
+  .highlights .bottom .tit {font-size: 40px; margin-bottom: 14px;}
+  .highlights .bottom .txt {font-size: 20px;}
+  .highlights .bottom .conBtn {position: absolute; bottom: 50px; right: 50px;}
+  .btn {position: absolute; left: 50%; bottom: 20%; transform: translateX(-50%);}
+  .highlights .screen {width: 578px; height: 270px;}
+  .highlights li.ani .posTxt {top: 16%;} 
+  .highlights li:nth-child(4) img.screen {width: 315px; height: 360px;}
+
+  .fixcard ul li {width: 358px; height: 436px; padding: 35px;}
+  .fixcard ul li .icon {width: 300px; z-index: -1;} 
+  .fixcard ul li .txtBox .top img {width: 50px; height: 50px;}
+  .fixcard ul li .txtBox .top p.tit {font-size: 30px;}
+  .fixcard ul li .txtBox p.txt {font-size: 14px;} 
+  
+}
+
+@media (max-width: 390px) {
+  .conBtn {width: 148px; height: 52px;}
+  .conBtn p {font-size: 16px;}
+  .highlights span {padding: 5px 9px;}
+  .textBox .tit {font-size: 55px;}
+  .dancer .left .con-tit {font-size: 55px;}
+  .project {min-height: 150vh;}
+  .project .inner {width: 100%; padding: 16px; margin: 50px 0 0 0;}
+  .project .inner .left .textBox {display: block;}
+  .project .inner .left .textBox .txt {display: block; font-size: 14px; padding-top: 20px;}
+  .project .inner .left .descBox {display: none;}
+  .project .projectCard {position: absolute; left: 3%; bottom: -80%;}
+  .project .projectCard li:nth-child(1),  .project .projectCard li:nth-child(2),  .project .projectCard li:nth-child(3),  .project .projectCard li:nth-child(4), .project .projectCard li:nth-child(5), .project .projectCard li:nth-child(6), .project .projectCard li:nth-child(7), .project .projectCard li:nth-child(8) {width: 324px; height: 433px;}
+  .project .projectCard img.bg {width: 100%;}
+  .project .topRight {padding-right: 24px; padding-top: 24px; font-size: 18px;}
+  .project .projectBox .tit {font-size: 24px;}
+  .project .projectBox .subTit {font-size: 18px;}
+  .project .projectBox .subTit span {display: block; font-size: 12px; margin-left: 0;}
+  .project ul li:nth-child(6) .side {display: none;}
+  .project ul li:nth-child(5) .subTit span {margin-left: 0;}
+  .project ul li:nth-child(2) .bottom, .project ul li:nth-child(3) .bottom,.project ul li:nth-child(5) .bottom {padding-left: 8px;}
+  .project .projectBox {padding: 24px}
+  .project .projectBox .txt {font-size: 12px;}
+  .project ul li:nth-child(2) .arrow, .project ul li:nth-child(5) .arrow {padding-top: 16px; padding-right: 16px; width: 55px; height: 55px;} 
+  .dancer {padding: 16px;}
+  .dancer .right {display: block;}
+  .dancer .left .sub-tit {font-size: 14px;}
+  .dancer .dancer-card {width: 358px; height: 380px;}
+  .right .text-card .txt {font-size: 24px;}
+  .dancer .text-card {width: 356px; padding: 20px;}
+
+  .highlights .textBox {margin-bottom: 24px; display: block;}
+  .textBox .txt {font-size: 14px; margin-top: 16px;}
+  .highlights ul li {width: 343px; height: 446px; padding: 30px;}
+  .highlights ul li:nth-child(2),  .highlights ul li:nth-child(6) {width: 250px;}
+  .highlights ul li:nth-child(3) {  background-size: cover;  background-position: center center; background-repeat: no-repeat;}
+  .highlights li:nth-child(3) .title {font-size: 60px;}
+  .highlights .bottom {padding-top: 0px;}
+  .highlights .bottom .tit {font-size: 24px; margin-bottom: 14px;}
+  .highlights .bottom .txt {font-size: 12px;}
+  .highlights .bottom .conBtn {position: absolute; bottom: 30px; right: 30px;}
+  .btn {position: absolute; bottom: 50px; right: 50px;}
+  .highlights .screen {width: 297px; height: 139px;}
+  .highlights span {font-size: 12px;}
+  .highlights li.ani .aniTit {font-size: 24px;}
+  .highlights li.ani .aniTxt {font-size: 12px;}
+  .highlights li.ani .posTxt {top: 26%;} 
+  .highlights li:nth-child(5) .title {font-size: 24px;}
+  .highlights li:nth-child(4) img.screen {width: 213px; height: 242px;}
+
+  .fixcard ul {justify-content: center;}
+  .fixcard ul li {width: 358px; height: 434px; padding: 35px;}
+  .fixcard ul li .txtBox .top img {width: 48px; height: 48px;}
+  .fixcard ul li .txtBox p.txt {font-size: 12px;} 
+  .fixcard ul li:nth-child(2), .fixcard ul li:nth-child(3),.fixcard ul li:nth-child(5),
+  .fixcard ul li:nth-child(1), .fixcard ul li:nth-child(4) {margin-top: 500px;}
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy</title>
+  <link rel="stylesheet" href="css/buy.css">
+  <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/typeface-hk-grotesk@1.0.0/index.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/faq.css">
+  <script src="js/schedule.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/scrolla.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+<header>
+        <div class="inner-header">
+            <a href="../../index.html" class="logo">
+                <img src="../../img/blogo.svg" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html" data-text="HOME">HOME</a></li>
+                    <li><a href="../sub_dancer/dancer.html" data-text="CLASS">CLASS</a></li>
+                    <li><a href="#" data-text="BUY TICKET">BUY TICKET</a></li>
+                    <li><a href="../sub-schedule/schedule.html" data-text="SCHEDULE">SCHEDULE</a></li>
+                </ul>
+            </nav>
+            <div class="right-box">
+                <a href="#" class="language">
+                    <p>KR</p>
+                    <img src="img/bottom-Arrow-icon.svg" alt="">
+                </a>
+                <a href="#" class="menu">
+                    <span class="a"></span>
+                    <span class="b"></span>
+                    <span class="c"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <a href="../../index.html">HOME</a>
+        <a href="../sub_dancer/dancer.html">CLASS</a>
+        <a href="../sub_buy_ticket/ticket.html">BUY TICKET</a>
+        <a href="../sub-schedule/schedule.html">SCHEDULE</a>
+    </div>
+
+
+    
+  <section class="buy">
+    <div class="inner">
+      <p class="title animate" data-animate="motion">
+          <span><b>Buy Ticket.</b></span>
+      </p>
+      <div class="con1">
+        <p class="buy">주문/결제를 진행해주세요.</p>
+        <div class="buy_box">
+          <ul class="select_ticket">
+            <li data-title="1 Class" data-desc="클래스 수강권 1회" data-price="30000" class="a">
+              <div class="left">
+                <p class="class">1 Class <span class="class-name">클래스 수강권 1회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount">30,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+            <li data-title="5 Class" data-desc="클래스 수강권 5회" data-price="130000" class="b">
+              <div class="left">
+                <p class="class">5 Class <span class="class-name">클래스 수강권 5회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount"><span>15%</span>130,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+            <li data-title="10 Class" data-desc="클래스 수강권 10회" data-price="240000" class="b">
+              <div class="left">
+                <p class="class">10 Class <span class="class-name">클래스 수강권 10회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount"><span>20%</span>240,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+            <li data-title="20 Class" data-desc="클래스 수강권 20회" data-price="380000" class="b">
+              <div class="left">
+                <p class="class">20 Class <span class="class-name">클래스 수강권 20회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount"><span>35%</span>380,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+            <li data-title="30 Class" data-desc="클래스 수강권 30회" data-price="420000" class="b">
+              <div class="left">
+                <p class="class">30 Class <span class="class-name">클래스 수강권 30회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount"><span>55%</span>420,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+            <li data-title="40 Class" data-desc="클래스 수강권 40회" data-price="500000" class="b">
+              <div class="left">
+                <p class="class">40 Class <span class="class-name">클래스 수강권 40회</span></p>
+              </div>
+              <div class="right">
+                <p class="discount"><span>60%</span>500,000원</p>
+                <img src="img/select_box.svg" alt="">
+              </div>
+            </li>
+          </ul>
+          <div class="product">
+            <div class="top">
+              <p class="logo">1MILLION</p>
+              <p class="buy">주문/결제</p>
+            </div>
+            <div class="system">
+              <p class="select_product">주문 상품</p>
+              <div class="class">
+                <p class="class-name">1 Class <span>클래스 수강권 1회</span></p>
+                <p class="price">30,000원</p>
+              </div>
+            </div>
+            <div class="total">
+              <p>총 주문 금액</p>
+              <p class="total-price">30,000원</p>
+            </div>
+
+            <hr>
+            <div class="payment">
+              <p class="a">결제수단</p>
+              <ul class="select_payment">
+                <li>
+                  <img src="img/radio_btn.svg" class="radio_btn">
+                  <p>일반결제</p>
+                </li>
+                <li>
+                  <img src="img/radio_btn.svg" class="radio_btn">
+                  <p>해외카드 &nbsp;</p>
+                  <img src="img/card1.svg" alt="" class="card">
+                  <img src="img/card2.svg" alt="" class="card">
+                  <img src="img/card3.svg" alt="" class="card">
+                </li>
+                <li>
+                  <img src="img/radio_btn.svg" class="radio_btn">
+                  <p>해외간편 / PayPal</p>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <p>주문 내용을 확인하였으며, 정보 제공 등에 동의합니다.</p>
+              <button>결제하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con2">
+        <div class="alert">
+          <div class="left">
+            <img src="img/alert_icon.svg" alt="">
+            <p>수강권 환불 및 이용 정책</p>
+          </div>
+          <div class="right">
+            원밀리언 댄스 스튜디오의 환불 규정은 2016년 1월 25일 개정된 학원법 시행령 제 18조 제 2항 제 3호, ‘교습기간이 30일 이내인 경우의 반환 사유에 해당하는 경우’를 바탕으로
+            하였으며, 2017년 6월 1일 이후의 구매부터 적용합니다. <br><br>
+            * 구매한 티켓이 30일 이내에 사용되지 않는 경우, 구매일로부터 30일 후에 자동으로 수강 기간이 시작되며, 이는 사용 여부에 관계없이 적용됩니다. <br>
+            EX) 4월 15일에 구입한 티켓은, 활성화 여부와 무관하게 5월 14일부터 수강 기간이 적용됩니다. 이에 따라, 해당 티켓의 유효기간은 6월 13일로 정해집니다. <br><br>
+            * 수업 티켓을 구매하면 다른 종류의 티켓으로 변경이 불가능합니다. <br>
+            * 수강 시작일 이후에는 수강 시작일로부터 경과한 일 수에 따라 다음과 같이 환불이 가능합니다. <br>
+            - 수강 시작일로부터 10일 이내(1일-10일 경과) <br>
+            수강한 횟수만큼의 금액을 차감한 뒤 2/3 환불 <br>
+            - 수강 시작일로부터 15일 이내(11일-15 일 경과) <br>
+            수강한 횟수만큼의 금액을 차감한 뒤 반액 환불 <br>
+            - 수강 시작일로부터 15일 이후(16일이 경과한 후) <br>
+            환불 불가 <br><br>
+            Ex) 30회를 결제한 후 10회를 수강하고, 수강 시작일로부터 10일 이내에 환불을 받을 경우 <br>
+            30회 티켓 기준 1회 수업당 수강료 = 360,000원 / 30 = 12,000원 <br>
+            결제 금액에서 수강한 횟수만큼의 금액을 차감 = 360,000원-120,000원 = 240,000원 <br>
+            남은 금액의 2/3 = 240,000원 x 2/3 = 160,000원
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+        <div class="inner">
+            <div class="logo">
+                <p>STUDIO@<br>1MILLION<br>DANCE.COM</p>
+            </div>
+            <div class="sns a">
+                <p class="img"><a href="#"><img src="img/footer-tiktok.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-instagram.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-youtube.svg" alt=""></a></p>
+            </div>
+            <ul>
+                <li>
+                    <h2 class="contact">Address</h2>
+                    <p>서울 성동구 뚝섬로 13길 33</p>
+                </li>
+                <li>
+                    <h2 class="contact b">Hours</h2>
+                    <p>Weekdays: 4:00 PM – 10:00 PM<br>Weekends: 3:00 PM – 9:30 PM</p>
+                </li>
+                <li>
+                    <h2 class="contact">Tell</h2>
+                    <p>82+ 512 6756</p>
+                </li>
+                <li>
+                    <h2 class="contact">E-mail</h2>
+                    <p>STUDIO@1MILLIONDANCE.COM</p>
+                </li>
+            </ul>
+            <div class="sns b">
+                <p class="img"><a href="#"><img src="img/footer-tiktok.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-instagram.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-youtube.svg" alt=""></a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+    // header
+  gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu');
+  const fullscreenMenu = document.getElementById('fullscreenMenu');
+  const header = document.querySelector("header");
+
+  menuBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    menuBtn.classList.toggle('active');
+    fullscreenMenu.classList.toggle('active');
+    header.classList.toggle("menu-open");
+    document.body.classList.toggle("no-scroll");
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      menuBtn.classList.remove('active');
+      fullscreenMenu.classList.remove('active');
+    }
+  });
+});
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('selectedTicket');
+      if (!saved) return;
+
+      const ticketData = JSON.parse(saved);
+
+      const ticketItems = document.querySelectorAll('.select_ticket li');
+      const productName = document.querySelector('.product .class-name');
+      const productPrice = document.querySelector('.product .price');
+      const totalPrice = document.querySelector('.total-price');
+
+      ticketItems.forEach(item => {
+        const title = item.dataset.title;
+        const desc = item.dataset.desc;
+        const price = item.dataset.price;
+
+        if (
+          title === ticketData.title &&
+          desc === ticketData.desc &&
+          price === ticketData.price
+        ) {
+          item.classList.add('active');
+
+          const formatted = Number(price).toLocaleString();
+
+          productName.innerHTML = `${title} <span>${desc}</span>`;
+          productPrice.textContent = `${formatted}원`;
+          totalPrice.textContent = `${formatted}원`;
+        }
+
+        item.addEventListener('click', () => {
+          ticketItems.forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+
+          const formatted = Number(price).toLocaleString();
+          productName.innerHTML = `${title} <span>${desc}</span>`;
+          productPrice.textContent = `${formatted}원`;
+          totalPrice.textContent = `${formatted}원`;
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const paymentItems = document.querySelectorAll('.select_payment li');
+
+      paymentItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+
+          paymentItems.forEach(li => {
+            li.classList.remove('active');
+            const radioImg = li.querySelector('.radio_btn');
+            radioImg.src = 'img/radio_btn.svg';
+          });
+
+          item.classList.add('active');
+          item.querySelector('.radio_btn').src = 'img/radio_btn2.svg';
+
+          sessionStorage.setItem('selectedPayment', index);
+        });
+      });
+
+      const saved = sessionStorage.getItem('selectedPayment');
+      if (saved !== null && paymentItems[saved]) {
+        paymentItems[saved].classList.add('active');
+        paymentItems[saved]
+          .querySelector('.radio_btn')
+          .src = 'img/radio_btn2.svg';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
