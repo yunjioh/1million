@@ -1,0 +1,127 @@
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통요소 */
+body {background: #F5F6FB; color: #0A0A0A; font-family: 'Pretendard', sans-serif;}
+.inner {padding: 100px; width: 100%;}
+
+header {position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; z-index:20;}
+.logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #0A0A0A;}
+
+nav ul {display: flex; gap: 36px;  background: rgba(0, 0, 0, 0.05); padding: 10px 80px; border-radius: 200px;}
+nav ul li {font-size: 20px; font-weight: 300; color: #0A0A0A; cursor: pointer;}
+nav ul li:hover {opacity:1;}
+
+.right-menu {display: flex; align-items: center; gap: 34px; font-size:16px; color: #0A0A0A; font-weight: 500;}
+.right-menu img {margin-left: 10px; filter: brightness(1) invert(1);}
+.right-menu span.kr {background: rgba(0, 0, 0, 0.05); padding: 5px 15px; border-radius: 20px; cursor: pointer;}
+.right-menu span.add {font-size: 20px;} 
+
+/* select */
+.con1 .topBox {margin: 80px 0; display: flex; justify-content: space-between; color: #818181; font-size: 18px; line-height: 1.3;}
+.con1 .title {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; position: relative; font-size: 295px; font-weight: bold; letter-spacing: -1px; text-align: center; margin-top: 464px; margin-bottom: 230px;}
+.con1 img {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: -1;}
+
+.con2 .tit {font-size: 30px; font-weight: bold; margin-bottom: 30px;}
+.con2 ul {display: flex; gap: 25px; align-items: stretch; flex-wrap: wrap;}
+.con2 ul li {background: white; flex: 1; min-width: 220px; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 20px; text-align: center; padding: 40px;}
+.con2 ul li.active {flex: 1.5; background: #0E0E0E; background-image: url(../img/select_ticket.svg); background-size: cover; background-position: center bottom; color: white; border: none;}
+.con2 ul li.active .class, .con2 ul li.active .price {color: white;}
+.con2 ul li .class {font-size: 32px; font-weight: 600; letter-spacing: -1px; margin-bottom: 8px;}
+.con2 ul li .class-name {font-size: 16px; font-weight: 600; color: #777777;}
+.con2 ul li .img {width: 80px; height: 80px; align-content: center; margin: 55px auto;}
+.con2 ul li.active .img {margin: 25px auto;}
+.con2 ul li.active .img img {filter: brightness(0) invert(1);}
+.con2 ul li .discount {font-size: 20px; font-weight: 500; color: #ACACAC; text-decoration: line-through;}
+.con2 ul li .discount span {display: inline-block; margin-right: 6px; text-decoration: none; color: #FF7E7E; font-size: 20px;}
+.con2 ul li .price {font-size: 30px; font-weight: 700; color: #565656;}
+.con2 ul li .btn {display: none; margin-top: 30px; width: 100%; padding: 18px 0; border-radius: 10px; background: white; color: #0A0A0A; font-size: 20px; 
+font-weight: 500;}
+.con2 ul li.active .btn {display: block; border: none;}
+
+.con2 .alert {display: flex; margin-top: 50px; color: #6D6D6D;}
+.con2 .alert .left {display: flex; margin-right: 64px; font-size: 18px; font-weight: 700;}
+.con2 .alert .left img {width: 24px; height: 24px; margin-right: 10px;}
+.con2 .alert .right {font-size: 16px; color: #838383; line-height: 1.4;}
+
+@media (max-width: 1024px) {
+    header {padding: 24px;}
+    .inner {padding: 24px;}
+    .con1 img {width: 492px; height: 498px;}
+    .con1 .topBox {font-size: 16px; margin: 168px 0;}
+    .con1 .title {font-size: 150px; margin-top: 323px; margin-bottom: 150px;}
+    .con2 .tit {font-size: 26px;}
+    .con2 ul {flex-wrap: wrap; gap: 20px;}
+    .con2 ul li {width: 312px; flex: none; padding: 30px;}
+    .con2 ul li .class {font-size: 36px;}
+    .con2 ul li .price {font-size: 32px;}
+    .con2 ul li .discount {font-size: 24px; font-weight: 400;}
+    .con2 .alert .left {margin-right: 40px;}
+    .con2 .alert .right {font-size: 14px;}
+}
+
+@media (max-width: 768px) {
+    header {padding: 20px; width: 100%;}
+    .inner {padding: 20px;}
+    .con1 img {width: 338px; height: 342px; top: 42%;}
+    .con1 .topBox {font-size: 14px; margin: 146px 0;}
+    .con1 .title {font-size: 100px; margin-top: 220px; margin-bottom: 133px;}
+    .con2 .tit {font-size: 20px;}
+    .con2 ul {gap: 16px;}
+    .con2 ul li {width: 232px; flex: none; padding: 24px; border-radius: 16px;}
+    .con2 ul li .class {font-size: 32px;}
+    .con2 ul li .class-name {font-size: 14px;}
+    .con2 ul li .price {font-size: 26px;}
+    .con2 ul li .discount {font-size: 18px; font-weight: 300;}
+    .con2 ul li .btn {padding: 14px 0; font-size: 14px;}
+    .con2 .alert {display: block;}
+    .con2 .alert .left {font-size: 18px; margin-bottom: 15px;}
+    .con2 .alert img {width: 22px; height: 22px;}
+    .con2 .alert .right {margin-left: 36px; letter-spacing: -1px;}
+}
+
+@media (max-width: 390px) {
+    header {overflow: hidden;}
+    .inner {padding: 16px;}
+    .con1 .topBox {font-size: 10px; margin: 71px 0;}
+    .con1 img {width: 229px; height: 232px; top: 30%;}
+    .con1 .title {font-size: 55px; margin-top: 269px; margin-bottom: 60px;}
+    .con2 .tit {font-size: 14px; margin-bottom: 20px;}
+    .con2 ul li {display: flex; padding: 17px; width: 100%; align-items: center; border-radius: 6px;}
+    .con2 ul li .classBox {text-align: left;}
+    .con2 ul li .class {display: inline; font-size: 22px;}
+    .con2 ul li .class-name {font-size: 10px; margin-top: 5px;}
+    .con2 ul li .price {font-size: 16px;}
+    .con2 ul li .priceBox {position: relative; padding-right: 30px; text-align: end;}
+    .con2 ul li .priceBox::after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/select_box.svg') no-repeat center/contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+    .con2 ul li .discount {font-size: 12px; font-weight: 300;}
+    .con2 ul li .discount span {font-size: 12px;}
+    .con2 ul li .img {margin: 0 auto; width: 50px; height: 50px;}
+    .con2 ul li .img img {width: 20px; height: 20px;}
+    .con2 .alert .left img {width: 16px; height: 16px; margin-right: 10px;}
+    .con2 .alert .left {font-size: 14px;}
+    .con2 .alert .right {font-size: 10px; margin-left: 28px;}
+    .con2 ul li.active .btn {display: none;}
+    .con2 ul li.active .class-name {color: white;}
+    .con2 ul li.active .img {margin: auto;}
+    .con2 ul li.active .priceBox::after { background: url('../img/select_box2.svg') no-repeat center/contain;}
+}
