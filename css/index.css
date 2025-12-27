@@ -179,7 +179,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .dancer .right .list1 {width: 49%;}
 .dancer .right .list2 {width: 49%;}
 .dancer .right ul li {margin-bottom: 25px;}
-.dancer .right .dancer-card {background: white; box-sizing: border-box; border-radius: 20px; padding: 30px; min-height: 715px; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.dancer .right .dancer-card {background: white; box-sizing: border-box; border-radius: 20px; padding: 30px; min-height: 560px; background-size: cover; background-repeat: no-repeat; background-position: center;}
 .dancer .right.motion .list1 {animation: dancerAni 1s ease-out forwards;}
 .dancer .right.motion .list2 {animation: dancerAni2 1s ease-out forwards;}
 
@@ -380,7 +380,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .fixcard .bg {position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8vw; z-index: 2;}
 .fixcard .bg p.recent {color: #777777; margin-bottom: 0.5vw;}
 .fixcard .bg .down {width: 1.5vw;}
-.fixcard img.glass {position: absolute; top: 50%; left: 50%; filter: brightness(0.5); transform: translate(-50%, -50%); width: 100%; height: 85vh; opacity: 0; z-index: 1;}
+.fixcard img.glass {position: absolute; top: 50%; left: 50%; filter: brightness(0.3); transform: translate(-50%, -50%); width: 100%; height: 85vh; opacity: 0; z-index: 1;}
 .fixcard img.textImg {height: 7vw;}
 .fixcard img.textImg2 {height: 5vw;}
 .fixcard .bg p {position: relative; z-index: 3; opacity: 0;}
@@ -396,9 +396,13 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 
 
 @media (max-width:1778px) {
-  .dancer .right {width: 100%;}
-  .dancer .right .list1{width: 49%;}
-  .dancer .right .list2{width: 49%;}
+  .dancer .right {width: 100%; display: block;}
+  .dancer .right .list1 {display: flex; width: 100%; justify-content: space-between; gap: 5px;}
+  .dancer .right .list1 li:nth-child(2n+1) {width: 34%;}
+  .dancer .right ul li .text-card {display: none;}
+  .dancer .right .list2 {display: flex; width: 100%; justify-content: space-between; gap: 5px;}
+  .dancer .right .list2 li:nth-child(2n) {width: 34%;}
+  .dancer-card .card-tit img {display: none;}
   .dancer .inner2 {display: block;}
   .dancer .fix .left,
   .dancer .fix .left.on,
@@ -432,7 +436,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .menu {display: flex;}
   .menu.active {display: flex;}
   .inner-header .logo img {width: 18vw;}
-  .fullscreen-menu {position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #000; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 100px; font-size: 50px; color: #fff; transition: all 0.7s; z-index: 100;}
+  .fullscreen-menu {position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #000; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 60px; font-size: 50px; color: #fff; transition: all 0.7s; z-index: 100;}
   .fullscreen-menu.active { left: 0; }
   .fullscreen-menu a { color: #fff; text-decoration: none; font-weight: bold; }
   header.menu-open {position: fixed; top: 40px; left: 0; width: 100%;}
@@ -454,8 +458,6 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .dancer .inner2 {display: block;}
   .dancer .left.on {width: 30%;}
   .dancer .right .list2 {padding-top: 0;}
-  .dancer .right .text-card .txt {font-size: 40px;}
-  .dancer .right .text-card .txt span {display: inline;}
   .dancer .fix .left {width: 100%;}
   .dancer .light-btn {display: none;}
   .dancer .right ul li {margin-bottom: 15px;}
@@ -518,8 +520,6 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .project ul li:nth-child(7) {background: #000;}
   .project ul li:nth-child(7)::before {background-image: url(../img/project7.svg); background-repeat: no-repeat;}
   .dancer {padding: 16px;}
-  .dancer .right .text-card .txt {font-size: 24px;}
-  .dancer .text-card {padding: 20px;}
 
   .highlights {padding-bottom: 100px; overflow-x: hidden;}
   .highlights .inner2 {padding: 200px 24px;}
@@ -556,11 +556,14 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 }
 
 @media (max-width: 750px) {
+  .dancer .right {display: flex; justify-content: space-between; gap: 10px;}
+  .dancer .right .list1 {display: block;}
+  .dancer .right .list1 li:nth-child(2n+1) {width: 100%;}
+  .dancer .right .list2 li:nth-child(2n) {width: 100%;}
+  .dancer .right .list2 {display: block;}
   .dancer .right.motion .list2 li:nth-child(1) {margin-bottom: 0;}
-  .dancer .right .text-card {display: none;}
   .dancer .right .dancer-card {min-height: 420px;}
   .dancer .right .dancer-card .card-tit {font-size: 6vw;}
-  .dancer-card .card-tit img {display: none;}
 }
 
 @media (max-width: 580px) {
@@ -604,7 +607,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .menu {width: 25px; height: 17px;}
   .menu.active .a {transform: translateY(4px) rotate(45deg);}
   .inner-header .logo img {width: 25vw;}
-  .fullscreen-menu {font-size: 30px; gap: 60px;}
+  .fullscreen-menu {font-size: 30px; gap: 50px;}
   .inner-header .right-box .language {display: none;}
   .highlights span.comment {padding: 5px 9px;}
   .dancer .left .con-tit {font-size: 55px;}
@@ -626,8 +629,6 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .project ul li:nth-child(5) img.bg {padding: 0px; width: 130%;}
   .project ul li:nth-child(6) img.bg {width: 170%;}
   .dancer .left .sub-tit {font-size: 14px;}
-  .dancer .right .text-card .txt {font-size: 24px;}
-  .dancer .text-card {padding: 20px;}
   .dancer .right .dancer-card {min-height: 300px;}
   .dancer .right .dancer-card {min-height: 300px;}
 

@@ -499,24 +499,22 @@ footer .inner .bottom-box .name {font-size: clamp(189px, 18.9vw, 340px);}
     .upcoming .inner .text-box .sub-tit {right: 10%;}
     .intro .inner .intro-box2 {margin:clamp(550px, 41.7vw, 826px) 0 clamp(160px, 15.6vw, 300px)}
     footer .inner .bottom-box .name {font-size: clamp(145px, 18.9vw, 189px);}
-    .intro .inner .intro-box1 .text-box .sub-tit-out {left: 66%;}
+    .intro .inner .intro-box1 .text-box .sub-tit-out {left: 66%; top: -22%;}
     .intro .inner .video-box .video1 {right: -85%; width: 1150px;}
     .gradaition-bg {height: 400px;}
     .intro .inner .intro-box1 .text-box .sub-tit {bottom: -65px;}
     .intro .inner .box3-box .intro-box3 .text-box.right .text-mini-box {left: 0;}
     .intro .inner .box3-box .intro-box3 .text-box.right .text-mini-box .sub-tit {width: 480px;}
-    .intro .inner .box3-box .video2 {width: 100%; height: 100%;}
+    .intro .inner .box3-box .video2 {width: 100%; height: 100%; top: 30%;}
     .intro .inner .box3-box .video-box {height: 90vh;}
 }
 
 @media (max-width: 930px){
-.intro .inner .intro-box1 .text-box .sub-tit-out {left: 60%; top: -22%;}
+.intro .inner .intro-box1 .text-box .sub-tit-out {left: 60%;}
 .intro .inner .video-box .video1 {right: -85%; width: 1100px;}
 .intro .inner .intro-box1 .text-box .sub-tit {bottom: -35%;}
 .intro .inner .box3-box .intro-box3 .text-box.right .text-mini-box {left: -15%;}
 .intro .inner .intro-box4 {gap: 16%;}
-.intro .inner .box3-box .video2 {top: 27%;}
-.intro .inner .box3-box .video2 {top: 27%;}
 }
 
 @media (max-width: 840px){
@@ -570,7 +568,7 @@ footer .inner .bottom-box .name {font-size: clamp(189px, 18.9vw, 340px);}
 .intro .inner .intro-box4 .heart.box2 .text-box .title-box .num {display: none;}
 .intro .inner .intro-box4 .heart .text-box .title-box .title {font-size: 30px; margin-bottom: 120px;}
 .intro .inner .intro-box4 .heart .text-box .name {font-size: 18px; margin-bottom: 21px;}
-.intro .inner .intro-box4 .heart .text-box .sub-tit {width: 200px; font-size: 14px; line-height: 1.3; letter-spacing: -1px;}
+.intro .inner .intro-box4 .heart .text-box .sub-tit {width: 235px; font-size: 14px; line-height: 1.3; letter-spacing: -1px;}
 
 .lineup {margin-bottom: 100px;}
 .lineup .inner .text-box {margin-bottom: 40px;}
@@ -645,6 +643,7 @@ footer .inner .top-box li p {font-size: 20px;}
 .intro .inner .intro-box1 .text-box .sub-tit-out {left: 45%;}
 .intro .inner .intro-box2 .text-mini-box .sub-tit {font-size: 13px;  width: 420px;}
 .intro .inner .intro-box1 .text-box .sub-tit p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;} 
+.intro .inner .intro-box4 .heart .text-box .sub-tit {width: 215px;}
 }
 
 @media (max-width: 620px){
@@ -656,7 +655,7 @@ footer .inner .top-box li p {font-size: 20px;}
 .intro .inner .intro-box4 {gap: 10%;}
 .intro .inner .intro-box4 .heart .text-box .title-box .title {font-size: 24px;}
 .intro .inner .intro-box4 .heart .text-box .name {font-size: 16px;}
-.intro .inner .intro-box4 .heart .text-box .sub-tit {font-size: 13px;}
+.intro .inner .intro-box4 .heart .text-box .sub-tit {font-size: 13px; width: 200px;}
 }
 
 @media (max-width: 600px){
@@ -695,10 +694,10 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
   .intro .inner .video-box .video1 {right: -75%; width: 650px;}
   .intro .inner .intro-box1 .text-box .sub-tit-out {top: -40%; left: 37%; font-size: 10px;}
   .intro .inner .intro-box1 .text-box .sub-tit {left: 0; width: 330px;}
-  .intro .inner .intro-box2 {margin: 230px 0 0 0px;} 
+  .intro .inner .intro-box2 {margin: 150px 0 0 0px;} 
   .intro .inner .box3-box {margin-top: 500px;}
   .intro .inner .intro-box4 .heart .text-box .title-box .title {margin-bottom: 100px;}
-  .intro .inner .intro-box4 .heart .text-box .sub-tit {width: 150px;}
+  .intro .inner .intro-box4 .heart .text-box .sub-tit {width: 160px;}
   .intro .inner .intro-box2 .topBox img {width: 80%;}
   .intro .inner .intro-box2 .bottomBox img {width: 60%;}
   .upcoming .inner .upcoming-wrap .upcoming-box .top-box .purplebox .text-box .loca {font-size: 28px;}
@@ -707,10 +706,12 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
 @media (max-width: 480px){
   .intro .inner .intro-box2 .text-mini-box {bottom: -120%;}
   .intro .inner .intro-box2 .text-mini-box .sub-tit {width: 310px;}
-  .intro .inner .box3-box .video-box{height: 40vh;}
+  .intro .inner .box3-box .video-box{height: 36vh;}
   .intro .inner .box3-box .intro-box3 .text-box.right .text-mini-box {display: block; left: -7%; top: 390px;}
   .intro .inner .intro-box4 {margin-top: 610px;}
   .intro .inner .video-box .video1 {width: 500px;}
+  .location {padding-top: 0;}
+  .bottom-bookclass .inner .title {padding-top: 200px;}
 }
 
 @media (max-width: 460px){
@@ -775,7 +776,7 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
   
   .intro .inner .video-box .video1 {left: 46%; transform: translate(-30%,-27%); width: 558px;}
   .wrap-1m {margin-left: 8%; width: 384px; height: 255px; bottom: -260px;}
-  .intro .inner .intro-box2 {margin-bottom: 250px;}
+  .intro .inner .intro-box2 {margin-bottom: 100px;}
   .intro .inner .intro-box2 .topBox img {width: 90%;}
   .intro .inner .intro-box2 .bottomBox img {width: 68%;}
   .intro .inner .intro-box2 .text-mini-box {width: 320px; left: -15%; bottom: -105%;}

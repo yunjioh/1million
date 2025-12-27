@@ -221,9 +221,8 @@ $(function () {
     gsap.timeline({
       scrollTrigger: {
         trigger: project,
-        start: "0% 80%",
-        end: '20% 100%',
-        end: '20% 100%',
+        start: "0% 50%",
+        end: '20% 0%',
         scrub: 1,
       }
     })
