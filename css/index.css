@@ -20,8 +20,8 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300
 .textBox {margin-bottom: 140px; overflow: hidden; display: flex;}
 .textBox .tit {line-height: 1.1; font-size: 250px; font-weight: 600; margin-right: 25px;  color: #f5f6fb; letter-spacing: -1px; transform: translateX(0);}
 
-.textBox.motion {animation: textAni1 1s ease-out forwards;}
-.descBox.motion {animation: textAni1 1s ease-out forwards;}
+.textBox.motion {animation: textAni1 .5s ease-out forwards;}
+.descBox.motion {animation: textAni1 .5s ease-out forwards;}
 
 .light-btn {background: rgba(9, 9, 9, 0.14); display: inline-flex; align-items: center;justify-content: center; font-family: 'Pretendard', sans-serif; font-size: 20px; color: #434343; padding: 10px 12px 12px 30px; border-radius: 100px; font-weight: 500;  white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.13); backdrop-filter: blur(6px)}
 .light-btn span {width: 44px; height: 44px; background: #F5F6FB; border-radius: 50%; position: relative; margin-left: 16px;}
@@ -51,7 +51,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 300
 .textBox .txt {font-family: 'Pretendard', sans-serif; font-size: 16px; color: #777777; width: 27vw; font-weight: 500; line-height: 1.1; align-content: end; padding-bottom: 2.5vw;}
 
 .descBox .subTit {font-family: 'Pretendard', sans-serif; font-size: 26px; font-weight: 600; margin-bottom: 26px; color: #000}
-.descBox .txt {font-family: 'Pretendard', sans-serif; font-weight: 500; color: #777777; font-size: 16px; line-height: 1.4;}
+.descBox .txt {font-family: 'Pretendard', sans-serif; font-weight: 500; color: #494949; font-size: 16px; line-height: 1.4;}
 
 /* header */
 header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
@@ -93,7 +93,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .project {position: relative;}
 
 .project ul {display: flex; flex-wrap: nowrap; gap: 25px; align-items: end;}
-.project ul.motion {animation-name: sector; animation-duration: 1s;}
+.project ul.motion {animation-name: sector; animation-duration: .5s;}
 .project ul li {color: #f5f6fb; position: relative; border-radius: 20px; overflow: hidden;}
 .project ul li.down {margin-top: auto;}
 .project .projectBox {position: absolute; left: 0 ; bottom: 0; padding: 0 4vw 4vw 4vw;}
@@ -172,7 +172,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .dancer .inner2 {display: flex; justify-content: space-between;}
 .dancer .left {margin-bottom: auto;}
 .dancer .left .con-tit {font-size: 130px; font-weight: 600; line-height: 0.9; letter-spacing: -3px; margin-bottom: 25px;}
-.dancer .left.motion {animation: textAniDancer 2s;}
+.dancer .left.motion {animation: textAniDancer 1s;}
 .dancer .left .sub-tit {font-family: 'Pretendard', sans-serif; font-size: 16px; line-height: 1.3; margin-bottom: 2vw; color: #777777; font-weight: 400;}
 
 .dancer .right {display: flex; width: 49%; justify-content: space-between;}
@@ -180,8 +180,8 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .dancer .right .list2 {width: 49%;}
 .dancer .right ul li {margin-bottom: 25px;}
 .dancer .right .dancer-card {background: white; box-sizing: border-box; border-radius: 20px; padding: 30px; min-height: 560px; background-size: cover; background-repeat: no-repeat; background-position: center;}
-.dancer .right.motion .list1 {animation: dancerAni 1s ease-out forwards;}
-.dancer .right.motion .list2 {animation: dancerAni2 1s ease-out forwards;}
+.dancer .right.motion .list1 {animation: dancerAni .5s ease-out forwards;}
+.dancer .right.motion .list2 {animation: dancerAni2 .5s ease-out forwards;}
 
 
 @keyframes dancerAni {
@@ -214,14 +214,14 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .highlights {padding-bottom: 800px;}
 .highlights .inner2 {padding: 200p easex 0 200px 100px}
 .highlights .inner2 .textBox {margin-bottom: 37px;}
-.highlights .inner2 .textBox.motion {animation: textAni1 1s ease-out forwards;}
+.highlights .inner2 .textBox.motion {animation: textAni1 .5s ease-out forwards;}
 @keyframes sector {
     0% {opacity: 0; transform: translateX(1000px);}
    30% {opacity: 0; transform: translateX(1000px);}
 }
 .highlights ul.motion li {animation-name: sector; animation-duration: 1s;}
-.highlights ul.motion li:nth-child(2) {animation-duration: 1.15s;}
-.highlights ul.motion li:nth-child(3) {animation-duration: 1.3s;}
+.highlights ul.motion li:nth-child(2) {animation-duration: 1.3s;}
+.highlights ul.motion li:nth-child(3) {animation-duration: 1.5s;}
 .highlights ul {display: flex; flex-wrap: nowrap; gap: 25px; }
 .highlights ul li {position: relative; width: 1120px; height: 593px; padding: 50px; background: #fff; overflow: hidden; border-radius: 40px; flex: 0 0 auto; border-radius: 20px;}
 .highlights ul li:nth-child(3) {background: #000; background-image: url(../img/highlight2.png); background-position: center;}
@@ -267,8 +267,8 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .fixcard { position: relative; padding-bottom: 1800px;}
 .fixcard .inner2 {padding: 5%; justify-content: center;}
 
-.fixcard ul {display: flex; flex-wrap: wrap; margin: 1500px auto; justify-content: space-between; margin-bottom: 200px; width: 75vw;}
-.fixcard ul li{ border-radius: 2vw; width: 32vw; height: 42vw; padding: 4vw;
+.fixcard ul {display: flex; flex-wrap: wrap; margin: 1500px auto; justify-content: space-between; margin-bottom: 200px; width: 80vw;}
+.fixcard ul li{ border-radius: 2vw; width: 35vw; height: 42vw; padding: 4vw;
   position: relative; 
   background: rgba(0, 0, 0, 0.6); 
   backdrop-filter: blur(75px);
@@ -545,9 +545,9 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights span.love {top: 34%;}
 
   .fixcard ul {gap: 12vw;}
-  .fixcard ul li {width: 51vw; height: 66vw;}
+  .fixcard ul li {width: 51vw; height: 66vw; padding: 5vw;}
   .fixcard ul li .txtBox p.txt {font-size: 13px;} 
-  .fixcard ul li .txtBox .top p.tit {font-size: 4.5vw;}
+  .fixcard ul li .txtBox .top p.tit {font-size: 5.5vw;}
   .fixcard ul li .txtBox .top img {display: none;}
   .fixcard ul li:nth-child(2), .fixcard ul li:nth-child(4) {margin-left: 29vw; margin-top: 0;}
 /* 
@@ -607,6 +607,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .menu {width: 25px; height: 17px;}
   .menu.active .a {transform: translateY(4px) rotate(45deg);}
   .inner-header .logo img {width: 25vw;}
+  .highlights li.ani {padding: 30px;}
   .fullscreen-menu {font-size: 30px; gap: 50px;}
   .inner-header .right-box .language {display: none;}
   .highlights span.comment {padding: 5px 9px;}
@@ -643,7 +644,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights span.comment {font-size: 12px;}
   .highlights li.ani .aniTit {font-size: 24px;}
   .highlights li.ani .aniTxt {font-size: 12px;}
-  .highlights li.ani .posTxt {top: 30%;} 
+  .highlights li.ani .posTxt {top: 30%; right: -6%;} 
   .highlights li:nth-child(4) img.screen {width: 213px; height: auto;}
   .highlights li:nth-child(5) .top {font-size: 12px;}
 

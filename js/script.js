@@ -368,7 +368,7 @@ $(function () {
       window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=150 top", 900); runHighlightScroll("top+=200 top", 300); runFixcardAnimation(); changeBg();
     },
     "(min-width: 769px) and (max-width: 1024px)": function () {
-      window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=300 top", -600); runHighlightScroll("top+=300 top", 350); runFixcardAnimation(); changeBg();
+      window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=200 top", -600); runHighlightScroll("top+=300 top", 350); runFixcardAnimation(); changeBg();
     },
     "(min-width: 300px) and (max-width: 768px)": function () {
       window.addEventListener("resize", ScrollTrigger.update); runFixcardAnimation(); changeBg();
