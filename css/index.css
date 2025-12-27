@@ -458,6 +458,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .dancer .right .text-card .txt span {display: inline;}
   .dancer .fix .left {width: 100%;}
   .dancer .light-btn {display: none;}
+  .dancer .right ul li {margin-bottom: 15px;}
 
   .highlights {padding-bottom: 800px;}
   .highlights .inner2 {padding: 400px 24px; width: 100%; padding-right: 0;}
@@ -541,7 +542,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights .play {width: 8vw;}
   
   .highlights span.iconic {left: 19%; bottom: 49%;}
-  .highlights span.love {top: 35%;}
+  .highlights span.love {top: 34%;}
 
   .fixcard ul {gap: 12vw;}
   .fixcard ul li {width: 51vw; height: 66vw;}
@@ -578,6 +579,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights span.iconic {left: 15%; bottom: 48%;}
   .dancer .right .dancer-card {padding: 20px; border-radius: 10px}
   .dancer .right .dancer-card {padding: 20px; border-radius: 10px}
+  .dancer .left .sub-tit br {display: none;}
 
   .fixcard ul li .txtBox p.txt {font-size: 12px;} 
   .fixcard ul li {width: 58vw; height: 72vw; padding: 7vw;}
@@ -591,7 +593,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights li.ani .aniTit {font-size: 5vw;}
   .highlights li.ani .aniTxt {font-size: 3vw;}
 
-  .fixcard .bg {gap: 1vw;}
+  .fixcard .bg {gap: 1.5vw;}
   .fixcard img.textImg {height: 12vw;}
   .fixcard .bg p:nth-child(4) img {height: 10vw;}
   .fixcard img.textImg2 {height: 9vw;}
@@ -607,7 +609,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights span.comment {padding: 5px 9px;}
   .dancer .left .con-tit {font-size: 55px;}
   .project .inner2 .left .textBox {display: block;}
-  .project .inner2 .left .textBox .txt {display: block; font-size: 14px; margin-left: 0;}
+  .project .inner2 .left .textBox .txt {font-size: 14px; margin-left: 0;}
   .project .inner2 .left .descBox {display: none;}
   .project .topRight {padding-right: 24px; padding-top: 24px; font-size: 18px;}
   .project .projectBox .tit {font-size: 24px;}
@@ -634,7 +636,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights ul li {height: 446px; padding: 30px;}
   .highlights ul li:nth-child(3) {  background-size: cover;  background-position: center center; background-repeat: no-repeat;}
   .highlights li:nth-child(3) .title {font-size: 55px;}
-  .highlights .bottom .tit {font-size: 24px; margin-bottom: 14px;}
+  .highlights .bottom .tit {font-size: 24px; margin-bottom: 8px;}
   .highlights .bottom .txt {font-size: 12px;}
   .highlights .screen {width: 297px; height: auto;}
   .highlights span.comment {font-size: 12px;}
