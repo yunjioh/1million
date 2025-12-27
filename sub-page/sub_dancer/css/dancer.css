@@ -229,7 +229,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .dancer-pick .inner .circle-wrap .center-icon:hover svg { transform: scale(1.2); stroke: #8724BD; fill: #8724BD;}
 
 @media (max-width: 1400px) {
-  .inner-header {width: 95%;}
+  .inner-header {width: 92%;}
   .inner-header nav {display: none;}
   .inner-header .right-box .language {display: none;}
   .menu {display: flex;}
@@ -452,26 +452,10 @@ text-align: justify;}
   .dancer-pick .inner .inner-text {padding: 0 16px;}
   .dancer-pick .inner .inner-text .inner-tit {font-size: 7vw; margin-top: 60px; margin-bottom: 24px;}
 
+  .visual .inner .text-box .tit.motion span b {animation: none !important;}
+  .dancer .inner .dancer-card-wrap.motion {animation: none !important}
+  .step-by-review .inner .card-box .starter.motion {animation:  none !important;}
+.step-by-review .inner .card-box .learner.motion {animation:  none !important;}
+.step-by-review .inner .card-box .master.motion {animation:  none !important}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

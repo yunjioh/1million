@@ -432,4 +432,13 @@ footer {margin-top: 150px;}
   footer .inner ul li .contact.b {margin-bottom: 24px;}
   footer .inner .sns .img a {width: 60%;}
   footer .inner .sns .img img {margin-bottom: 8px;}
+
+  .dancer-news .inner ul li .news-card .box h2.motion {animation: none !important;}
+.dancer-news .inner ul li .news-card .box .talk.motion {animation: none !important;}
+.dancer-news .inner ul li .news-card.motion {animation: none !important;}
+.review-card-summary.motion {animation: none !important;}
+.review-card-teacher.motion {animation: none !important;}
+.review-info.motion {animation: none !important;}
+.review-student.motion {animation: none !important;}
+
 }

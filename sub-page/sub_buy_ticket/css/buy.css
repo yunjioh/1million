@@ -131,7 +131,7 @@ footer .inner .sns.a {display: none;}
 
 
 @media screen and (max-width: 1400px) {
-    .inner-header {width: 95%;}
+    .inner-header {width: 92%;}
   .inner-header nav {display: none;}
   .inner-header .right-box .language {display: none;}
   .menu {display: flex;}
@@ -303,4 +303,6 @@ footer .inner .sns .img a {width: 90%;}
   footer .inner ul li .contact.b {margin-bottom: 24px;}
   footer .inner .sns .img a {width: 60%;}
   footer .inner .sns .img img {margin-bottom: 8px;}
+
+  .title.motion span b {animation: none !important}
 }

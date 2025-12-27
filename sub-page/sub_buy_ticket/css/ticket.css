@@ -152,17 +152,17 @@ font-weight: 500; opacity: 0; border: none; pointer-events: none}
 
 @keyframes leftAni {
   0% {
-    transform: translateX(-40px);
+    transform: translateY(-40px);
     opacity: 0;
   }
 
   60% {
-    transform: translateX(2px);
+    transform: translateY(2px);
     opacity: 1;
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -203,12 +203,12 @@ font-weight: 500; opacity: 0; border: none; pointer-events: none}
 .use-ticket ul .step.s2.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
 .use-ticket ul .step.s3.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.3s;}
 
-.con2 ul li.a.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
+/* .con2 ul li.a.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.1s;}
 .con2 ul li.b.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
 .con2 ul li.c.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.3s;}
 .con2 ul li.d.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.4s;}
 .con2 ul li.e.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.5s;}
-.con2 ul li.f.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.6s;}
+.con2 ul li.f.motion {animation: card-rise-soft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.6s;} */
 
 
 
@@ -265,7 +265,7 @@ footer .inner .sns.a {display: none;}
 
 /* pc mode 1024px*/ 
 @media screen and (max-width:1400px) {
-  .inner-header {width: 95%;}
+  .inner-header {width: 92%;}
   .inner-header nav {display: none;}
   .inner-header .right-box .language {display: none;}
   .menu {display: flex;}
@@ -467,8 +467,6 @@ footer .inner .sns .img a {width: 90%;}
     .use-ticket ul li:nth-child(2) {
         transform: none;}
 
-          .use-ticket ul .step.s2.motion {animation: card-rise-soft1 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0.2s;}
-
     .use-ticket {padding: 0 16px;}
     .use-ticket .mainTit {margin-bottom: 32px;}
     .use-ticket .mainTit h2 {font-size: 10vw; letter-spacing: 0px; -webkit-text-stroke: 1px #000; margin-bottom: 16px;}
@@ -487,4 +485,19 @@ footer .inner .sns .img a {width: 90%;}
   footer .inner ul li .contact.b {margin-bottom: 24px;}
   footer .inner .sns .img a {width: 60%;}
   footer .inner .sns .img img {margin-bottom: 8px;}
+
+.con1 .title.motion span b {animation: none !important;}
+.use-ticket .mainTit .how-tit.motion {animation: none !important;}
+.use-ticket ul .step.s1.motion {animation: none !important;}
+.use-ticket ul .step.s2.motion {animation: none !important;}
+.use-ticket ul .step.s3.motion {animation: none !important;}
+
+.con2 ul li.a.motion {animation: none !important;}
+.con2 ul li.b.motion {animation: none !important;}
+.con2 ul li.c.motion {animation: none !important;}
+.con2 ul li.d.motion {animation: none !important;}
+.con2 ul li.e.motion {animation: none !important;}
+.con2 ul li.f.motion {animation: none !important}
+
+
 }

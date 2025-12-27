@@ -22,17 +22,13 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; background: #F5F6
 
 @keyframes leftAni {
   0% {
-    transform: translateX(-40px);
+    transform: translateY(40px);
     opacity: 0;
   }
 
   60% {
-    transform: translateX(2px);
+    transform: translateY(0px);
     opacity: 1;
-  }
-
-  100% {
-    transform: translateX(0);
   }
 }
 
@@ -59,7 +55,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; background: #F5F6
 
 .recommend .inner .middle-box .left-box p { font-size: 30px; font-family: 'Pretendard',sans-serif; }
 
-.recommend .inner .middle-box .right-box {width: 48%;}
+.recommend .inner .middle-box .right-box {width: 48%; padding: 10px;}
 .recommend .inner .middle-box .right-box .text-box {margin-bottom: 90px;}
 .recommend .inner .middle-box .right-box .text-box h2 {font-size: 3vw; font-weight: 500; font-family: 'Pretendard',sans-serif; margin-bottom: 18px;}
 .recommend .inner .middle-box .right-box .text-box .sub-text {font-size: 1.3vw; color: #ACAFB4; font-family: 'Pretendard',sans-serif; }
@@ -245,5 +241,10 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; background: #F5F6
     .payment .inner .card-box li .easy-card p {font-size: 24px;}
     /* shape */
 
-
+.title-box .tit.motion {animation: none !important;}
+.recommend .inner .middle-box .left-box.motion {animation: none !important;}
+.recommend .inner .middle-box .right-box.motion {animation: none !important;}
+.payment .inner .card-box .card1.motion {animation: none !important;}
+.payment .inner .card-box .card2.motion {animation: none !important;}
+.payment .inner .card-box .card3.motion {animation: none !important;}
 }
