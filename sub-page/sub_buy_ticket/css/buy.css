@@ -64,7 +64,11 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .con1 .buy {font-size: 30px; color: #777777; font-weight: 500; margin-bottom: 30px;}
 .con1 .buy_box {display: flex; justify-content: space-between; font-family: 'Pretendard',sans-serif;;}
 .con1 .buy_box .select_ticket {width: 65%; }
+<<<<<<< HEAD
 .con1 .buy_box .select_ticket li {padding: 52px 60px; margin-bottom: 25px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; align-items: center; display: flex; justify-content: space-between;}
+=======
+.con1 .buy_box .select_ticket li {padding: 52px 60px; margin-bottom: 25px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; align-items: center; display: flex; justify-content: space-between; font-family: }
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
 .con1 .buy_box .select_ticket li .class {font-size: 36px; font-weight: 600; letter-spacing: -1px; }
 .con1 .buy_box .select_ticket li .class span {font-size: 20px; font-weight: 400; letter-spacing: -1px; color: #777777; margin-left: 15px;}
 .con1 .buy_box .select_ticket li .right {display: flex}
@@ -77,7 +81,11 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .con1 .product .top .logo {font-family: 'HK Grotesk', sans-serif; font-weight: 800; font-size: 26px;}
 .con1 .product .buy {font-size: 24px; color: #F5F6FB;}
 
+<<<<<<< HEAD
 .con1 .product .system .select_product {font-size: 30px; margin-bottom: 30px; font-weight: 600; }
+=======
+.con1 .product .system .select_product {font-size: 30px; margin-bottom: 30px; font-weight: 600; font-family: }
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
 .con1 .product .system .class {display: flex; justify-content: space-between; margin-bottom: 70px;}
 .con1 .product .system .class .class-name {font-size: 26px;}
 .con1 .product .system .class .class-name span {display: block; line-height: 2; font-size: 20px; font-weight: 200;}

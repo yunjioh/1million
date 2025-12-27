@@ -2,7 +2,10 @@
 
 //1m hover
 document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< HEAD
   if (window.innerWidth <= 1400) return;
+=======
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
   const wrap = document.querySelector('.wrap-1m');
   if (!wrap) return;
 

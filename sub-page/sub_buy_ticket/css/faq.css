@@ -21,13 +21,18 @@ body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-se
 .faq-inner .faq-text-box .faq-title span b {display: block;}
 
 
+<<<<<<< HEAD
 .faq-inner .faq-text-box .faq-title.motion span b {animation: leftAni 1s ease forwards;}
+=======
+.faq-inner .faq-text-box .faq-title.motion span b {animation: textAni 1s ease forwards;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
 
 @keyframes textAni {
     0% {opacity: 0;}
     30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
 }
 
+<<<<<<< HEAD
 @keyframes leftAni {
   0% {
     transform: translateX(-40px);
@@ -45,6 +50,8 @@ body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-se
 }
 
 
+=======
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
 .faq-inner .faq-text-box .text {color: #7d7d7d; font-family: 'Prentendard', sans-serif; font-weight: 400; margin-top: 30px; font-size: 20px;}
 
 .faq-inner .accordion {

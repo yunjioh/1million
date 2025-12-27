@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schedule</title>
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/schedule2.css">
+    <link href="https://cdn.jsdelivr.net/npm/typeface-hk-grotesk@1.0.0/index.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/twice-writing" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/typeface-hk-grotesk@1.0.0/index.min.css" rel="stylesheet">
+    <script src="js/schedule.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="../../index.html" class="logo">
+                <img src="../../img/blogo.svg" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html" data-text="HOME">HOME</a></li>
+                    <li><a href="../sub_dancer/dancer.html" data-text="CLASS">CLASS</a></li>
+                    <li><a href="../sub_buy_ticket/ticket.html" data-text="BUY TICKET">BUY TICKET</a></li>
+                    <li><a href="#" data-text="SCHEDULE">SCHEDULE</a></li>
+                </ul>
+            </nav>
+            <div class="right-box">
+                <a href="#" class="language">
+                    <p>KR</p>
+                    <img src="img/bottom-Arrow-icon.svg" alt="">
+                </a>
+                <a href="#" class="menu">
+                    <span class="a"></span>
+                    <span class="b"></span>
+                    <span class="c"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <a href="../../index.html">HOME</a>
+        <a href="../sub_dancer/dancer.html">CLASS</a>
+        <a href="../sub_buy_ticket/ticket.html">BUY TICKET</a>
+        <a href="../sub-schedule/schedule.html">SCHEDULE</a>
+    </div>
+
+
+    <section class="wrap a">
+        <div class="inner">
+            <div class="visual">
+                <div class="con1">
+                    <div class="topBox">
+                        <p class="left">Explore a Variety of Dance Styles<br>Throughout the Month</p>
+                        <p class="right">Same Passion, Every Single Class</p>
+                    </div>
+                    <p class="title animate" data-animate="motion">
+                        <span><b>Schedule.</b></span>
+                    </p>
+                    <div class="float-wrap"><img src="img/ticktet.svg" alt="" class="img animate" data-animate="motion">
+                    </div>
+                </div>
+                <div class="bottomBox">
+                    <div class="calender">
+                        <div class="leftBox animate" data-animate="motion">
+                            <div class="tit">
+                                <h3 class="bigtit">December 2025</h3>
+                                <div class="movemonthBtn">
+                                    <div class="beforemonthBtn"> <button class="btnInner" type="button"><img
+                                                src="img/beforemonthBtn.svg" alt=""></button> </div>
+                                    <div class="aftermonthBtn"> <button class="btnInner" type="button"><img
+                                                src="img/AftermonthBtn.svg" alt=""></button> </div>
+                                </div>
+                            </div>
+                            <div class="innerBox">
+                                <div class="selectBtn">
+                                    <button class="btnInner ">All Instructors<img
+                                            src="img/schedulemoreBtn.svg"></button>
+                                    <button class="btnInner">All Class<img src="img/schedulemoreBtn.svg"></button>
+                                </div>
+                                <div class="month">
+                                    <ul class="dayoftheWeek">
+                                        <li>
+                                            <h3 class="smalltit">SUN</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">MON</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">TUE</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">WED</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">THR</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">FRI</h3>
+                                        </li>
+                                        <li>
+                                            <h3 class="smalltit">SAT</h3>
+                                        </li>
+                                    </ul>
+                                    <ul class="monthDec">
+                                        <li class="emptyday"></li>
+                                        <li class="day today">
+                                            <span class="num">1</span>
+                                            <div class="class">
+                                                <span class="stepby1M"></span>
+                                                <span class="starter"></span>
+                                                <span class="learner"></span>
+                                                <span class="master"></span>
+                                            </div>
+                                        </li>
+                                        <li class="day">2</li>
+                                        <li class="day">3</li>
+                                        <li class="day">4</li>
+                                        <li class="day">5</li>
+                                        <li class="day">6</li>
+                                        <li class="day">7</li>
+                                        <li class="day">8</li>
+                                        <li class="day">9</li>
+                                        <li class="day">10</li>
+                                        <li class="day">11</li>
+                                        <li class="day">12</li>
+                                        <li class="day">13</li>
+                                        <li class="day">14</li>
+                                        <li class="day">15</li>
+                                        <li class="day">16</li>
+                                        <li class="day">17</li>
+                                        <li class="day">18</li>
+                                        <li class="day">19</li>
+                                        <li class="day">20</li>
+                                        <li class="day">21</li>
+                                        <li class="day">22</li>
+                                        <li class="day">23</li>
+                                        <li class="day">24</li>
+                                        <li class="day">25</li>
+                                        <li class="day">26</li>
+                                        <li class="day">27</li>
+                                        <li class="day">28</li>
+                                        <li class="day">29</li>
+                                        <li class="day">30</li>
+                                        <li class="day">31</li>
+                                        <li class="emptyday"></li>
+                                        <li class="emptyday"></li>
+                                        <li class="emptyday"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightBox animate" data-animate="motion">
+                            <h3 class="tit">12. 01 <span>MON</span></h3>
+                            <ul class="classList">
+
+                                <li class="classCard">
+                                    <button class="btnInner" type="button">
+                                        <div class="innerBox">
+                                            <img src="img/classicon1.svg" alt="">
+                                            <div class="txtBox">
+                                                <div class="className">
+                                                    <h3 class="smalltit">Step By 1M</h3>
+                                                    <p class="instructor">Lia kim</p>
+                                                </div>
+                                                <p class="time">16:30 ~ 17:50 (KST)</p>
+                                                <p class="Locate">1MILLION Dance Studio Seoul, 2F 201</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="classCard">
+                                    <button class="btnInner" type="button">
+                                        <div class="innerBox">
+                                            <img src="img/classicon2.svg" alt="">
+                                            <div class="txtBox">
+                                                <div class="className">
+                                                    <h3 class="smalltit">Starter</h3>
+                                                    <p class="instructor">Reddy</p>
+                                                </div>
+                                                <p class="time">18:00 ~ 19:20 (KST)</p>
+                                                <p class="Locate">1MILLION Dance Studio Seoul, 1F 102</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="classCard">
+                                    <button class="btnInner" type="button">
+                                        <div class="innerBox">
+                                            <img src="img/classicon3.svg" alt="">
+                                            <div class="txtBox">
+                                                <div class="className">
+                                                    <h3 class="smalltit">Learner</h3>
+                                                    <p class="instructor">HARIMU</p>
+                                                </div>
+                                                <p class="time">19:30 ~ 20:50 (KST)</p>
+                                                <p class="Locate">1MILLION Dance Studio Seoul, 1F 104</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="classCard">
+                                    <button class="btnInner" type="button">
+                                        <div class="innerBox">
+                                            <img src="img/classicon4.svg" alt="">
+                                            <div class="txtBox">
+                                                <div class="className">
+                                                    <h3 class="smalltit">Master</h3>
+                                                    <p class="instructor">Dohee</p>
+                                                </div>
+                                                <p class="time">21:00 ~ 22:20 (KST)</p>
+                                                <p class="Locate">1MILLION Dance Studio Seoul, 2F 201</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="moreView">
+                        <div class="mvButton animate" data-animate="motion">
+                            <button class="btnInner" type="button">
+                                <div class="txtBox">
+                                    <p class="txt">If you haven't purchased a ticket yet</p>
+                                    <h3 class="bigtit">Buy Ticket</h3>
+                                </div>
+                                <img src="img/MoreviewBtn.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="mvButton animate" data-animate="motion">
+                            <button class="btnInner" type="button">
+                                <div class="txtBox">
+                                    <p class="txt">Locate in</p>
+                                    <h3 class="bigtit">1MILLION</h3>
+                                </div>
+                                <img src="img/MoreviewBtn.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="classinformCard">
+                <div class="cardInner">
+                    <img src="img/informCard-1920.svg" alt="">
+                    
+                    <div class="txtBox">
+
+                        <div class="topBox">
+                            <div class="leftBox">
+                                <div class="icon">
+                                    <img src="img/classicon1.svg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <h3 class="smallTit">2025 Dec 1, Tue</h3>
+                                    <p>1st Class</p>
+                                </div>
+                            </div>
+                            <button class="btnInner"><img src="img/infromcloseBtn.svg" alt=""></button>
+                        </div>
+
+                        <div class="bottomBox">
+                            <div class="classBox">
+
+                                <div class="tit">
+                                    <h3>Step By 1M</h3>
+                                    <h3 class="smallTit">Lia kim</h3>
+                                </div>  
+                                                    
+                                <div class="informBox">
+                                    <p class="inform">The First Steps of Dance : Easy Lessons for Beginners.</p>
+                                    <p class="locate">1MILLION Dance Studio seoul, 2F 201</p>
+                                    <p class="time">16:30 ~ 17:50 (KST)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/booknowBtn.svg" alt=""></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="wrap b">
+        <div class="inner">
+            <div class="recommend">
+                <div class="inner">
+                    <div class="title-box">
+                        <p class="top-sub-tit">Recommend</p>
+                        <p class="tit animate" data-animate="motion">Experience<br>Like Never Before</p>
+                    </div>
+
+                    <div class="middle-box">
+                        <div class="left-box animate" data-animate="motion">
+                            <div class="left-box-inner">
+                                <h2>How About <br> This <br> Experience?</h2>
+                                <div class="btn">
+                                    <a href="#" class="dark-btn">View More<span><img
+                                                src="button_img/dark-button-arrow.svg" alt=""></span></a>
+                                </div>
+                                <p>Booking right now!</p>
+                            </div>
+                        </div>
+                        <div class="right-box animate" data-animate="motion">
+                            <div class="text-box">
+                                <h2>이런 클래스는 어떠세요?</h2>
+                                <p class="sub-text">
+                                    Discover 1MILLION diverse classes here. <br>
+                                    We are always waiting for you
+                                </p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <p class="num">001/</p>
+                                    <p class="text">댄스가 처음이라면? 원밀리언 강사진에게 기본기를...</p>
+                                </li>
+                                <li>
+                                    <p class="num">002/</p>
+                                    <p class="text">이런 클래스, 은근 잘 맞을지도 몰라요</p>
+                                </li>
+                                <li>
+                                    <p class="num">003/</p>
+                                    <p class="text">댄스 초보도 Learner Class를 추천하는 이유가...</p>
+                                </li>
+                                <li>
+                                    <p class="num">004/</p>
+                                    <p class="text">마감임박! 지금 보기 좋은 클래스만 골라봤어요</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment">
+                <div class="inner">
+                    <div class="title-box">
+                        <p class="top-sub-tit">Easy pay</p>
+                        <p class="tit animate" data-animate="motion">Easy payment</p>
+                    </div>
+                    <ul class="card-box">
+                        <li class="card1 animate" data-animate="motion">
+                            <a href="#" class="easy-card">
+                                <p>Easy Payment</p>
+                                <span class="shape"></span>
+                                <div class="glass"></div>
+                            </a>
+                            <div class="btn">
+                                <a href="#" class="light-btn a">View More<span><img
+                                            src="button_img/dark-button-arrow.svg" alt=""></span></a>
+                            </div>
+                        </li>
+                        <li class="card2 animate" data-animate="motion">
+                            <a href="#" class="easy-card">
+                                <p>Easy Schedule</p>
+                                <span class="shape"></span>
+                                <div class="glass"></div>
+                            </a>
+                            <div class="btn">
+                                <a href="#" class="light-btn">View More<span><img src="button_img/dark-button-arrow.svg"
+                                            alt=""></span></a>
+                            </div>
+                        </li>
+                        <li class="card3 animate" data-animate="motion">
+                            <a href="#" class="easy-card">
+                                <p>Easy Booking</p>
+                                <span class="shape"></span>
+                                <div class="glass"></div>
+                            </a>
+                            <div class="btn">
+                                <a href="#" class="light-btn">View More<span><img src="button_img/dark-button-arrow.svg"
+                                            alt=""></span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="logo">
+                <p>STUDIO@<br>1MILLION<br>DANCE.COM</p>
+            </div>
+            <div class="sns a">
+                <p class="img"><a href="#"><img src="img/footer-tiktok.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-instagram.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-youtube.svg" alt=""></a></p>
+            </div>
+            <ul>
+                <li>
+                    <h2 class="contact">Address</h2>
+                    <p>서울 성동구 뚝섬로 13길 33</p>
+                </li>
+                <li>
+                    <h2 class="contact b">Hours</h2>
+                    <p>Weekdays: 4:00 PM – 10:00 PM<br>Weekends: 3:00 PM – 9:30 PM</p>
+                </li>
+                <li>
+                    <h2 class="contact">Tell</h2>
+                    <p>82+ 512 6756</p>
+                </li>
+                <li>
+                    <h2 class="contact">E-mail</h2>
+                    <p>STUDIO@1MILLIONDANCE.COM</p>
+                </li>
+            </ul>
+            <div class="sns b">
+                <p class="img"><a href="#"><img src="img/footer-tiktok.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-instagram.svg" alt=""></a></p>
+                <p class="img"><a href="#"><img src="img/footer-youtube.svg" alt=""></a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+
+        // header
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('.menu');
+            const fullscreenMenu = document.getElementById('fullscreenMenu');
+            const header = document.querySelector("header");
+
+            menuBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                menuBtn.classList.toggle('active');
+                fullscreenMenu.classList.toggle('active');
+                header.classList.toggle("menu-open");
+                document.body.classList.toggle("no-scroll");
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    menuBtn.classList.remove('active');
+                    fullscreenMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

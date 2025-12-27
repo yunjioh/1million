@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let resizeTimer;
 
 window.addEventListener("resize", () => {
@@ -9,6 +10,17 @@ window.addEventListener("resize", () => {
     location.reload();
   }, 400);
 });
+=======
+// let resizeTimer;
+
+// window.addEventListener("resize", () => {
+//   clearTimeout(resizeTimer);
+
+//   resizeTimer = setTimeout(() => {
+//     location.reload();
+//   }, 400);
+// });
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
 
 // let currentScroll = 0;
 // let targetScroll = 0;
@@ -110,7 +122,11 @@ $(function () {
             card,
             {
               opacity: 0,
+<<<<<<< HEAD
               y: i % 2 === 0 ? -200 : 200
+=======
+              y: i % 2 === 0 ? -50 : 50
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
             },
             {
               opacity: 1,
@@ -208,7 +224,11 @@ $(function () {
     gsap.fromTo(document.body,
       { background: '#f5f6fb', color: '#000' },
       {
+<<<<<<< HEAD
         background: '#000', color: '#f5f6fb',
+=======
+        background: '#131313', color: '#f5f6fb',
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
         scrollTrigger: {
           trigger: dancer,
           start: "0% 80%",
@@ -220,7 +240,11 @@ $(function () {
       scrollTrigger: {
         trigger: project,
         start: "0% 80%",
+<<<<<<< HEAD
         end: '20% 100%',
+=======
+        end: '80% 100%',
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
         scrub: 1,
       }
     })
@@ -229,6 +253,14 @@ $(function () {
         { background: '#f5f6fb', color: '#000', ease: 'none', duration: 5 },
         0
       )
+<<<<<<< HEAD
+=======
+      .fromTo('.project .deco',
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, ease: 'none', duration: 20 },
+        0
+      );
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
     gsap.fromTo(document.body,
       { background: '#000', color: '#f5f6fb' },
       {
@@ -299,7 +331,11 @@ $(function () {
           scrollTrigger: {
             trigger: fixcard,
             start: "top 100%",
+<<<<<<< HEAD
             end: "top 50%",
+=======
+            end: "top 30%",
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
             scrub: 1,
           }
         }
