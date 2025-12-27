@@ -91,6 +91,16 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .project .textBox .tit {color: black;}
 .project .inner2 {display: flex; align-items: center;}
 .project {position: relative;}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.project img.deco {position: absolute; right: 0; top: 0; z-index: -100;} 
+.project img.deco:nth-child(1) {bottom: 0;}
+.project img.deco:nth-child(2) {right: -200%;}
+.project img.deco:nth-child(3) {right: -350%;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 
 .project ul {display: flex; flex-wrap: nowrap; gap: 25px; align-items: end;}
 .project ul.motion {animation-name: sector; animation-duration: 1s;}
@@ -214,14 +224,34 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .highlights {padding-bottom: 800px;}
 .highlights .inner2 {padding: 200p easex 0 200px 100px}
 .highlights .inner2 .textBox {margin-bottom: 37px;}
+<<<<<<< HEAD
 .highlights .inner2 .textBox.motion {animation: textAni1 1s ease-out forwards;}
+=======
+<<<<<<< HEAD
+.highlights .inner2 .textBox.motion {animation: textAni1 1s ease-out forwards;}
+=======
+.highlights .inner2 .textBox.motion {animation: textAni2 1s ease-out forwards;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 @keyframes sector {
     0% {opacity: 0; transform: translateX(1000px);}
    30% {opacity: 0; transform: translateX(1000px);}
 }
+<<<<<<< HEAD
 .highlights ul.motion li {animation-name: sector; animation-duration: 1s;}
 .highlights ul.motion li:nth-child(2) {animation-duration: 1.15s;}
 .highlights ul.motion li:nth-child(3) {animation-duration: 1.3s;}
+=======
+<<<<<<< HEAD
+.highlights ul.motion li {animation-name: sector; animation-duration: 1s;}
+.highlights ul.motion li:nth-child(2) {animation-duration: 1.15s;}
+.highlights ul.motion li:nth-child(3) {animation-duration: 1.3s;}
+=======
+.highlights ul.motion li {animation-name: sector; animation-duration: 2s;}
+.highlights ul.motion li:nth-child(2) {animation-duration: 2.15s;}
+.highlights ul.motion li:nth-child(3) {animation-duration: 2.3s;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 .highlights ul {display: flex; flex-wrap: nowrap; gap: 25px; }
 .highlights ul li {position: relative; width: 1120px; height: 593px; padding: 50px; background: #fff; overflow: hidden; border-radius: 40px; flex: 0 0 auto; border-radius: 20px;}
 .highlights ul li:nth-child(3) {background: #000; background-image: url(../img/highlight2.png); background-position: center;}
@@ -380,11 +410,26 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .fixcard .bg {position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8vw; z-index: 2;}
 .fixcard .bg p.recent {color: #777777; margin-bottom: 0.5vw;}
 .fixcard .bg .down {width: 1.5vw;}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 .fixcard img.glass {position: absolute; top: 50%; left: 50%; filter: brightness(0.5); transform: translate(-50%, -50%); width: 100%; height: 85vh; opacity: 0; z-index: 1;}
 .fixcard img.textImg {height: 7vw;}
 .fixcard img.textImg2 {height: 5vw;}
 .fixcard .bg p {position: relative; z-index: 3; opacity: 0;}
 .fixcard .bg p:nth-child(4) img {height: 6vw;}
+<<<<<<< HEAD
+=======
+=======
+.fixcard img.glass {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 85vh; opacity: 0; z-index: 1;}
+.fixcard img.textImg {height: 7vw;}
+.fixcard img.small {height: 6vw;}
+.fixcard img.textImg2 {height: 5vw;}
+.fixcard .bg p {position: relative; z-index: 3; opacity: 0;}
+.fixcard .bg p:nth-child(4) img {height: 6.8vw;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 .fixcard .bg p:nth-child(5) {margin-right: 23vw;}
 
 .fixcard ul li .txtBox .top {display: flex; justify-content: space-between; margin-bottom: 1.5vw; align-items: start;}
@@ -555,11 +600,25 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 }
 
 @media (max-width: 750px) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
   .dancer .right.motion .list2 li:nth-child(1) {margin-bottom: 0;}
   .dancer .right .text-card {display: none;}
   .dancer .right .dancer-card {min-height: 420px;}
   .dancer .right .dancer-card .card-tit {font-size: 6vw;}
   .dancer-card .card-tit img {display: none;}
+<<<<<<< HEAD
+=======
+=======
+  .dancer .right {display: block;}
+  .dancer .right .list1 {width: 100%;}
+  .dancer .right .list2 {width: 100%;}
+  .dancer .right .list2 li:nth-child(1) {display: none;}
+  .dancer .right .dancer-card {min-height: 720px;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 }
 
 @media (max-width: 580px) {
@@ -576,7 +635,14 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .project .projectBox .subTit {font-size: 23px;}
   .highlights span.comment {font-size: 12px; padding: 10px 15px;}
   .highlights span.iconic {left: 15%; bottom: 48%;}
+<<<<<<< HEAD
   .dancer .right .dancer-card {padding: 20px; border-radius: 10px}
+=======
+<<<<<<< HEAD
+  .dancer .right .dancer-card {padding: 20px; border-radius: 10px}
+=======
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 
   .fixcard ul li .txtBox p.txt {font-size: 12px;} 
   .fixcard ul li {width: 58vw; height: 72vw; padding: 7vw;}
@@ -589,11 +655,20 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .highlights .bottom .txt {font-size: 3vw;}
   .highlights li.ani .aniTit {font-size: 5vw;}
   .highlights li.ani .aniTxt {font-size: 3vw;}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 
   .fixcard .bg {gap: 1vw;}
   .fixcard img.textImg {height: 12vw;}
   .fixcard .bg p:nth-child(4) img {height: 10vw;}
   .fixcard img.textImg2 {height: 9vw;}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 } 
 
 @media (max-width: 460px) {
@@ -625,7 +700,15 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   .dancer .left .sub-tit {font-size: 14px;}
   .dancer .right .text-card .txt {font-size: 24px;}
   .dancer .text-card {padding: 20px;}
+<<<<<<< HEAD
   .dancer .right .dancer-card {min-height: 300px;}
+=======
+<<<<<<< HEAD
+  .dancer .right .dancer-card {min-height: 300px;}
+=======
+  .dancer .right .dancer-card {min-height: 500px;}
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 
   .highlights .textBox {margin-bottom: 24px; display: block;}
   .textBox .txt {font-size: 14px;}
@@ -644,5 +727,12 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 
   .fixcard ul li {width: 63vw; height: 80vw; padding: 8vw}
   .fixcard .bg p.recent {font-size: 10px;}
+<<<<<<< HEAD
   .fixcard ul li:nth-child(2), .fixcard ul li:nth-child(4) {margin-left: 17vw;}
+=======
+<<<<<<< HEAD
+  .fixcard ul li:nth-child(2), .fixcard ul li:nth-child(4) {margin-left: 17vw;}
+=======
+>>>>>>> c569bcd36bcd911bca9cbc8da28bc354daafed33
+>>>>>>> 23f9e6ea8bfe65beb7cebc1673ea3d882bf7bf93
 }
