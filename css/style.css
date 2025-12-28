@@ -636,7 +636,7 @@ footer .inner .top-box li p {font-size: 20px;}
 @media (max-width: 670px){
 .intro .inner .intro-box1 .text-box .sub-tit-out {left: 45%;}
 .intro .inner .intro-box2 .text-mini-box .sub-tit {font-size: 13px;  width: 420px;}
-.intro .inner .intro-box1 .text-box .sub-tit p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;} 
+.intro .inner .intro-box1 .text-box .sub-tit p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: 230px;} 
 .intro .inner .intro-box4 .heart .text-box .sub-tit {width: 215px;}
 }
 
@@ -687,7 +687,7 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
 }
 
 @media (max-width: 520px){
-  .intro .inner .video-box .video1 { width: 650px;}
+  .intro .inner .video-box .video1 { width: 630px;}
   .intro .inner .intro-box1 .text-box .sub-tit-out {top: -40%; left: 37%; font-size: 10px;}
   .intro .inner .intro-box1 .text-box .sub-tit {left: 0; width: 330px;}
   .intro .inner .intro-box2 {margin: 100px 0 0 0px; top: 500px;} 
@@ -728,7 +728,6 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
 @media (max-width: 430px){
   .intro .inner .intro-box2 {top: 400px;}
   .intro .inner .intro-box2 .text-mini-box {bottom: -75%;}
-  .intro .inner .intro-box1 .text-box .sub-tit p {display: none;}
   .intro .inner .intro-box1 .text-box .sub-tit-out {left: 32%;}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(2) {padding-left: 4%;}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(3) {padding-left: 0%;}
@@ -775,7 +774,7 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(2) {padding-left: 0%;}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(3) {padding-left: 4%;}
   
-  .intro .inner .video-box .video1 {left: 46%; transform: translate(-30%,-27%);}
+  .intro .inner .video-box .video1 {right: -100%;}
   .wrap-1m {bottom: -500px;}
   .intro .inner .intro-box2 .topBox img {width: 90%;}
   .intro .inner .intro-box2 .bottomBox img {width: 68%;}
