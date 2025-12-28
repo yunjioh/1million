@@ -82,8 +82,8 @@ $(function () {
         opacity: 0,
         scrollTrigger: {
           trigger: project,
-          start: "700% 80%",
-          end: "700% 60%",
+          start: "650% 80%",
+          end: "650% 60%",
           scrub: 1,
         }
       }
@@ -130,7 +130,6 @@ $(function () {
         });
       }
     });
-
   }
 
   function runDancerPin() {
@@ -199,6 +198,7 @@ $(function () {
     const dancer = document.querySelector(".dancer");
     const project = document.querySelector(".project");
     const lineup = document.querySelector(".lineup");
+    const highlights = document.querySelector(".highlights");
     const bookclass = document.querySelector(".bottom-bookclass");
 
     gsap.set(document.body, {
@@ -210,19 +210,18 @@ $(function () {
       { background: '#f5f6fb', color: '#000' },
       {
         background: '#000', color: '#f5f6fb',
-        background: '#000', color: '#f5f6fb',
         scrollTrigger: {
-          trigger: dancer,
+          trigger: highlights,
           start: "0% 80%",
-          end: '20% 100%',
+          end: '10% 100%',
           scrub: 1,
         }
       })
     gsap.timeline({
       scrollTrigger: {
         trigger: project,
-        start: "0% 50%",
-        end: '20% 0%',
+        start: "-10% 50%",
+        end: '0% 0%',
         scrub: 1,
       }
     })
@@ -231,11 +230,6 @@ $(function () {
         { background: '#f5f6fb', color: '#000', ease: 'none', duration: 5 },
         0
       )
-      .fromTo('.project .deco',
-        { opacity: 0, y: 40 },
-        { opacity: 1, y: 0, ease: 'none', duration: 20 },
-        0
-      );
     gsap.fromTo(document.body,
       { background: '#000', color: '#f5f6fb' },
       {
@@ -362,16 +356,16 @@ $(function () {
 
   ScrollTrigger.matchMedia({
     "(min-width: 1779px)": function () {
-      window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=100 top", 900); runHighlightScroll("top+=200 top", 300); runDancerPin(); runFixcardAnimation(); changeBg();
+      runProjectScroll("top+=100 top", 500); runHighlightScroll("top+=200 top", 300); runDancerPin(); runFixcardAnimation(); changeBg();
     },
     "(min-width: 1025px) and (max-width: 1778px)": function () {
-      window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=150 top", 900); runHighlightScroll("top+=200 top", 300); runFixcardAnimation(); changeBg();
+      runProjectScroll("top+=150 top", 900); runHighlightScroll("top+=200 top", 300); runFixcardAnimation(); changeBg();
     },
     "(min-width: 769px) and (max-width: 1024px)": function () {
-      window.addEventListener("resize", ScrollTrigger.update); runProjectScroll("top+=200 top", -600); runHighlightScroll("top+=300 top", 350); runFixcardAnimation(); changeBg();
+      runProjectScroll("top+=200 top", -600); runHighlightScroll("top+=300 top", 350); runFixcardAnimation(); changeBg();
     },
     "(min-width: 300px) and (max-width: 768px)": function () {
-      window.addEventListener("resize", ScrollTrigger.update); runFixcardAnimation(); changeBg();
+      runFixcardAnimation(); changeBg();
     }
   });
 });
