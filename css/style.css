@@ -774,7 +774,6 @@ footer .inner .bottom-box .name {font-size: clamp(60px, 18vw, 110px);}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(1) {padding-left: 4%;} 
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(2) {padding-left: 0%;}
   .intro .inner .intro-box1 .text-box .sub-tit-out p:nth-child(3) {padding-left: 4%;}
-  .intro .inner .intro-box1 .text-box .sub-tit p {display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
   
   .intro .inner .video-box .video1 {left: 46%; transform: translate(-30%,-27%);}
   .wrap-1m {bottom: -500px;}

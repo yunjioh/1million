@@ -312,7 +312,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
       .fullscreen-menu {font-size: 40px; gap: 80px;}
 
 
-  .visual .inner {padding: 300px 20px 60px;}
+  .visual .inner {padding: 200px 20px 60px;}
   .visual .inner .text-box .tit {margin-bottom: 24px;}
   .visual .inner .sub-tit {font-size: 14px;}
   .visual .inner .sub-tit2 {font-size: 12px; display: -webkit-box; overflow: hidden;
@@ -395,12 +395,12 @@ text-align: justify;}
   .menu.active .a {transform: translateY(4px) rotate(45deg);}
   
   .inner-header .logo img {width: 25vw;}
-  .fullscreen-menu {font-size: 30px; gap: 60px;}
+  .fullscreen-menu {font-size: 28px; gap: 40px;}
   .inner-header .right-box .language {display: none;}
 
 
 
-  .visual .inner {padding: 225px 16px 30px;}
+  .visual .inner {padding: 170px 16px 30px;}
   .visual .inner .text-box .tit {font-size: 20vw;  margin-bottom: 16px;}
   .visual .inner .sub-tit {font-size: 12px;}
   .visual .inner .sub-tit2 {display: none;}

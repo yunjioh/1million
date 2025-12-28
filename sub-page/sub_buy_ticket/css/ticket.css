@@ -407,7 +407,7 @@ footer .inner .sns .img a {width: 90%;}
 /* pc mode 390px*/ 
 @media screen and (max-width:500px) {
     .inner-header .logo {font-size: 26px;}
-    .fullscreen-menu {font-size: 32px; gap: 40px;}
+    .fullscreen-menu {font-size: 28px; gap: 40px;}
 
     
     .menu {width: 25px; height: 17px;}
@@ -416,15 +416,15 @@ footer .inner .sns .img a {width: 90%;}
   .inner-header .logo img {width: 25vw;}
 
       .con1 {margin-top: 100px;}
-    .con1 .topBox {font-size: 12px;}
-    .con1 .topBox .right {display: none;}
+    .con1 .topBox {display: none;}
+    .con1 .float-wrap {top: -230%;}
     .con1 img {width: 300px;}
 
 
 
 
     .select .inner {padding: 0 16px;}
-    .con1 .title {font-size: 18vw; margin-top: 280px; margin-bottom: 40px;}
+    .con1 .title {font-size: 18vw; margin-top: 320px; margin-bottom: 40px;}
     .con2 .tit {font-size: 14px; margin-bottom: 20px;}
     .con2 ul {transition: none;}
     .con2 ul li {display: flex; padding: 17px; width: 100%; align-items: center; border-radius: 6px; height: auto; justify-content: space-between; transition: none;}

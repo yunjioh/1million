@@ -527,7 +527,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 
   .highlights {padding-bottom: 100px; overflow-x: hidden;}
   .highlights .inner2 {padding: 200px 24px;}
-  .highlights .inner2 .textBox {margin-bottom: 35px;}
+  .highlights .inner2 .textBox {margin-bottom: 25px;}
   .highlights ul {display: block;}
   .highlights ul li {width: 100%; min-height: 446px; margin-bottom: 5vw; border-radius: 18px; padding: 7vw;}
   .highlights ul li:nth-child(2),  .highlights ul li:nth-child(6) {width: 100%;}
@@ -609,11 +609,12 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 
 @media (max-width: 460px) {
   .inner-header .logo {font-size: 22px; font-weight: 900;}
+  .inner-header .right-box .language p {font-size: 12px;}
   .menu {width: 25px; height: 17px;}
   .menu.active .a {transform: translateY(4px) rotate(45deg);}
   .inner-header .logo img {width: 25vw;}
   .highlights li.ani {padding: 30px;}
-  .fullscreen-menu {font-size: 30px; gap: 50px;}
+  .fullscreen-menu {font-size: 28px; gap: 40px;}
   .highlights span.comment {padding: 5px 9px;}
   .dancer .left .con-tit {font-size: 55px;}
   .project .inner2 .left .textBox {display: block;}

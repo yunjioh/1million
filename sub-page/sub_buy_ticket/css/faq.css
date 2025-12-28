@@ -173,8 +173,7 @@ body {background: #F5F6FB; font-family: 'Neue Haas Grotesk Display Pro', sans-se
     .faq-inner .faq-text-box {margin-bottom: 32px;}
     .faq-inner .faq-text-box .faq-title {font-size: 10vw; -webkit-text-stroke: 1px #000;}
     .faq-inner .faq-text-box .text {font-size: 14px; margin-top: 16px;}
-    .faq-inner .accordion .item .title {font-size: 16px; padding: 30px 20px; text-align: left;}
-    .faq-inner .accordion .item .title br {display: block;}
+    .faq-inner .accordion .item .title {font-size: 15px; padding: 30px 20px; text-align: left;}
     .faq-inner .accordion .content {font-size: 14px;  margin: 0 20px;}
     .faq-inner .accordion .icon {width: 25px; height: 25px;}
     .item.active .content {padding: 0 0px 30px;}
