@@ -1,0 +1,181 @@
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통요소 */
+body {background: #F5F6FB; color: #0A0A0A; font-family: 'Pretendard', sans-serif;}
+.inner {padding: 100px;}
+
+header {position: absolute; top: 0; left: 0; width: 100%; padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; z-index:20;}
+.logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #0A0A0A;}
+
+nav ul {display: flex; gap: 36px;  background: rgba(0, 0, 0, 0.05); padding: 10px 80px; border-radius: 200px;}
+nav ul li {font-size: 20px; font-weight: 300; color: #0A0A0A; cursor: pointer;}
+nav ul li:hover {opacity:1;}
+
+.right-menu {display: flex; align-items: center; gap: 34px; font-size:16px; color: #0A0A0A; font-weight: 500;}
+.right-menu img {margin-left: 10px; filter: brightness(1) invert(1);}
+.right-menu span.kr {background: rgba(0, 0, 0, 0.05); padding: 5px 15px; border-radius: 20px; cursor: pointer;}
+.right-menu span.add {font-size: 20px;} 
+
+/* select */
+.con1 .topBox {margin: 80px 140px; display: flex; justify-content: space-between; color: #818181; font-size: 18px; line-height: 1.3;}
+.con1 .title {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; position: relative; font-size: 295px; font-weight: bold; letter-spacing: -1px; text-align: center; margin-top: 464px; margin-bottom: 230px;}
+.con1 img {position: absolute; top: 65%; left: 50%; transform: translate(-50%,-50%); z-index: -1;}
+
+.con2 .tit {font-size: 30px; font-weight: bold; margin-bottom: 30px;}
+.con2 ul {display: flex; gap: 25px; align-items: stretch;}
+.con2 ul li {background: white; flex: 1; min-width: 220px; height: 420px; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 20px; text-align: center; padding: 40px;}
+.con2 ul li.active {flex: 1.5; background: #0E0E0E; background-image: url(../img/select_ticket.svg); background-size: cover; background-position: center bottom; color: white; border: none;}
+.con2 ul li.active .class, .con2 ul li.active .price {color: white;}
+.con2 ul li .class {font-size: 32px; font-weight: 600; letter-spacing: -1px; margin-bottom: 8px;}
+.con2 ul li .class-name {font-size: 16px; font-weight: 600; color: #777777;}
+.con2 ul li .img {width: 80px; height: 80px; align-content: center; margin: 55px auto;}
+.con2 ul li.active .img {margin: 25px auto;}
+.con2 ul li.active .img img {filter: brightness(0) invert(1);}
+.con2 ul li .discount {font-size: 20px; font-weight: 500; color: #ACACAC; text-decoration: line-through;}
+.con2 ul li .discount span {display: inline-block; margin-right: 6px; text-decoration: none; color: #FF7E7E; font-size: 20px;}
+.con2 ul li .price {font-size: 30px; font-weight: 700; color: #565656;}
+.con2 ul li .btn {display: none; margin-top: 30px; width: 100%; padding: 18px 0; border-radius: 10px; background: white; color: #0A0A0A; font-size: 20px; 
+font-weight: 500;}
+.con2 ul li.active .btn {display: block; border: none;}
+
+.con2 .alert {display: flex; margin-top: 50px; color: #6D6D6D;}
+.con2 .alert .left {display: flex; margin-right: 64px; font-size: 18px; font-weight: 700;}
+.con2 .alert .left img {width: 24px; height: 24px; margin-right: 10px;}
+.con2 .alert .right {font-size: 16px; color: #838383; line-height: 1.4;}
+
+
+
+/* use-ticket */
+.use-ticket {margin-top: 12%;padding: 100px;}
+
+.use-ticket .mainTit {margin-bottom: 120px;}
+.use-ticket .mainTit h2 {font-size: 100px; letter-spacing: -1px; margin-bottom: 16px;}
+.use-ticket .mainTit p {font-size: 30px; color: #777777;}
+
+.use-ticket ul {display: flex; gap: 25px; width: 100%;}
+
+.use-ticket ul li {width: 33.333%; height: 64vh; display: flex; flex-direction:column; box-sizing: border-box;}
+.use-ticket ul li .txtBox {flex: 1; position: relative; overflow: hidden;}
+.use-ticket ul li p span {display: inline-block;  width: 15px;height: 40px;}
+.use-ticket ul li p span.pur {background: #6F47DB;}
+.use-ticket ul li p span.yellow {background: #FFB039;}
+.use-ticket ul li p span.pink {background: #FF0753;}
+
+.use-ticket ul li p.top {font-size: 42px; font-weight: 500; display: flex; align-items: center; gap: 20px; margin-bottom: 12px; }
+
+
+.use-ticket ul li.step.s1 p {color: #6F47DB;}
+.use-ticket ul li.step.s2 p {color: #FFB039;}
+.use-ticket ul li.step.s3 p {color: #FF0753;}
+
+.use-ticket ul li.step .txtBox {border-radius: 10px; position: relative;}
+.use-ticket ul li.step .txtBox:after {content: ''; position: absolute; top: 0;left: 0; width: 100%;height: 100%; background: linear-gradient( to top, rgba(255,255,255,0.35)0%,
+    rgba(255,255,255,0)50%);}
+.use-ticket ul li.step .txtBox.step01 {background: #C0B8FC;}
+.use-ticket ul li.step .txtBox.step02 {background: #FFE88D;}
+.use-ticket ul li.step .txtBox.step03 {background: #FFB8CE;}
+.use-ticket ul li.step .txtBox .topText { padding: 40px 50px;}
+.use-ticket ul li.step .txtBox .topText .tit {font-size: 40px; font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-weight: 600; color: #0A0A0A; margin-bottom: 16px;}
+.use-ticket ul li.step .txtBox .topText .txt {font-size: 26px; color: #555555; font-weight: 400;}
+.use-ticket ul li .txtBox img {width: 100%; position: absolute; bottom: 0; left: 0;}
+
+
+/* banner */
+.useBanner {height: 805px;width: 100%; background: url(../img/use-banner1.png) no-repeat center/cover; margin: 250px 0; }
+
+
+
+
+
+/* pc mode 1024px*/ 
+@media screen and (max-width:1024px) {
+    .use-ticket {padding: 25px;}
+    .use-ticket .mainTit {margin-bottom: 95px;}
+    .use-ticket .mainTit h2 {font-size: 70px;}
+    .use-ticket .mainTit p {font-size: 26px;}
+
+    .use-ticket ul li p span {width: 9px;height: 24px;}
+    
+    .use-ticket ul {display: flex; gap: 20px; width: 100%;}
+    .use-ticket ul li {width: 33.333%; height: 37vh;}
+    .use-ticket ul li.step .txtBox .topText {padding: 24px 24px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 30px;}
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 16px;}
+    .use-ticket ul li p.top {font-size: 26px; gap: 10px; margin-bottom: 9px;}
+    .use-ticket ul li.step .txtBox .topText .tit {margin-bottom: 8px;}
+
+    .useBanner { height: 650px; max-width: 100%;
+    background-image: url(../img/use-banner2.png);}
+}
+
+
+/* pc mode 768px*/ 
+@media screen and (max-width:768px) {
+    .use-ticket ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;}
+
+    .use-ticket ul li {width: 100%; margin-bottom: 40%; height: 41vh; }
+
+    .use-ticket ul li:nth-child(2) {
+        transform: translateY(70%);}
+
+    .use-ticket {padding: 20px;}
+    .use-ticket .mainTit {margin-bottom: 88px;}
+    .use-ticket .mainTit h2 {font-size: 42px;}
+    .use-ticket .mainTit p {font-size: 20px;}
+
+    .use-ticket ul li p span {width: 9px;height: 24px;}
+    
+    .use-ticket ul li.step .txtBox .topText {padding: 30px 24px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 34px; margin-bottom: 8px;}
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 16px;}
+    .use-ticket ul li p.top {font-size: 30px; gap: 12px; margin-bottom: 3px;}
+
+    .useBanner { height: 476px; max-width: 100%;
+    background-image: url(../img/use-banner3.png);}
+    
+}
+
+/* pc mode 390px*/ 
+@media screen and (max-width:390px) {
+    .use-ticket {padding: 16px;}
+
+    .use-ticket ul {
+        display:block;
+        
+        gap: 24px;
+    }
+
+    .use-ticket ul li {width: 100%; margin-bottom: 16px; transform: none; height: 37vh;}
+
+    .use-ticket ul li:nth-child(2) {
+        transform: none;}
+
+    .use-ticket {padding: 20px;}
+    .use-ticket .mainTit {margin-bottom: 88px;}
+    .use-ticket .mainTit h2 {font-size: 30px; letter-spacing: -1.5px;}
+    .use-ticket .mainTit p {font-size: 14px;}
+
+    .use-ticket ul li p span {width: 9px;height: 24px;}
+    
+    .use-ticket ul li.step .txtBox .topText {padding: 25px 25px;}
+    .use-ticket ul li.step .txtBox .topText .tit{font-size: 30px; margin-bottom:5px; }
+    .use-ticket ul li.step .txtBox .topText .txt {font-size: 16px; letter-spacing: -1px;}
+    .use-ticket ul li p.top {font-size: 30px; gap: 12px; margin-bottom: 3px;}
+
+    .useBanner { height: 287px; max-width: 100%;
+    background-image: url(../img/use-banner4.png); margin: 200px 0; }
+    
+}

@@ -1,0 +1,198 @@
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통요소 */
+body {background: #F5F6FB; color: #0A0A0A; font-family: 'Pretendard', sans-serif;}
+.inner {padding: 100px;}
+
+/* header {position: absolute; top: 0; left: 0; width: 100%; padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; z-index:20;}
+.logo {font-family: 'HK Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #0A0A0A;}
+
+nav ul {display: flex; gap: 36px;  background: rgba(0, 0, 0, 0.05); padding: 10px 80px; border-radius: 200px;}
+nav ul li {font-size: 20px; font-weight: 300; color: #0A0A0A; cursor: pointer;}
+nav ul li:hover {opacity:1;}
+
+.right-menu {display: flex; align-items: center; gap: 34px; font-size:16px; color: #0A0A0A; font-weight: 500;}
+.right-menu img {margin-left: 10px; filter: brightness(1) invert(1);}
+.right-menu span.kr {background: rgba(0, 0, 0, 0.05); padding: 5px 15px; border-radius: 20px; cursor: pointer;}
+.right-menu span.add {font-size: 20px;}  */
+
+.title {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 250px; font-weight: bold; letter-spacing: -1px; margin-bottom: 100px;}
+.con1 .buy {font-size: 30px; color: #777777; font-weight: 500; margin-bottom: 30px;}
+.con1 .buy_box {display: flex; justify-content: space-between;}
+.con1 .buy_box .select_ticket {width: 65%;}
+.con1 .buy_box .select_ticket li {padding: 52px 60px; margin-bottom: 25px; border: 1px solid rgba(0, 0, 0, 0.25); border-radius: 20px; align-items: center; display: flex; justify-content: space-between;}
+.con1 .buy_box .select_ticket li:last-child {margin-bottom: 0;}
+.con1 .buy_box .select_ticket li .class {font-size: 36px; font-weight: 600; letter-spacing: -1px;}
+.con1 .buy_box .select_ticket li .class span {font-size: 20px; font-weight: 300; letter-spacing: -1px; color: #777777; margin-left: 10px;}
+.con1 .buy_box .select_ticket li .right {display: flex}
+.con1 .buy_box .select_ticket li .discount {font-size: 26px; align-content: center; color: #575757; font-weight: 600; margin-right: 15px;}
+.con1 .buy_box .select_ticket li .discount span {margin-right: 15px; color: #FF7E7E; font-weight: 600;}
+
+.con1 .product {background: #0A0A0A; color: white; border-radius: 20px; padding: 50px 40px; width: 33.5%;}
+.con1 .product .top {display: flex; justify-content: space-between; align-content: center; margin-bottom: 60px;}
+.con1 .product .logo {font-family: 'HK Grotesk', sans-serif; font-size: 30px; color: white; font-weight: 800;}
+.con1 .product .buy {font-size: 24px; color: #F5F6FB;}
+
+.con1 .product .system .select_product {font-size: 30px; margin-bottom: 30px; font-weight: 600;}
+.con1 .product .system .class {display: flex; justify-content: space-between; margin-bottom: 70px;}
+.con1 .product .system .class .class-name {font-size: 26px;}
+.con1 .product .system .class .class-name span {display: block; line-height: 2; font-size: 20px; font-weight: 200;}
+.con1 .product .system .class .price {align-content: end; font-size: 20px; font-weight: 200;}
+
+.con1 .product .total {display: flex; justify-content: space-between; font-size: 26px; margin-bottom: 15px;}
+
+.con1 .product .payment {margin-top: 80px; font-size: 30px;  font-weight: 600;}
+.con1 .product .payment p.a {margin-bottom: 40px;}
+.con1 .product .payment .select_payment {padding: 0 0 0 20px; margin-bottom: 100px;}
+.con1 .product .payment .select_payment li {display: flex; font-size: 26px; margin-bottom: 30px;}
+.con1 .product .payment .select_payment li img {margin-right: 16px; width: 6%;}
+.con1 .product .payment .select_payment li .card {margin-right: 10px; width: 15%;}
+.con1 .product .payment .select_payment li .card:last-child {margin-right: 0;}
+
+.con1 .bottom {font-size: 20px; text-align: center;}
+.con1 .bottom p {font-weight: 200;}
+.con1 .bottom button {background: white; border-radius: 10px; margin-top: 15px; color: #0A0A0A; width: 100%; padding: 20px 0; font-size: 20px;}
+
+.con2 .alert {margin-top: 120px; font-weight: 800; color: #6D6D6D;}
+.con2 .alert .left {display: flex; margin-right: 64px; font-size: 20px; font-weight: 700; margin-bottom: 40px;}
+.con2 .alert .left img {width: 24px; height: 24px; margin-right: 10px;}
+.con2 .alert .right {font-size: 18px; color: #838383; line-height: 1.5; font-weight: 500;}
+
+.select_ticket li.active {background: #0A0A0A;  border: none; background-image: url(../img/select_ticket2.svg); background-size: cover;}
+.con1 .buy_box .select_ticket li.active .class, .con1 .buy_box .select_ticket li.active .class-name,
+.con1 .buy_box .select_ticket li.active .discount {
+  color: #fff;
+}
+.select_ticket li.active .class span {color: #ccc;}
+.select_ticket li.active .right img {content: url(../img/select_box2.svg);}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+  .inner {padding: 100px 24px;}
+
+  .title {font-size: 150px;}
+
+  .con1 .buy {font-size: 24px; margin-bottom: 24px;}
+  .con1 .buy_box .select_ticket {width: 60%;}
+  .con1 .buy_box .select_ticket li {padding: 28px 36px; margin-bottom: 25px; border-radius: 15px;}
+  .con1 .buy_box .select_ticket li .class {font-size: 24px;}
+  .con1 .buy_box .select_ticket li .class span {font-size: 14px; display: block; margin-left: 0; margin-top: 4px;}
+  .con1 .buy_box .select_ticket li .discount {font-size: 20px; margin-right: 12px;}
+  .con1 .buy_box .select_ticket li .discount span {margin-right: 12px;}
+  .con1 .buy_box .select_ticket li .right {justify-content: space-between;}
+  .con1 .buy_box .select_ticket li:nth-child(1) .right img {width: 20%;}
+  .con1 .buy_box .select_ticket li .right img {width: 14%;}
+
+  .con1 .product {width: 38%; padding: 40px 30px;}
+  .con1 .product .total {margin-bottom: 16px;}
+  .con1 .product .top {margin-bottom: 50px;}
+  .con1 .product .logo {font-size: 18px;}
+  .con1 .product .buy {font-size: 18px; margin-bottom: 0;}
+  .con1 .product .system .select_product {font-size: 20px; margin-bottom: 24px;}
+  .con1 .product .system .class {margin-bottom: 35px;}
+  .con1 .product .system .class .class-name {font-size: 18px;}
+  .con1 .product .system .class .class-name span {font-size: 16px;}
+  .con1 .product .system .class .price{font-size: 16px;}
+  .con1 .product .total {font-size: 20px;}
+  .con1 .product .payment {margin-top: 50px;}
+  .con1 .product .payment p.a {font-size: 20px; margin-bottom: 24px;}
+  .con1 .product .payment .select_payment {padding: 0 0 0 10px; margin-bottom: 130px;}
+  .con1 .product .payment .select_payment li {font-size: 18px; margin-bottom: 20px;}
+  .con1 .product .payment .select_payment li img {margin-right: 10px; width: 6%;}
+  .con1 .product .payment .select_payment li .card {margin-right: 10px; width: 13%;}
+  .con1 .product .payment .select_payment li .card:last-child {margin-right: 0;}
+
+  .con1 .bottom p {font-size: 16px;}
+  .con1 .bottom button {font-size: 16px; padding: 16px 0; margin-top: 12px;}
+
+  .con2 .alert {margin-top: 45px;}
+  .con2 .alert .left {margin-bottom: 25px;}
+  .con2 .alert .left img {width: 24px; margin-right: 8px;}
+  .con2 .alert p {font-size: 16px; margin-top: 2px;}
+  .con2 .alert .right {font-size: 14px;}
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .inner {padding: 100px 20px;}
+
+  .title {font-size: 100px; margin-bottom: 80px;}
+  .con1 .buy {font-size: 20px; margin-bottom: 20px;}
+
+  .con1 .buy_box .select_ticket li {padding: 20px 20px; margin-bottom: 16px; border-radius: 10px;}
+  .con1 .buy_box .select_ticket li .class {font-size: 20px;}
+  .con1 .buy_box .select_ticket li .class span {font-size: 14px;}
+  .con1 .buy_box .select_ticket li .discount {font-size: 18px; margin-right: 0;}
+  .con1 .buy_box .select_ticket li .discount span {margin-right: 0; display: block; font-size: 16px;}
+  .con1 .buy_box .select_ticket li:nth-child(1) .right img {width: 15%;}
+  .con1 .buy_box .select_ticket li .right img {width: 15%;}
+
+  .con1 .product .top {margin-bottom: 36px;}
+  .con1 .product {padding: 30px 20px; border-radius: 15px;}
+  .con1 .product .logo {font-size: 16px;}
+  .con1 .product .buy {font-size: 16px;}
+  .con1 .product .system .select_product {font-size: 18px; margin-bottom: 16px;}
+  .con1 .product .system .class {margin-bottom: 36px;}
+  .con1 .product .system .class .class-name {font-size: 14px; margin-left: 8px;}
+  .con1 .product .system .class .class-name span {font-size: 14px;}
+  .con1 .product .system .class .price {font-size: 14px;}
+  .con1 .product .total {font-size: 18px; margin-bottom: 8px;}
+  .con1 .product .total-price {font-size: 18px;}
+
+  .con1 .product .payment {margin-top: 36px;}
+  .con1 .product .payment p.a {font-size: 18px; margin-bottom: 16px;}
+  .con1 .product .payment .select_payment li {font-size: 16px; margin-bottom: 16px;}
+  .con1 .product .payment .select_payment {margin-bottom: 60px; padding: 0 0 0 8px;}
+
+  .con1 .product .payment .select_payment li .card {margin-right: 8px; width: 12%;}
+
+  .con1 .bottom p {font-size: 14px;}
+  .con1 .bottom button {padding: 12px 0;}
+
+  .con2 .alert {margin-top: 80px;}
+  .con2 .alert .left {margin-bottom: 20px;}
+  .con2 .alert .left img {width: 20px; margin-right: 8px;}
+  .con2 .alert p {font-size: 14px; margin-top: 4px;}
+  .con2 .alert .right {font-size: 12px;}
+}
+
+
+
+@media screen and (max-width: 390px) {
+  .inner {padding: 100px 16px;}
+  .title {font-size: 55px; margin-bottom: 60px;}
+  .con1 .buy {font-size: 14px; margin-bottom: 20px;}
+
+  .con1 .buy_box {flex-wrap: wrap;}
+  .con1 .buy_box .select_ticket {width: 100%;}
+  .con1 .buy_box .select_ticket li .right {width: 40%;}
+  .con1 .buy_box .select_ticket li {display: none;}
+  .con1 .buy_box .select_ticket li.active {display: block; display: flex;}
+  .con1 .buy_box .select_ticket li .discount {font-size: 16px;}
+  .con1 .buy_box .select_ticket li .class {font-size: 18px;}
+  .con1 .buy_box .select_ticket li .class span {font-size: 12px;}
+  .con1 .buy_box .select_ticket li:nth-child(1) .right img {width: 18%;}
+  .con1 .buy_box .select_ticket li .right img {width: 18%;}
+
+  .con1 .product {width: 100%;}
+  
+  .con2 .alert {margin-top: 60px;}
+  .con2 .alert .left {margin-bottom: 16px;}
+  .con2 .alert .left img {width: 20px; margin-right: 8px;}
+  .con2 .alert p {font-size: 14px; margin-top: 4px;}
+  .con2 .alert .right {font-size: 12px;}
+}

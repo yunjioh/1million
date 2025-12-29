@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* Medium */
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('../font/NeueHaasDisplayMediu.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('../font/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('../font/NeueHaasDisplayLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Roman (Regular) */
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('../font/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Aspekta */
+@font-face {
+  font-family: 'Aspekta';
+  src: url('../font/Aspekta-Font/aspekta-main/fonts/otf/Aspekta-350.otf') format('opentype');
+  font-weight: 350;
+  font-style: normal;
+}
+
