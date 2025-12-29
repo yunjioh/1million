@@ -42,7 +42,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; background: #F5F6
 .recommend .inner .middle-box .left-box .left-box-inner {display: flex; flex-direction: column; justify-content: space-evenly; height: 100%;}
 
 /* hover */
-.recommend .inner .middle-box .left-box:hover {background:linear-gradient(rgba(0,0,0,1) 0%,rgba(0,64,128,0.5) 44%,rgba(0,127,255,0.5) 100%),  url(../img/sub-recommend-img.svg); background-size: cover; background-position: center; transition: all .3s;}
+.recommend .inner .middle-box .left-box:hover {background:linear-gradient(rgba(0,0,0,1) 0%,rgba(0,64,128,0.5) 44%,rgba(0,127,255,0.5) 100%),  url(../../../img/sub-recommend-img.svg); background-size: cover; background-position: center; transition: all .3s;}
 .recommend .inner .middle-box .left-box:hover .btn .dark-btn {opacity: 1;}
 .recommend .inner .middle-box .left-box h2 {font-size: 3.5vw; font-weight: lighter; letter-spacing: -2px; line-height: 1.1; font-family: 'Twice-Writing', serif; text-transform: uppercase;}
 
@@ -131,7 +131,7 @@ body {font-family: 'Neue Haas Grotesk Display Pro',sans-serif; background: #F5F6
     .recommend .inner .middle-box .left-box {width: 49%;}
     .recommend .inner .middle-box .left-box h2 {font-size: vw; white-space: nowrap;}
     .recommend .inner .middle-box .left-box p {font-size: 20px;}
-    .recommend .inner .middle-box .left-box {background:linear-gradient(rgba(0,0,0,1) 0%,rgba(0,64,128,0.5) 44%,rgba(0,127,255,0.5) 100%),  url(../img/sub-recommend-img.svg); background-size: cover; background-position: center; background-repeat: no-repeat;}
+    .recommend .inner .middle-box .left-box {background:linear-gradient(rgba(0,0,0,1) 0%,rgba(0,64,128,0.5) 44%,rgba(0,127,255,0.5) 100%),  url(../../../img/sub-recommend-img.svg); background-size: cover; background-position: center; background-repeat: no-repeat;}
     .recommend .inner .middle-box .left-box .btn .dark-btn {background: rgba(255, 255, 255, 0.14); display: inline-flex; align-items: center;justify-content: center; font-family: 'Pretendard', sans-serif; font-size: 20px; color: #F5F6FB; padding: 10px 10px 10px 25px; border-radius: 100px; font-weight: 500; border: 1px solid rgba(245, 246, 251,0.28); white-space: nowrap; backdrop-filter: blur(6px); opacity: 1;}
     .recommend .inner .middle-box .left-box .btn .dark-btn span {width: 40px; height: 40px; background: rgba(245, 246, 251, 0.28); border-radius: 50%; position: relative; margin-left: 14px;}
     .recommend .inner .middle-box .left-box .btn .dark-btn img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}

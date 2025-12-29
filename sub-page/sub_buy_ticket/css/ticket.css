@@ -99,7 +99,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
 .con2 ul li {width: 14%; background: #fff; border: 1px solid rgba(253, 205, 205, 0.3); border-radius: 20px; text-align: center; padding: 40px 30px 20px 30px; font-family: 'Pretendard', sans-serif; flex: 1; transition: flex-grow 0.3s;}
 .con2 ul li .img {margin: 50px auto; width: 25%; align-items: center;}
 .con2 ul li .img  img {width: 100%;}
-.con2 ul li.active {background: #0E0E0E; background-image: url(../img/select_ticket.svg); background-size: cover; color: white; border: none; flex: 1.2; transition: flex-grow 0.3s;}
+.con2 ul li.active {background: #0E0E0E; background-image: url(../../../img/select_ticket.svg); background-size: cover; color: white; border: none; flex: 1.2; transition: flex-grow 0.3s;}
 
 .con2 ul li.active .class, .con2 ul li.active .price {color: white;}
 .con2 ul li .class {font-size: 2vw; font-weight: 500; letter-spacing: -1px; margin-bottom: 8px; white-space: nowrap;}

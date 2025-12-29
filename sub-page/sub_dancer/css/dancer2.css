@@ -49,8 +49,8 @@ body {font-family: 'Neue Haas Grotesk Display Pro', sans-serif; font-size: 18px;
 .dancer-news .inner ul li {width: 49.5%; min-width: 0;}
 .dancer-news .inner ul li .news-card {position: relative; ; display: block; width: 100%; height: 826px; border-radius: 30px; overflow: hidden; min-width: 0;}
 .dancer-news .inner ul li .news-card:hover {background-size: 120%;}
-.dancer-news .inner ul li .news-card.a {background: url(../img/sub-page-dancer-news-card-bg-1.png) no-repeat center/cover;}
-.dancer-news .inner ul li .news-card.b {background: url(../img/sub-page-dancer-news-card-bg-2.png) no-repeat center/cover;}
+.dancer-news .inner ul li .news-card.a {background: url(../../../img/sub-page-dancer-news-card-bg-1.png) no-repeat center/cover;}
+.dancer-news .inner ul li .news-card.b {background: url(../../../img/sub-page-dancer-news-card-bg-2.png) no-repeat center/cover;}
 .dancer-news .inner ul li .news-card .box {inset: 0; padding: 90px; box-sizing: border-box; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
 .dancer-news .inner ul li .news-card .box h2.motion {font-size: 5vw; color: #fff; margin-bottom: auto; word-break: break-word; font-weight: 500; -webkit-text-stroke: 3px #fff; letter-spacing: 3px; animation: textUp 0.6s ease-out forwards;}
 .dancer-news .inner ul li .news-card .box h2 span {font-size: 3vw; display: block; -webkit-text-stroke: 1px #fff}
@@ -275,8 +275,8 @@ footer .inner .sns.a {display: none;}
     .dancer-news .inner ul li .news-card .box h2.motion {font-size: 6vw; font-weight: 400;}
     .dancer-news .inner ul li .news-card .box h2 span {font-size: 3vw; font-weight: 200; -webkit-text-stroke: 2px #fff}
     .dancer-news .inner ul li .news-card .box p {font-size: 14px;}
-    .dancer-news .inner ul li .news-card.a {background: url(../img/sub-page-dancer-news-card-bg-1-1024.png) no-repeat center/cover;}
-    .dancer-news .inner ul li .news-card.b {background: url(../img/sub-page-dancer-news-card-bg-2-1024.png) no-repeat center/cover;}
+    .dancer-news .inner ul li .news-card.a {background: url(../../../img/sub-page-dancer-news-card-bg-1-1024.png) no-repeat center/cover;}
+    .dancer-news .inner ul li .news-card.b {background: url(../../../img/sub-page-dancer-news-card-bg-2-1024.png) no-repeat center/cover;}
 
     .dancer-news .inner .btn-wrap {margin-bottom: 60px;}
     .dancer-news .inner .btn-wrap a span {font-size: 30px;}
@@ -352,8 +352,8 @@ footer {margin-top: 150px;}
     .dancer-news .inner ul li .news-card .box h2.motion {font-size: 11vw;}
     .dancer-news .inner ul li .news-card .box h2 span {font-size: 6vw; letter-spacing: 4px;}
     .dancer-news .inner ul li .news-card .box p {font-size: 16px;}
-    .dancer-news .inner ul .news-card:nth-child(1) {background: url(../img/sub-page-dancer-news-card-bg-1.png) no-repeat center/cover}
-    .dancer-news .inner ul .news-card:last-child {background: url(../img/sub-page-dancer-news-card-bg-2.png) no-repeat center/cover;}
+    .dancer-news .inner ul .news-card:nth-child(1) {background: url(../../../img/sub-page-dancer-news-card-bg-1.png) no-repeat center/cover}
+    .dancer-news .inner ul .news-card:last-child {background: url(../../../img/sub-page-dancer-news-card-bg-2.png) no-repeat center/cover;}
 
       footer .inner {padding: 30px 20px 0px;}
   footer .inner {padding: 50px 24px 50px; flex-wrap: wrap;}
@@ -425,8 +425,8 @@ footer {margin-top: 150px;}
     .dancer-news .inner ul li .news-card .box h2.motion {font-size: 13vw;}
     .dancer-news .inner ul li .news-card .box h2 span {font-size: 7vw;}
     .dancer-news .inner ul li .news-card .box p {font-size: 12px;}
-    .dancer-news .inner ul li .news-card.a {background: url(../img/sub-page-dancer-news-card-bg-1-390.png) no-repeat center/cover;}
-    .dancer-news .inner ul li .news-card.b {background: url(../img/sub-page-dancer-news-card-bg-2-390.png) no-repeat center/cover;}
+    .dancer-news .inner ul li .news-card.a {background: url(../../../img/sub-page-dancer-news-card-bg-1-390.png) no-repeat center/cover;}
+    .dancer-news .inner ul li .news-card.b {background: url(../../../img/sub-page-dancer-news-card-bg-2-390.png) no-repeat center/cover;}
 
   footer .inner .logo {font-size: 24px;}
   footer .inner ul li .contact.b {margin-bottom: 24px;}
