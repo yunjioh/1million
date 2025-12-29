@@ -356,7 +356,7 @@ $(function () {
 
   ScrollTrigger.matchMedia({
     "(min-width: 1779px)": function () {
-      runProjectScroll("top+=100 top", 500); runHighlightScroll("top+=200 top", 300); runDancerPin(); runFixcardAnimation(); changeBg();
+      runProjectScroll("top+=100 top", 500); runHighlightScroll("top+=150 top", 300); runDancerPin(); runFixcardAnimation(); changeBg();
     },
     "(min-width: 1025px) and (max-width: 1778px)": function () {
       runProjectScroll("top+=150 top", 900); runHighlightScroll("top+=200 top", 300); runFixcardAnimation(); changeBg();
