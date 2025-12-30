@@ -110,7 +110,7 @@ header {position: absolute; top: 40px; left: 0; width: 100%; z-index: 101;}
   color: #fff;
 }
 .select_ticket li.active .class span {color: #ccc;}
-.select_ticket li.active .right img {content: url(../img/select_box2.svg);}
+.select_ticket li.active .right img {content: url(../../../img/select_box2.svg);}
 
 
 footer .inner {padding: 100px 120px 100px; display: flex; justify-content: space-between; background: #000}
