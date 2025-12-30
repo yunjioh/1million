@@ -448,7 +448,7 @@ footer .inner .sns .img a {width: 90%;}
     display: inline-block;
     width: 17px;
     height: 17px;
-    background: url('../img/select_box.svg') no-repeat center/contain;
+    background: url('../../../img/select_box.svg') no-repeat center/contain;
     position: absolute;
     right: 0;
     top: 50%;
@@ -462,12 +462,12 @@ footer .inner .sns .img a {width: 90%;}
     .con3 .alert .left {font-size: 14px;}
     .con3 .alert .right {font-size: 12px; margin-left:0; letter-spacing: normal;}
     .con2 ul li .btn {display: none;}
-    .con2 ul li.active {background: url(../img/select_ticket390.svg) no-repeat center/cover}
+    .con2 ul li.active {background: url(../../../img/select_ticket390.svg) no-repeat center/cover}
     .con2 ul li.active .btn {display: none;}
     .con2 ul li.active .class-name {color: white;}
     .con2 ul li.active .img {margin: auto;}
     .con2 ul li:nth-child(1) .priceBox {margin-top: 0;}
-    .con2 ul li.active .priceBox::after { background: url('../img/select_box2.svg') no-repeat center/contain;}
+    .con2 ul li.active .priceBox::after { background: url('../../../img/select_box2.svg') no-repeat center/contain;}
     
     .use-ticket {padding: 16px; margin-top: 100px; margin-bottom: 100px;}
     .use-ticket ul { display:block; gap: 24px;}
