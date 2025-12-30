@@ -621,7 +621,7 @@ footer .inner .top-box {display: block;}
 footer .inner .top-box  li {margin-bottom: 40px;}
 footer .inner .top-box li p.tit {margin-bottom: 16px;}
 footer .inner .bottom-box .mail-box {font-size:  clamp(24px, 6.25vw, 48px) }
-footer .inner .bottom-box .name {font-size: clamp(96px, 19vw, 180px);
+footer .inner .bottom-box .name {font-size: clamp(96px, 18vw, 180px);
 ;}
 footer .inner .top-box li p {font-size: 20px;}
 
